@@ -6,8 +6,15 @@ const config = {
   issuer: import.meta.env.VITE_RUNABLE_AUTH_ISSUER as string,
 };
 
+// O APK offline serve o jogo por file://; essa origem não é uma URL HTTP válida
+// para o cliente Better Auth. Mantemos um endpoint inerte para que o boot não
+// quebre e o login online continue usando a origem normal na web.
+const runtimeOrigin = window.location.protocol === "file:" || window.location.origin === "null"
+  ? "http://localhost"
+  : window.location.origin;
+
 export const authClient = createAuthClient({
-  baseURL: window.location.origin,
+  baseURL: runtimeOrigin,
   basePath: "/api/auth",
   plugins: [managedAuthClient(config)],
 });

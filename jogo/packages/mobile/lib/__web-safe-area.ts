@@ -38,8 +38,7 @@ export function startWebSafeArea() {
       if (bg && bg !== "transparent" && bg !== "rgba(0, 0, 0, 0)") {
         const m = bg.match(/rgba\([^,]+,[^,]+,[^,]+,\s*([\d.]+)\)/);
         if (m && parseFloat(m[1]) < 0.5) continue;
-        if (document.body.style.backgroundColor !== bg)
-          document.body.style.backgroundColor = bg;
+        if (document.body.style.backgroundColor !== bg) document.body.style.backgroundColor = bg;
         return;
       }
     }

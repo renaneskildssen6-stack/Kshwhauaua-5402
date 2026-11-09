@@ -170,6 +170,9 @@ export function veinYield(oreId: string, depth: number): number {
 // ------------------------------------------------------- estado persistido
 export interface MiningState {
   depth: number;
+  highestDepth: number;
+  carry: Record<string,number>;
+  queue: {ore:string;bars:number;endsAt:number}[];
   ores: Record<string, number>;
   bars: Record<string, number>;
   pick: number;
@@ -186,6 +189,9 @@ export interface MiningState {
 export function initialMining(): MiningState {
   return {
     depth: 1,
+    highestDepth: 1,
+    carry: {},
+    queue: [],
     ores: {},
     bars: {},
     pick: 1,
@@ -206,6 +212,9 @@ export function normalizeMining(m: Partial<MiningState> | undefined): MiningStat
     ...base,
     ...m,
     depth: Math.min(MAX_DEPTH, Math.max(1, Math.round(m.depth ?? 1))),
+    highestDepth: Math.min(MAX_DEPTH,Math.max(1,Math.round(m.depth??1),Math.round(m.highestDepth??1),...Object.keys(m.drills??{}).map(Number).filter(Number.isFinite))),
+    carry: m.carry??{},
+    queue: Array.isArray(m.queue)?m.queue.filter(j=>ORE_MAP[j.ore]&&Number.isInteger(j.bars)&&j.bars>0&&Number.isFinite(j.endsAt)).slice(0,3):[],
     pick: Math.min(PICK_MAX, Math.max(1, Math.round(m.pick ?? 1))),
     silo: Math.min(SILO_MAX, Math.max(1, Math.round(m.silo ?? 1))),
     refinery: Math.min(REFINERY_MAX, Math.max(1, Math.round(m.refinery ?? 1))),
@@ -225,7 +234,7 @@ export function storedTotal(m: MiningState): number {
 export function totalDrillRate(m: MiningState): number {
   let sum = 0;
   for (const d of DEPTHS) {
-    if (d.level > m.depth) break;
+    if (d.level > m.highestDepth) break;
     sum += drillRate(d.level, m.drills[String(d.level)] ?? 0);
   }
   return +sum.toFixed(2);
@@ -238,25 +247,28 @@ export function totalDrillRate(m: MiningState): number {
 export function collectProduction(
   m: MiningState,
   now: number,
-): { ores: Record<string, number>; gained: number; ms: number } {
+): { ores: Record<string, number>; gained: number; ms: number; carry: Record<string,number> } {
   const ms = Math.min(OFFLINE_CAP_MS, Math.max(0, now - m.lastTick));
   const minutes = ms / 60000;
   const room = Math.max(0, siloCapacity(m.silo) - storedTotal(m));
   const out: Record<string, number> = {};
+  const carry:Record<string,number>={...m.carry};
   let gained = 0;
-  if (minutes <= 0 || room <= 0) return { ores: out, gained: 0, ms };
+  if (minutes <= 0 || room <= 0) return { ores: out, gained: 0, ms, carry };
 
   for (const d of DEPTHS) {
-    if (d.level > m.depth) break;
+    if (d.level > m.highestDepth) break;
     const lvl = m.drills[String(d.level)] ?? 0;
     if (lvl <= 0) continue;
     const amount = drillRate(d.level, lvl) * minutes;
-    if (amount < 1) continue;
     // reparte a produção da camada entre os minérios dela, do comum ao raro
     const ws = d.ores.map((_, i) => WEIGHTS[i] ?? 6);
     const total = ws.reduce((a, b) => a + b, 0);
     d.ores.forEach((ore, i) => {
-      const q = Math.floor((amount * ws[i]) / total);
+      const key=`${d.level}:${ore}`;
+      const exact=(amount*ws[i])/total+(carry[key]||0);
+      const q = Math.floor(exact);
+      carry[key]=exact-q;
       if (q > 0) {
         out[ore] = (out[ore] ?? 0) + q;
         gained += q;
@@ -265,17 +277,20 @@ export function collectProduction(
   }
 
   if (gained > room) {
-    // corta proporcionalmente para caber no silo
+    // Distribui também os restos: a última vaga do silo não pode sumir no arredondamento.
     const scale = room / gained;
+    const shares = Object.keys(out).map(id => ({ id, exact: out[id] * scale }));
     let left = room;
-    for (const k of Object.keys(out)) {
-      const q = Math.min(left, Math.floor(out[k] * scale));
-      out[k] = q;
+    for (const share of shares) {
+      const q = Math.floor(share.exact);
+      out[share.id] = q;
       left -= q;
     }
-    gained = room - left;
+    shares.sort((a,b)=>(b.exact-Math.floor(b.exact))-(a.exact-Math.floor(a.exact)));
+    for (const share of shares) { if (left <= 0) break; out[share.id]++; left--; }
+    gained = room;
   }
-  return { ores: out, gained, ms };
+  return { ores: out, gained, ms, carry };
 }
 
 export function sellValue(m: MiningState): number {

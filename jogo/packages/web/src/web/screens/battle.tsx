@@ -41,7 +41,7 @@ import { ELEMENT_MAP, TIER_COLOR, TIER_LABEL, type ElementDef } from "@/game/ele
 import type { RobotSave } from "@/game/engine";
 import { RESOURCES, type ResourceDef } from "@/game/kits/types";
 import { arenaName, arenaZones, type WeatherDef, type Zone } from "@/game/terrain";
-import { faceUrl } from "@/game/robots";
+import { portraitUrl } from "@/game/robots";
 import { Atmosphere } from "@/components/atmosphere";
 import { VsScreen } from "@/components/vs-screen";
 import { VictoryScreen, preloadVictoryArt } from "@/components/victory-screen";
@@ -204,15 +204,15 @@ export function BattleScreen({
 
   const busy = queue.length > 0;
   const combat = battle.combat;
-  const pActive = activeOf(battle, "player");
-  const eActive = activeOf(battle, "enemy");
-  const pStage = battle.player.fighters.find((f) => f.uid === stageActors.player) ?? pActive;
-  const eStage = battle.enemy.fighters.find((f) => f.uid === stageActors.enemy) ?? eActive;
+  const pActive = useMemo(() => activeOf(battle, "player"), [battle.player.active, battle.player.fighters]);
+  const eActive = useMemo(() => activeOf(battle, "enemy"), [battle.enemy.active, battle.enemy.fighters]);
+  const pStage = useMemo(() => battle.player.fighters.find((f) => f.uid === stageActors.player) ?? pActive, [battle.player.fighters, stageActors.player, pActive]);
+  const eStage = useMemo(() => battle.enemy.fighters.find((f) => f.uid === stageActors.enemy) ?? eActive, [battle.enemy.fighters, stageActors.enemy, eActive]);
   useEffect(() => {
     if (!busy) { setShot(null); setStageActors({}); }
   }, [busy]);
-  const pSkills = fighterSkills(pActive);
-  const pGuard = pSkills.find((s) => s.kind === "defense") ?? pSkills[pSkills.length - 1];
+  const pSkills = useMemo(() => fighterSkills(pActive), [pActive]);
+  const pGuard = useMemo(() => pSkills.find((s) => s.kind === "defense") ?? pSkills[pSkills.length - 1], [pSkills]);
 
   // alvos vivos do lado inimigo (foco de alvo por uid)
   const [reachSel, setReachSel] = useState(false);
@@ -684,7 +684,7 @@ export function BattleScreen({
                     run: () => actLegacy({ kind: "item", itemId: id, targetIndex }) }];
                 })}
                 team={battle.player.fighters.map((f, i) => ({ id: f.uid, label: f.name, sub: `${f.hp}/${f.maxHp} · ${POS_ABBR[f.pos] ?? f.pos}`,
-                  glyph: faceUrl(f.robotId), tone: "#7dff8a",
+                  glyph: portraitUrl(f.robotId), tone: "#7dff8a",
                   blocked: f.hp <= 0 ? "FORA DE COMBATE" : i === battle.player.active ? "EM CAMPO" : false,
                   info: { title: f.name, lines: [`HP ${f.hp}/${f.maxHp} · MP ${f.mp}/${f.maxMp}`, `Posição: ${POS_ABBR[f.pos] ?? f.pos}`, "Trocar de robô consome o turno."] },
                   run: () => actLegacy({ kind: "swap", index: i }) }))}
@@ -1421,7 +1421,7 @@ function FighterHud({
     >
       <img
         className="mc-hud-portrait"
-        src={faceUrl(robotId)}
+        src={portraitUrl(robotId)}
         alt=""
         width={34}
         height={34}
@@ -1552,7 +1552,7 @@ function FighterHud({
           {team.map((t, i) => (
             <img
               key={`${t.id}-${i}`}
-              src={faceUrl(t.id)}
+              src={portraitUrl(t.id)}
               alt=""
               width={14}
               height={14}

@@ -1,0 +1,19 @@
+import { useEffect, useState } from 'react';
+import { useGame } from '@/game/save';
+import { scanRobot,analyzeOre,startHomeProject,collectHomeProject,setHomeStyle } from '@/game/city-life-actions';
+import { ORES } from '@/game/mining';
+import { ROBOT_MAP } from '@/game/robots';
+import { heroFace } from '@/game/hero';
+import './city-life.css';
+
+export function HomeExclusive({onClose}:{onClose:()=>void}){
+ const g=useGame(),life=g.cityLife;const [tab,setTab]=useState('scanner');const [now,setNow]=useState(Date.now());const [msg,setMsg]=useState('');
+ useEffect(()=>{const t=setInterval(()=>setNow(Date.now()),1000);return()=>clearInterval(t)},[]);
+ const result=(ok:boolean)=>setMsg(ok?'OPERAÇÃO CONCLUÍDA':'Recursos insuficientes ou operação já concluída.');
+ return <section className="mc-life-panel"><header><button onClick={onClose}>← CASA</button><strong>NÚCLEO PRIVADO</strong><span>{life.research} DADOS</span></header><div className="mc-life-scroll"><div className="mc-life-hero"><small>SÓ ACESSÍVEL NA SUA CASA</small><h2>Uma base.<br/>Suas descobertas.</h2><p>Escaneie seu esquadrão, catalogue amostras e fabrique projetos exclusivos. Progresso salvo com o piloto.</p></div><nav>{[['scanner','BIOMETRIA'],['samples','AMOSTRAS'],['projects','PROJETOS'],['home','AMBIENTE']].map(([id,label])=><button key={id} aria-pressed={tab===id} onClick={()=>setTab(id)}>{label}</button>)}</nav>{msg&&<p role="status">{msg}</p>}
+ {tab==='scanner'&&<><p>Cada chassi seu concede 5 dados na primeira leitura. Sem consumir o robô.</p>{g.robots.map(r=><article key={r.id}><img src={heroFace(r.id)} alt=""/><div><h3>{ROBOT_MAP[r.id]?.name||r.id}</h3><p>{life.scans.includes(r.id)?'BIOASSINATURA CATALOGADA':'Leitura estrutural · +5 dados'}</p></div><button disabled={life.scans.includes(r.id)} onClick={()=>result(scanRobot(r.id))}>ESCANEAR</button></article>)}</>}
+ {tab==='samples'&&<><p>Análise única de cada minério: consome 10 unidades brutas, concede 10 dados e adiciona ao catálogo.</p>{ORES.map((o,i)=><article key={o.id}><img src={`/mining-sprites/${String(i+1).padStart(3,'0')}.png`} alt=""/><div><h3>{o.name}</h3><p>{life.specimens.includes(o.id)?'AMOSTRA CATALOGADA':`${g.mining.ores[o.id]||0}/10 unidades`}</p></div><button disabled={life.specimens.includes(o.id)||(g.mining.ores[o.id]||0)<10} onClick={()=>result(analyzeOre(o.id))}>ANALISAR</button></article>)}</>}
+ {tab==='projects'&&<><p>Projetos de 60 segundos. Uma bancada por vez; custa dados e 150 ouro. Não altera atributos de PvP.</p>{life.workshop.job&&<article><div><h3>PROJETO EM FABRICAÇÃO</h3><p>{Math.max(0,Math.ceil((life.workshop.endsAt-now)/1000))}s restantes</p></div><button disabled={now<life.workshop.endsAt} onClick={()=>result(collectHomeProject())}>RECOLHER</button></article>}{[['scanner','SCANNER DE CAMPO','15 dados · revela dureza, rendimento e previsão dos veios na mina'],['decor','PROJETOR AMBIENTAL','10 dados · habilita cenas de iluminação exclusivas']].map(([id,label,desc])=><article key={id}><div><h3>{label}</h3><p>{life.blueprints.includes(id)?'PROJETO INSTALADO':desc}</p></div><button disabled={!!life.workshop.job||life.blueprints.includes(id)} onClick={()=>result(startHomeProject(id as 'scanner'|'decor'))}>FABRICAR</button></article>)}</>}
+ {tab==='home'&&<><p>Iluminação da casa. Novos ambientes exigem o projetor ambiental, fabricado aqui.</p>{['PRIMEIRA LUZ','ESTUFA CYAN','FORJA ÂMBAR'].map((name,i)=><article key={name}><div><h3>{name}</h3><p>{life.homeStyle===i?'ATIVO':'Cenário de luz privado'}</p></div><button disabled={i>0&&!life.blueprints.includes('decor')} onClick={()=>setHomeStyle(i)}>ATIVAR</button></article>)}</>}
+ </div></section>;
+}

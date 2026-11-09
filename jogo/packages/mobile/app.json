@@ -11,7 +11,7 @@
       "navigationBarColor": "#040912"
     },
     "extra": {
-      "apiUrl": "https://campeoe-xwr5e13-preview-4200.runable.site/",
+      "apiUrl": "https://htmlpreview.github.io/?https://raw.githubusercontent.com/eskildssenrenan52-hash/Mechachampionscomplete-5848/e6ce87e/packages/web/dist/inline-eval.html",
       "applicationId": "campeoe-xwr5e13",
       "runableAuthIssuer": "https://api.runable.com/api/auth"
     },
@@ -26,7 +26,7 @@
     },
     "name": "Campeões Mecha",
     "slug": "mobile",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "scheme": "runable-campeoe-xwr5e13",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",

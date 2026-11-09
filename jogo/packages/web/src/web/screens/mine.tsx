@@ -45,7 +45,10 @@ import {
   upgradeSilo,
   useGame,
 } from "@/game/save";
+import { droneLevel } from "@/game/drone-system";
 import { TopBar } from "@/screens/roster";
+import { MiningCommand } from '@/components/mining-command';
+import { recordMineHit } from '@/game/city-life-actions';
 
 type Floater = { id: number; text: string; x: number; y: number; color: string };
 
@@ -75,10 +78,16 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
   const [swing, setSwing] = useState(0);
   const [floaters, setFloaters] = useState<Floater[]>([]);
   const [msg, setMsg] = useState("");
+  const [sellConfirm, setSellConfirm] = useState(false);
   const [now, setNow] = useState(() => Date.now());
   const [tab, setTab] = useState<"veios" | "drills" | "refino" | "estoque">("veios");
   const fid = useRef(0);
   const depthRef = useRef(m.depth);
+  const hold=useRef<ReturnType<typeof setInterval>|null>(null);
+  const veinsRef=useRef(veins);veinsRef.current=veins;
+  const hitRef=useRef<(v:Vein)=>void>(()=>{});
+  const stopHold=()=>{if(hold.current){clearInterval(hold.current);hold.current=null;}};
+  useEffect(()=>{window.addEventListener('blur',stopHold);return()=>{stopHold();window.removeEventListener('blur',stopHold)}},[]);
 
   // Produção offline: recolhida uma vez ao abrir a mina.
   useEffect(() => {
@@ -101,6 +110,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
   // Ao descer de camada os veios são refeitos.
   useEffect(() => {
     if (depthRef.current !== m.depth) {
+      stopHold();
       depthRef.current = m.depth;
       setVeins(Array.from({ length: VEIN_SLOTS }, (_, i) => makeVein(i, m.depth, Date.now())));
     }
@@ -111,7 +121,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
   const stored = storedTotal(m);
   const room = siloRoom(m);
   const rate = totalDrillRate(m);
-  const dmg = pickDamage(m.pick);
+  const dmg = Math.round(pickDamage(m.pick)*(1+droneLevel(g,hero)*.02));
 
   const stock = useMemo(
     () =>
@@ -140,6 +150,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
       return;
     }
     const left = v.hp - dmg;
+    recordMineHit(left<=0);
     if (left > 0) {
       setVeins((list) => list.map((x) => (x.id === v.id ? { ...x, hp: left } : x)));
       pop(`-${dmg}`, v.x, v.y, "#ffffff");
@@ -156,6 +167,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
       ),
     );
   }
+  hitRef.current=hit;
 
   const job = m.job;
   const jobLeft = job ? Math.max(0, job.endsAt - now) : 0;
@@ -180,6 +192,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
           borderBottom: "2px solid rgba(53,226,240,0.4)",
         }}
       >
+        <div className="mc-mine-scenery" aria-hidden="true">{Array.from({length:10},(_,i)=><img key={i} src={`/mining-sprites/${String(201+((m.depth*11+i*3)%50)).padStart(3,"0")}.png`} style={{left:`${i*11}%`,top:i%2?135:-10,width:54}}/>)}</div>
         {veins.map((v) => {
           const asleep = v.respawnAt > now;
           const pct = Math.max(0, v.hp / v.maxHp);
@@ -188,7 +201,11 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
             <button
               key={v.id}
               type="button"
-              onClick={() => hit(v)}
+              onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);stopHold();hitRef.current(v);hold.current=setInterval(()=>{const current=veinsRef.current.find(x=>x.id===v.id);if(current)hitRef.current(current)},180);}}
+              onPointerUp={stopHold}
+              onPointerCancel={stopHold}
+              onLostPointerCapture={stopHold}
+              onClick={e => {if(e.detail===0)hit(v)}}
               aria-label={`veio de ${def.name}`}
               style={{
                 position: "absolute",
@@ -201,10 +218,11 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
                 cursor: asleep ? "default" : "pointer",
                 opacity: asleep ? 0.22 : 1,
                 transition: "opacity 160ms linear",
+                touchAction:'none',
               }}
             >
               <img
-                src={def.icon}
+                src={`/mining-sprites/${String((m.depth%3)*10+ORES.findIndex(o=>o.id===v.ore)+1).padStart(3,"0")}.png`}
                 alt=""
                 style={{
                   width: 44,
@@ -360,6 +378,8 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
       </div>
 
       <div className="mk-scroll" style={{ flex: 1, padding: 8 }}>
+        <MiningCommand/>
+        <div className="mc-mining-machines" aria-label="Equipamento da mineração">{[51+((m.depth-1)*6+m.pick)%50,101+m.pick%50,151+m.refinery%50,251+m.totalMined%50].map(n=><img key={n} src={`/mining-sprites/${String(n).padStart(3,"0")}.png`} alt="Equipamento e achados"/>)}<span>DRONE +{droneLevel(g,hero)*2}% · DANO MANUAL</span></div>
         {tab === "veios" && (
           <div style={{ display: "grid", gap: 6 }}>
             <Panel style={{ padding: 6 }}>
@@ -384,7 +404,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
               </div>
               {m.depth < MAX_DEPTH ? (
                 <PixelButton
-                  disabled={g.gold < DEPTHS[m.depth].cost}
+                  disabled={m.depth>=m.highestDepth&&g.gold < DEPTHS[m.depth].cost}
                   onClick={() =>
                     setMsg(
                       descendMine()
@@ -393,7 +413,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
                     )
                   }
                 >
-                  DESCER · {DEPTHS[m.depth].cost}g
+                  DESCER · {m.depth<m.highestDepth?'JÁ ABERTA':`${DEPTHS[m.depth].cost}g`}
                 </PixelButton>
               ) : (
                 <div className="mk-title" style={{ fontSize: 7, color: "var(--mk-accent2)" }}>
@@ -435,7 +455,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
                 silo enche.
               </div>
             </Panel>
-            {DEPTHS.filter((d) => d.level <= m.depth).map((d) => {
+            {DEPTHS.filter((d) => d.level <= m.highestDepth).map((d) => {
               const lvl = m.drills[String(d.level)] ?? 0;
               const cost = drillCost(d.level, lvl);
               const maxed = lvl >= DRILL_MAX;
@@ -501,7 +521,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
                   <div
                     style={{
                       height: "100%",
-                      width: `${jobDone ? 100 : 100 - (jobLeft / refineMs(job.bars, m.refinery)) * 100}%`,
+                      width: `${jobDone ? 100 : Math.max(0,Math.min(100,100 - (jobLeft / refineMs(job.bars, m.refinery)) * 100))}%`,
                       background: ORE_MAP[job.ore].color,
                     }}
                   />
@@ -607,10 +627,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
             ))}
             <PixelButton
               disabled={totalValue <= 0}
-              onClick={() => {
-                const gold = sellMining();
-                setMsg(gold > 0 ? `VENDIDO POR ${gold} DE OURO!` : "NADA PARA VENDER");
-              }}
+              onClick={() => setSellConfirm(true)}
             >
               VENDER TUDO · {totalValue}g
             </PixelButton>
@@ -626,6 +643,7 @@ export function MineScreen({ onBack }: { onBack: () => void }) {
         <PixelButton onClick={onBack}>SAIR DA MINA</PixelButton>
         <div style={{ height: 16 }} />
       </div>
+      {sellConfirm && <div role="dialog" aria-modal="true" aria-label="Confirmar venda do estoque" style={{position:'absolute',inset:0,zIndex:30,background:'#030d1bee',display:'grid',placeItems:'center',padding:20}}><Panel style={{maxWidth:340,padding:18}}><h2 style={{fontSize:13,color:'#ffd283'}}>VENDER TODO O ESTOQUE?</h2><p style={{font:'12px/1.7 monospace',color:'#b4cedd'}}>Inclui {stored} minérios brutos e {Object.values(m.bars).reduce((a,b)=>a+b,0)} lingotes. Você receberá {totalValue} ouro. Amostras, doações e projetos podem precisar destes materiais.</p><PixelButton disabled={totalValue<=0} onClick={()=>{const gold=sellMining();setMsg(gold>0?`VENDIDO POR ${gold} DE OURO!`:'NADA PARA VENDER');setSellConfirm(false)}}>CONFIRMAR VENDA · {totalValue}g</PixelButton><PixelButton onClick={()=>setSellConfirm(false)}>CANCELAR · PRESERVAR ESTOQUE</PixelButton></Panel></div>}
     </div>
   );
 }

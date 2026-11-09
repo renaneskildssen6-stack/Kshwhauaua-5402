@@ -1,7 +1,7 @@
 import app from "./api";
 
 const port = Number(process.env.PORT ?? 3000);
-const distDir = `${import.meta.dir}/../dist`;
+const distDir = `${import.meta.dirname}/../dist`;
 const indexPath = `${distDir}/index.html`;
 
 const server = Bun.serve({
@@ -37,9 +37,7 @@ const server = Bun.serve({
 console.log(`Web server listening on http://localhost:${server.port}`);
 
 function getStaticFilePath(pathname: string) {
-  const cleanPath = decodeURIComponent(pathname)
-    .replace(/^\/+/, "")
-    .replaceAll("..", "");
+  const cleanPath = decodeURIComponent(pathname).replace(/^\/+/, "").replaceAll("..", "");
 
   return cleanPath ? `${distDir}/${cleanPath}` : indexPath;
 }

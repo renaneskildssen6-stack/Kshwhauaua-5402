@@ -12,6 +12,8 @@
 
 import { ALL_PARTS, partsFor, type PartSet } from "./parts";
 
+export const PART_ASSETS = ALL_PARTS;
+export const PART_ASSET_COUNT = ALL_PARTS.length;
 export const FRAME = 128;
 export const FRAMES = 16;
 const GROUND = 124;
@@ -40,10 +42,15 @@ function load(src: string): Promise<void> {
   });
 }
 
-/** Pre-carrega as 56 pecas. Chamado pela tela de carregamento. */
-export function preloadParts(): Promise<void> {
+/** Pre-carrega as peças modulares, informando progresso sem bloquear outros consumidores. */
+export function preloadParts(onProgress?: (completed: number, total: number, current: string) => void): Promise<void> {
   if (loading) return loading;
-  loading = Promise.all(partLoadFailures().map(load)).then(() => {
+  const pending = partLoadFailures();
+  let completed = 0;
+  loading = Promise.all(pending.map(async src => {
+    await load(src);
+    onProgress?.(++completed, pending.length, src);
+  })).then(() => {
     ready = true;
     stripCache.clear();faceCache.clear();
     loading = null;

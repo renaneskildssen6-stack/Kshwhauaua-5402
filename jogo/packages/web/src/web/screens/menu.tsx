@@ -4,29 +4,8 @@ import { useGame } from "@/game/save";
 import { isPlacing, rankAt } from "@/game/ranked";
 import { StatBar } from "@/components/pixel";
 
-export type Screen =
-  | "menu"
-  | "roster"
-  | "shop"
-  | "tournaments"
-  | "modes"
-  | "ranked"
-  | "engineer"
-  | "pets"
-  | "cards"
-  | "mine"
-  | "lab"
-  | "profile"
-  | "mastery"
-  | "skins"
-  | "observatory"
-  | "academy"
-  | "contracts"
-  | "power"
-  | "museum"
-  | "portal"
-  | "pantheon"
-  | "online";
+import type { Screen } from "../game/screen-ids";
+export type { Screen };
 
 export function MenuScreen({ onGo }: { onGo: (s: Screen) => void }) {
   const g = useGame();

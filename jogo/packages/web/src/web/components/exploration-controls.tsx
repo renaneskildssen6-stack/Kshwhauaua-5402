@@ -63,9 +63,10 @@ function Action({ label, name, test, color, disabled, onDown, onUp = () => {} }:
   const release = () => { if (owner.current === null) return; owner.current = null; setPressed(false); onUp(); };
   useEffect(() => { if (disabled) release(); }, [disabled]);
   useEffect(() => { window.addEventListener("blur", release); return () => { window.removeEventListener("blur", release); }; }, []);
-  return <button className="mk-title" aria-label={name} data-testid={test} disabled={disabled}
+  const art = test === "jump-button" ? "touch_jump" : test === "attack-button" ? "touch_attack" : test === "special-button" ? "touch_special" : "touch_interact";
+  return <button className={`mc-ai-touch${pressed ? " is-pressed" : ""}`} aria-label={name} data-testid={test} disabled={disabled}
     onPointerDown={e => { if (owner.current !== null) return; e.preventDefault(); e.currentTarget.setPointerCapture(e.pointerId); owner.current = e.pointerId; setPressed(true); onDown(); }}
     onPointerUp={release} onPointerCancel={release} onLostPointerCapture={release}
     onClick={e => { if (e.detail === 0 && !disabled) onDown(); }}
-    style={{ width: "100%", height: test === "jump-button" ? 62 : 48, minWidth: 44, minHeight: 44, fontSize: test === "interact-button" ? 5 : 6, border: `3px solid ${color}`, color: pressed ? "#02101a" : color, background: pressed ? color : "rgba(4,14,27,.9)", boxShadow: "3px 3px 0 #020813", opacity: disabled ? .45 : 1, transform: pressed ? "translateY(2px)" : undefined, touchAction: "none", userSelect: "none", cursor: "pointer" }}>{label}</button>;
+    style={{ width: "100%", height: test === "jump-button" ? 62 : 48, minWidth: 44, minHeight: 44, ["--touch-art" as string]: `url(/ui/ai/${art}.png)`, ["--touch-tone" as string]: color, touchAction: "none", userSelect: "none", cursor: "pointer" }}><span style={{ color }}>{label}</span></button>;
 }

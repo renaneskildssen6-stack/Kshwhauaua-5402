@@ -1,0 +1,3602 @@
+[
+  {
+    "kind": "mining",
+    "index": 1,
+    "batch": 1,
+    "url": "/mining-sprites/001.png"
+  },
+  {
+    "kind": "mining",
+    "index": 2,
+    "batch": 1,
+    "url": "/mining-sprites/002.png"
+  },
+  {
+    "kind": "mining",
+    "index": 3,
+    "batch": 1,
+    "url": "/mining-sprites/003.png"
+  },
+  {
+    "kind": "mining",
+    "index": 4,
+    "batch": 1,
+    "url": "/mining-sprites/004.png"
+  },
+  {
+    "kind": "mining",
+    "index": 5,
+    "batch": 1,
+    "url": "/mining-sprites/005.png"
+  },
+  {
+    "kind": "mining",
+    "index": 6,
+    "batch": 1,
+    "url": "/mining-sprites/006.png"
+  },
+  {
+    "kind": "mining",
+    "index": 7,
+    "batch": 1,
+    "url": "/mining-sprites/007.png"
+  },
+  {
+    "kind": "mining",
+    "index": 8,
+    "batch": 1,
+    "url": "/mining-sprites/008.png"
+  },
+  {
+    "kind": "mining",
+    "index": 9,
+    "batch": 1,
+    "url": "/mining-sprites/009.png"
+  },
+  {
+    "kind": "mining",
+    "index": 10,
+    "batch": 1,
+    "url": "/mining-sprites/010.png"
+  },
+  {
+    "kind": "mining",
+    "index": 11,
+    "batch": 1,
+    "url": "/mining-sprites/011.png"
+  },
+  {
+    "kind": "mining",
+    "index": 12,
+    "batch": 1,
+    "url": "/mining-sprites/012.png"
+  },
+  {
+    "kind": "mining",
+    "index": 13,
+    "batch": 1,
+    "url": "/mining-sprites/013.png"
+  },
+  {
+    "kind": "mining",
+    "index": 14,
+    "batch": 1,
+    "url": "/mining-sprites/014.png"
+  },
+  {
+    "kind": "mining",
+    "index": 15,
+    "batch": 1,
+    "url": "/mining-sprites/015.png"
+  },
+  {
+    "kind": "mining",
+    "index": 16,
+    "batch": 1,
+    "url": "/mining-sprites/016.png"
+  },
+  {
+    "kind": "mining",
+    "index": 17,
+    "batch": 1,
+    "url": "/mining-sprites/017.png"
+  },
+  {
+    "kind": "mining",
+    "index": 18,
+    "batch": 1,
+    "url": "/mining-sprites/018.png"
+  },
+  {
+    "kind": "mining",
+    "index": 19,
+    "batch": 1,
+    "url": "/mining-sprites/019.png"
+  },
+  {
+    "kind": "mining",
+    "index": 20,
+    "batch": 1,
+    "url": "/mining-sprites/020.png"
+  },
+  {
+    "kind": "mining",
+    "index": 21,
+    "batch": 1,
+    "url": "/mining-sprites/021.png"
+  },
+  {
+    "kind": "mining",
+    "index": 22,
+    "batch": 1,
+    "url": "/mining-sprites/022.png"
+  },
+  {
+    "kind": "mining",
+    "index": 23,
+    "batch": 1,
+    "url": "/mining-sprites/023.png"
+  },
+  {
+    "kind": "mining",
+    "index": 24,
+    "batch": 1,
+    "url": "/mining-sprites/024.png"
+  },
+  {
+    "kind": "mining",
+    "index": 25,
+    "batch": 1,
+    "url": "/mining-sprites/025.png"
+  },
+  {
+    "kind": "mining",
+    "index": 26,
+    "batch": 1,
+    "url": "/mining-sprites/026.png"
+  },
+  {
+    "kind": "mining",
+    "index": 27,
+    "batch": 1,
+    "url": "/mining-sprites/027.png"
+  },
+  {
+    "kind": "mining",
+    "index": 28,
+    "batch": 1,
+    "url": "/mining-sprites/028.png"
+  },
+  {
+    "kind": "mining",
+    "index": 29,
+    "batch": 1,
+    "url": "/mining-sprites/029.png"
+  },
+  {
+    "kind": "mining",
+    "index": 30,
+    "batch": 1,
+    "url": "/mining-sprites/030.png"
+  },
+  {
+    "kind": "mining",
+    "index": 31,
+    "batch": 1,
+    "url": "/mining-sprites/031.png"
+  },
+  {
+    "kind": "mining",
+    "index": 32,
+    "batch": 1,
+    "url": "/mining-sprites/032.png"
+  },
+  {
+    "kind": "mining",
+    "index": 33,
+    "batch": 1,
+    "url": "/mining-sprites/033.png"
+  },
+  {
+    "kind": "mining",
+    "index": 34,
+    "batch": 1,
+    "url": "/mining-sprites/034.png"
+  },
+  {
+    "kind": "mining",
+    "index": 35,
+    "batch": 1,
+    "url": "/mining-sprites/035.png"
+  },
+  {
+    "kind": "mining",
+    "index": 36,
+    "batch": 1,
+    "url": "/mining-sprites/036.png"
+  },
+  {
+    "kind": "mining",
+    "index": 37,
+    "batch": 1,
+    "url": "/mining-sprites/037.png"
+  },
+  {
+    "kind": "mining",
+    "index": 38,
+    "batch": 1,
+    "url": "/mining-sprites/038.png"
+  },
+  {
+    "kind": "mining",
+    "index": 39,
+    "batch": 1,
+    "url": "/mining-sprites/039.png"
+  },
+  {
+    "kind": "mining",
+    "index": 40,
+    "batch": 1,
+    "url": "/mining-sprites/040.png"
+  },
+  {
+    "kind": "mining",
+    "index": 41,
+    "batch": 1,
+    "url": "/mining-sprites/041.png"
+  },
+  {
+    "kind": "mining",
+    "index": 42,
+    "batch": 1,
+    "url": "/mining-sprites/042.png"
+  },
+  {
+    "kind": "mining",
+    "index": 43,
+    "batch": 1,
+    "url": "/mining-sprites/043.png"
+  },
+  {
+    "kind": "mining",
+    "index": 44,
+    "batch": 1,
+    "url": "/mining-sprites/044.png"
+  },
+  {
+    "kind": "mining",
+    "index": 45,
+    "batch": 1,
+    "url": "/mining-sprites/045.png"
+  },
+  {
+    "kind": "mining",
+    "index": 46,
+    "batch": 1,
+    "url": "/mining-sprites/046.png"
+  },
+  {
+    "kind": "mining",
+    "index": 47,
+    "batch": 1,
+    "url": "/mining-sprites/047.png"
+  },
+  {
+    "kind": "mining",
+    "index": 48,
+    "batch": 1,
+    "url": "/mining-sprites/048.png"
+  },
+  {
+    "kind": "mining",
+    "index": 49,
+    "batch": 1,
+    "url": "/mining-sprites/049.png"
+  },
+  {
+    "kind": "mining",
+    "index": 50,
+    "batch": 1,
+    "url": "/mining-sprites/050.png"
+  },
+  {
+    "kind": "mining",
+    "index": 51,
+    "batch": 2,
+    "url": "/mining-sprites/051.png"
+  },
+  {
+    "kind": "mining",
+    "index": 52,
+    "batch": 2,
+    "url": "/mining-sprites/052.png"
+  },
+  {
+    "kind": "mining",
+    "index": 53,
+    "batch": 2,
+    "url": "/mining-sprites/053.png"
+  },
+  {
+    "kind": "mining",
+    "index": 54,
+    "batch": 2,
+    "url": "/mining-sprites/054.png"
+  },
+  {
+    "kind": "mining",
+    "index": 55,
+    "batch": 2,
+    "url": "/mining-sprites/055.png"
+  },
+  {
+    "kind": "mining",
+    "index": 56,
+    "batch": 2,
+    "url": "/mining-sprites/056.png"
+  },
+  {
+    "kind": "mining",
+    "index": 57,
+    "batch": 2,
+    "url": "/mining-sprites/057.png"
+  },
+  {
+    "kind": "mining",
+    "index": 58,
+    "batch": 2,
+    "url": "/mining-sprites/058.png"
+  },
+  {
+    "kind": "mining",
+    "index": 59,
+    "batch": 2,
+    "url": "/mining-sprites/059.png"
+  },
+  {
+    "kind": "mining",
+    "index": 60,
+    "batch": 2,
+    "url": "/mining-sprites/060.png"
+  },
+  {
+    "kind": "mining",
+    "index": 61,
+    "batch": 2,
+    "url": "/mining-sprites/061.png"
+  },
+  {
+    "kind": "mining",
+    "index": 62,
+    "batch": 2,
+    "url": "/mining-sprites/062.png"
+  },
+  {
+    "kind": "mining",
+    "index": 63,
+    "batch": 2,
+    "url": "/mining-sprites/063.png"
+  },
+  {
+    "kind": "mining",
+    "index": 64,
+    "batch": 2,
+    "url": "/mining-sprites/064.png"
+  },
+  {
+    "kind": "mining",
+    "index": 65,
+    "batch": 2,
+    "url": "/mining-sprites/065.png"
+  },
+  {
+    "kind": "mining",
+    "index": 66,
+    "batch": 2,
+    "url": "/mining-sprites/066.png"
+  },
+  {
+    "kind": "mining",
+    "index": 67,
+    "batch": 2,
+    "url": "/mining-sprites/067.png"
+  },
+  {
+    "kind": "mining",
+    "index": 68,
+    "batch": 2,
+    "url": "/mining-sprites/068.png"
+  },
+  {
+    "kind": "mining",
+    "index": 69,
+    "batch": 2,
+    "url": "/mining-sprites/069.png"
+  },
+  {
+    "kind": "mining",
+    "index": 70,
+    "batch": 2,
+    "url": "/mining-sprites/070.png"
+  },
+  {
+    "kind": "mining",
+    "index": 71,
+    "batch": 2,
+    "url": "/mining-sprites/071.png"
+  },
+  {
+    "kind": "mining",
+    "index": 72,
+    "batch": 2,
+    "url": "/mining-sprites/072.png"
+  },
+  {
+    "kind": "mining",
+    "index": 73,
+    "batch": 2,
+    "url": "/mining-sprites/073.png"
+  },
+  {
+    "kind": "mining",
+    "index": 74,
+    "batch": 2,
+    "url": "/mining-sprites/074.png"
+  },
+  {
+    "kind": "mining",
+    "index": 75,
+    "batch": 2,
+    "url": "/mining-sprites/075.png"
+  },
+  {
+    "kind": "mining",
+    "index": 76,
+    "batch": 2,
+    "url": "/mining-sprites/076.png"
+  },
+  {
+    "kind": "mining",
+    "index": 77,
+    "batch": 2,
+    "url": "/mining-sprites/077.png"
+  },
+  {
+    "kind": "mining",
+    "index": 78,
+    "batch": 2,
+    "url": "/mining-sprites/078.png"
+  },
+  {
+    "kind": "mining",
+    "index": 79,
+    "batch": 2,
+    "url": "/mining-sprites/079.png"
+  },
+  {
+    "kind": "mining",
+    "index": 80,
+    "batch": 2,
+    "url": "/mining-sprites/080.png"
+  },
+  {
+    "kind": "mining",
+    "index": 81,
+    "batch": 2,
+    "url": "/mining-sprites/081.png"
+  },
+  {
+    "kind": "mining",
+    "index": 82,
+    "batch": 2,
+    "url": "/mining-sprites/082.png"
+  },
+  {
+    "kind": "mining",
+    "index": 83,
+    "batch": 2,
+    "url": "/mining-sprites/083.png"
+  },
+  {
+    "kind": "mining",
+    "index": 84,
+    "batch": 2,
+    "url": "/mining-sprites/084.png"
+  },
+  {
+    "kind": "mining",
+    "index": 85,
+    "batch": 2,
+    "url": "/mining-sprites/085.png"
+  },
+  {
+    "kind": "mining",
+    "index": 86,
+    "batch": 2,
+    "url": "/mining-sprites/086.png"
+  },
+  {
+    "kind": "mining",
+    "index": 87,
+    "batch": 2,
+    "url": "/mining-sprites/087.png"
+  },
+  {
+    "kind": "mining",
+    "index": 88,
+    "batch": 2,
+    "url": "/mining-sprites/088.png"
+  },
+  {
+    "kind": "mining",
+    "index": 89,
+    "batch": 2,
+    "url": "/mining-sprites/089.png"
+  },
+  {
+    "kind": "mining",
+    "index": 90,
+    "batch": 2,
+    "url": "/mining-sprites/090.png"
+  },
+  {
+    "kind": "mining",
+    "index": 91,
+    "batch": 2,
+    "url": "/mining-sprites/091.png"
+  },
+  {
+    "kind": "mining",
+    "index": 92,
+    "batch": 2,
+    "url": "/mining-sprites/092.png"
+  },
+  {
+    "kind": "mining",
+    "index": 93,
+    "batch": 2,
+    "url": "/mining-sprites/093.png"
+  },
+  {
+    "kind": "mining",
+    "index": 94,
+    "batch": 2,
+    "url": "/mining-sprites/094.png"
+  },
+  {
+    "kind": "mining",
+    "index": 95,
+    "batch": 2,
+    "url": "/mining-sprites/095.png"
+  },
+  {
+    "kind": "mining",
+    "index": 96,
+    "batch": 2,
+    "url": "/mining-sprites/096.png"
+  },
+  {
+    "kind": "mining",
+    "index": 97,
+    "batch": 2,
+    "url": "/mining-sprites/097.png"
+  },
+  {
+    "kind": "mining",
+    "index": 98,
+    "batch": 2,
+    "url": "/mining-sprites/098.png"
+  },
+  {
+    "kind": "mining",
+    "index": 99,
+    "batch": 2,
+    "url": "/mining-sprites/099.png"
+  },
+  {
+    "kind": "mining",
+    "index": 100,
+    "batch": 2,
+    "url": "/mining-sprites/100.png"
+  },
+  {
+    "kind": "mining",
+    "index": 101,
+    "batch": 3,
+    "url": "/mining-sprites/101.png"
+  },
+  {
+    "kind": "mining",
+    "index": 102,
+    "batch": 3,
+    "url": "/mining-sprites/102.png"
+  },
+  {
+    "kind": "mining",
+    "index": 103,
+    "batch": 3,
+    "url": "/mining-sprites/103.png"
+  },
+  {
+    "kind": "mining",
+    "index": 104,
+    "batch": 3,
+    "url": "/mining-sprites/104.png"
+  },
+  {
+    "kind": "mining",
+    "index": 105,
+    "batch": 3,
+    "url": "/mining-sprites/105.png"
+  },
+  {
+    "kind": "mining",
+    "index": 106,
+    "batch": 3,
+    "url": "/mining-sprites/106.png"
+  },
+  {
+    "kind": "mining",
+    "index": 107,
+    "batch": 3,
+    "url": "/mining-sprites/107.png"
+  },
+  {
+    "kind": "mining",
+    "index": 108,
+    "batch": 3,
+    "url": "/mining-sprites/108.png"
+  },
+  {
+    "kind": "mining",
+    "index": 109,
+    "batch": 3,
+    "url": "/mining-sprites/109.png"
+  },
+  {
+    "kind": "mining",
+    "index": 110,
+    "batch": 3,
+    "url": "/mining-sprites/110.png"
+  },
+  {
+    "kind": "mining",
+    "index": 111,
+    "batch": 3,
+    "url": "/mining-sprites/111.png"
+  },
+  {
+    "kind": "mining",
+    "index": 112,
+    "batch": 3,
+    "url": "/mining-sprites/112.png"
+  },
+  {
+    "kind": "mining",
+    "index": 113,
+    "batch": 3,
+    "url": "/mining-sprites/113.png"
+  },
+  {
+    "kind": "mining",
+    "index": 114,
+    "batch": 3,
+    "url": "/mining-sprites/114.png"
+  },
+  {
+    "kind": "mining",
+    "index": 115,
+    "batch": 3,
+    "url": "/mining-sprites/115.png"
+  },
+  {
+    "kind": "mining",
+    "index": 116,
+    "batch": 3,
+    "url": "/mining-sprites/116.png"
+  },
+  {
+    "kind": "mining",
+    "index": 117,
+    "batch": 3,
+    "url": "/mining-sprites/117.png"
+  },
+  {
+    "kind": "mining",
+    "index": 118,
+    "batch": 3,
+    "url": "/mining-sprites/118.png"
+  },
+  {
+    "kind": "mining",
+    "index": 119,
+    "batch": 3,
+    "url": "/mining-sprites/119.png"
+  },
+  {
+    "kind": "mining",
+    "index": 120,
+    "batch": 3,
+    "url": "/mining-sprites/120.png"
+  },
+  {
+    "kind": "mining",
+    "index": 121,
+    "batch": 3,
+    "url": "/mining-sprites/121.png"
+  },
+  {
+    "kind": "mining",
+    "index": 122,
+    "batch": 3,
+    "url": "/mining-sprites/122.png"
+  },
+  {
+    "kind": "mining",
+    "index": 123,
+    "batch": 3,
+    "url": "/mining-sprites/123.png"
+  },
+  {
+    "kind": "mining",
+    "index": 124,
+    "batch": 3,
+    "url": "/mining-sprites/124.png"
+  },
+  {
+    "kind": "mining",
+    "index": 125,
+    "batch": 3,
+    "url": "/mining-sprites/125.png"
+  },
+  {
+    "kind": "mining",
+    "index": 126,
+    "batch": 3,
+    "url": "/mining-sprites/126.png"
+  },
+  {
+    "kind": "mining",
+    "index": 127,
+    "batch": 3,
+    "url": "/mining-sprites/127.png"
+  },
+  {
+    "kind": "mining",
+    "index": 128,
+    "batch": 3,
+    "url": "/mining-sprites/128.png"
+  },
+  {
+    "kind": "mining",
+    "index": 129,
+    "batch": 3,
+    "url": "/mining-sprites/129.png"
+  },
+  {
+    "kind": "mining",
+    "index": 130,
+    "batch": 3,
+    "url": "/mining-sprites/130.png"
+  },
+  {
+    "kind": "mining",
+    "index": 131,
+    "batch": 3,
+    "url": "/mining-sprites/131.png"
+  },
+  {
+    "kind": "mining",
+    "index": 132,
+    "batch": 3,
+    "url": "/mining-sprites/132.png"
+  },
+  {
+    "kind": "mining",
+    "index": 133,
+    "batch": 3,
+    "url": "/mining-sprites/133.png"
+  },
+  {
+    "kind": "mining",
+    "index": 134,
+    "batch": 3,
+    "url": "/mining-sprites/134.png"
+  },
+  {
+    "kind": "mining",
+    "index": 135,
+    "batch": 3,
+    "url": "/mining-sprites/135.png"
+  },
+  {
+    "kind": "mining",
+    "index": 136,
+    "batch": 3,
+    "url": "/mining-sprites/136.png"
+  },
+  {
+    "kind": "mining",
+    "index": 137,
+    "batch": 3,
+    "url": "/mining-sprites/137.png"
+  },
+  {
+    "kind": "mining",
+    "index": 138,
+    "batch": 3,
+    "url": "/mining-sprites/138.png"
+  },
+  {
+    "kind": "mining",
+    "index": 139,
+    "batch": 3,
+    "url": "/mining-sprites/139.png"
+  },
+  {
+    "kind": "mining",
+    "index": 140,
+    "batch": 3,
+    "url": "/mining-sprites/140.png"
+  },
+  {
+    "kind": "mining",
+    "index": 141,
+    "batch": 3,
+    "url": "/mining-sprites/141.png"
+  },
+  {
+    "kind": "mining",
+    "index": 142,
+    "batch": 3,
+    "url": "/mining-sprites/142.png"
+  },
+  {
+    "kind": "mining",
+    "index": 143,
+    "batch": 3,
+    "url": "/mining-sprites/143.png"
+  },
+  {
+    "kind": "mining",
+    "index": 144,
+    "batch": 3,
+    "url": "/mining-sprites/144.png"
+  },
+  {
+    "kind": "mining",
+    "index": 145,
+    "batch": 3,
+    "url": "/mining-sprites/145.png"
+  },
+  {
+    "kind": "mining",
+    "index": 146,
+    "batch": 3,
+    "url": "/mining-sprites/146.png"
+  },
+  {
+    "kind": "mining",
+    "index": 147,
+    "batch": 3,
+    "url": "/mining-sprites/147.png"
+  },
+  {
+    "kind": "mining",
+    "index": 148,
+    "batch": 3,
+    "url": "/mining-sprites/148.png"
+  },
+  {
+    "kind": "mining",
+    "index": 149,
+    "batch": 3,
+    "url": "/mining-sprites/149.png"
+  },
+  {
+    "kind": "mining",
+    "index": 150,
+    "batch": 3,
+    "url": "/mining-sprites/150.png"
+  },
+  {
+    "kind": "mining",
+    "index": 151,
+    "batch": 4,
+    "url": "/mining-sprites/151.png"
+  },
+  {
+    "kind": "mining",
+    "index": 152,
+    "batch": 4,
+    "url": "/mining-sprites/152.png"
+  },
+  {
+    "kind": "mining",
+    "index": 153,
+    "batch": 4,
+    "url": "/mining-sprites/153.png"
+  },
+  {
+    "kind": "mining",
+    "index": 154,
+    "batch": 4,
+    "url": "/mining-sprites/154.png"
+  },
+  {
+    "kind": "mining",
+    "index": 155,
+    "batch": 4,
+    "url": "/mining-sprites/155.png"
+  },
+  {
+    "kind": "mining",
+    "index": 156,
+    "batch": 4,
+    "url": "/mining-sprites/156.png"
+  },
+  {
+    "kind": "mining",
+    "index": 157,
+    "batch": 4,
+    "url": "/mining-sprites/157.png"
+  },
+  {
+    "kind": "mining",
+    "index": 158,
+    "batch": 4,
+    "url": "/mining-sprites/158.png"
+  },
+  {
+    "kind": "mining",
+    "index": 159,
+    "batch": 4,
+    "url": "/mining-sprites/159.png"
+  },
+  {
+    "kind": "mining",
+    "index": 160,
+    "batch": 4,
+    "url": "/mining-sprites/160.png"
+  },
+  {
+    "kind": "mining",
+    "index": 161,
+    "batch": 4,
+    "url": "/mining-sprites/161.png"
+  },
+  {
+    "kind": "mining",
+    "index": 162,
+    "batch": 4,
+    "url": "/mining-sprites/162.png"
+  },
+  {
+    "kind": "mining",
+    "index": 163,
+    "batch": 4,
+    "url": "/mining-sprites/163.png"
+  },
+  {
+    "kind": "mining",
+    "index": 164,
+    "batch": 4,
+    "url": "/mining-sprites/164.png"
+  },
+  {
+    "kind": "mining",
+    "index": 165,
+    "batch": 4,
+    "url": "/mining-sprites/165.png"
+  },
+  {
+    "kind": "mining",
+    "index": 166,
+    "batch": 4,
+    "url": "/mining-sprites/166.png"
+  },
+  {
+    "kind": "mining",
+    "index": 167,
+    "batch": 4,
+    "url": "/mining-sprites/167.png"
+  },
+  {
+    "kind": "mining",
+    "index": 168,
+    "batch": 4,
+    "url": "/mining-sprites/168.png"
+  },
+  {
+    "kind": "mining",
+    "index": 169,
+    "batch": 4,
+    "url": "/mining-sprites/169.png"
+  },
+  {
+    "kind": "mining",
+    "index": 170,
+    "batch": 4,
+    "url": "/mining-sprites/170.png"
+  },
+  {
+    "kind": "mining",
+    "index": 171,
+    "batch": 4,
+    "url": "/mining-sprites/171.png"
+  },
+  {
+    "kind": "mining",
+    "index": 172,
+    "batch": 4,
+    "url": "/mining-sprites/172.png"
+  },
+  {
+    "kind": "mining",
+    "index": 173,
+    "batch": 4,
+    "url": "/mining-sprites/173.png"
+  },
+  {
+    "kind": "mining",
+    "index": 174,
+    "batch": 4,
+    "url": "/mining-sprites/174.png"
+  },
+  {
+    "kind": "mining",
+    "index": 175,
+    "batch": 4,
+    "url": "/mining-sprites/175.png"
+  },
+  {
+    "kind": "mining",
+    "index": 176,
+    "batch": 4,
+    "url": "/mining-sprites/176.png"
+  },
+  {
+    "kind": "mining",
+    "index": 177,
+    "batch": 4,
+    "url": "/mining-sprites/177.png"
+  },
+  {
+    "kind": "mining",
+    "index": 178,
+    "batch": 4,
+    "url": "/mining-sprites/178.png"
+  },
+  {
+    "kind": "mining",
+    "index": 179,
+    "batch": 4,
+    "url": "/mining-sprites/179.png"
+  },
+  {
+    "kind": "mining",
+    "index": 180,
+    "batch": 4,
+    "url": "/mining-sprites/180.png"
+  },
+  {
+    "kind": "mining",
+    "index": 181,
+    "batch": 4,
+    "url": "/mining-sprites/181.png"
+  },
+  {
+    "kind": "mining",
+    "index": 182,
+    "batch": 4,
+    "url": "/mining-sprites/182.png"
+  },
+  {
+    "kind": "mining",
+    "index": 183,
+    "batch": 4,
+    "url": "/mining-sprites/183.png"
+  },
+  {
+    "kind": "mining",
+    "index": 184,
+    "batch": 4,
+    "url": "/mining-sprites/184.png"
+  },
+  {
+    "kind": "mining",
+    "index": 185,
+    "batch": 4,
+    "url": "/mining-sprites/185.png"
+  },
+  {
+    "kind": "mining",
+    "index": 186,
+    "batch": 4,
+    "url": "/mining-sprites/186.png"
+  },
+  {
+    "kind": "mining",
+    "index": 187,
+    "batch": 4,
+    "url": "/mining-sprites/187.png"
+  },
+  {
+    "kind": "mining",
+    "index": 188,
+    "batch": 4,
+    "url": "/mining-sprites/188.png"
+  },
+  {
+    "kind": "mining",
+    "index": 189,
+    "batch": 4,
+    "url": "/mining-sprites/189.png"
+  },
+  {
+    "kind": "mining",
+    "index": 190,
+    "batch": 4,
+    "url": "/mining-sprites/190.png"
+  },
+  {
+    "kind": "mining",
+    "index": 191,
+    "batch": 4,
+    "url": "/mining-sprites/191.png"
+  },
+  {
+    "kind": "mining",
+    "index": 192,
+    "batch": 4,
+    "url": "/mining-sprites/192.png"
+  },
+  {
+    "kind": "mining",
+    "index": 193,
+    "batch": 4,
+    "url": "/mining-sprites/193.png"
+  },
+  {
+    "kind": "mining",
+    "index": 194,
+    "batch": 4,
+    "url": "/mining-sprites/194.png"
+  },
+  {
+    "kind": "mining",
+    "index": 195,
+    "batch": 4,
+    "url": "/mining-sprites/195.png"
+  },
+  {
+    "kind": "mining",
+    "index": 196,
+    "batch": 4,
+    "url": "/mining-sprites/196.png"
+  },
+  {
+    "kind": "mining",
+    "index": 197,
+    "batch": 4,
+    "url": "/mining-sprites/197.png"
+  },
+  {
+    "kind": "mining",
+    "index": 198,
+    "batch": 4,
+    "url": "/mining-sprites/198.png"
+  },
+  {
+    "kind": "mining",
+    "index": 199,
+    "batch": 4,
+    "url": "/mining-sprites/199.png"
+  },
+  {
+    "kind": "mining",
+    "index": 200,
+    "batch": 4,
+    "url": "/mining-sprites/200.png"
+  },
+  {
+    "kind": "mining",
+    "index": 201,
+    "batch": 5,
+    "url": "/mining-sprites/201.png"
+  },
+  {
+    "kind": "mining",
+    "index": 202,
+    "batch": 5,
+    "url": "/mining-sprites/202.png"
+  },
+  {
+    "kind": "mining",
+    "index": 203,
+    "batch": 5,
+    "url": "/mining-sprites/203.png"
+  },
+  {
+    "kind": "mining",
+    "index": 204,
+    "batch": 5,
+    "url": "/mining-sprites/204.png"
+  },
+  {
+    "kind": "mining",
+    "index": 205,
+    "batch": 5,
+    "url": "/mining-sprites/205.png"
+  },
+  {
+    "kind": "mining",
+    "index": 206,
+    "batch": 5,
+    "url": "/mining-sprites/206.png"
+  },
+  {
+    "kind": "mining",
+    "index": 207,
+    "batch": 5,
+    "url": "/mining-sprites/207.png"
+  },
+  {
+    "kind": "mining",
+    "index": 208,
+    "batch": 5,
+    "url": "/mining-sprites/208.png"
+  },
+  {
+    "kind": "mining",
+    "index": 209,
+    "batch": 5,
+    "url": "/mining-sprites/209.png"
+  },
+  {
+    "kind": "mining",
+    "index": 210,
+    "batch": 5,
+    "url": "/mining-sprites/210.png"
+  },
+  {
+    "kind": "mining",
+    "index": 211,
+    "batch": 5,
+    "url": "/mining-sprites/211.png"
+  },
+  {
+    "kind": "mining",
+    "index": 212,
+    "batch": 5,
+    "url": "/mining-sprites/212.png"
+  },
+  {
+    "kind": "mining",
+    "index": 213,
+    "batch": 5,
+    "url": "/mining-sprites/213.png"
+  },
+  {
+    "kind": "mining",
+    "index": 214,
+    "batch": 5,
+    "url": "/mining-sprites/214.png"
+  },
+  {
+    "kind": "mining",
+    "index": 215,
+    "batch": 5,
+    "url": "/mining-sprites/215.png"
+  },
+  {
+    "kind": "mining",
+    "index": 216,
+    "batch": 5,
+    "url": "/mining-sprites/216.png"
+  },
+  {
+    "kind": "mining",
+    "index": 217,
+    "batch": 5,
+    "url": "/mining-sprites/217.png"
+  },
+  {
+    "kind": "mining",
+    "index": 218,
+    "batch": 5,
+    "url": "/mining-sprites/218.png"
+  },
+  {
+    "kind": "mining",
+    "index": 219,
+    "batch": 5,
+    "url": "/mining-sprites/219.png"
+  },
+  {
+    "kind": "mining",
+    "index": 220,
+    "batch": 5,
+    "url": "/mining-sprites/220.png"
+  },
+  {
+    "kind": "mining",
+    "index": 221,
+    "batch": 5,
+    "url": "/mining-sprites/221.png"
+  },
+  {
+    "kind": "mining",
+    "index": 222,
+    "batch": 5,
+    "url": "/mining-sprites/222.png"
+  },
+  {
+    "kind": "mining",
+    "index": 223,
+    "batch": 5,
+    "url": "/mining-sprites/223.png"
+  },
+  {
+    "kind": "mining",
+    "index": 224,
+    "batch": 5,
+    "url": "/mining-sprites/224.png"
+  },
+  {
+    "kind": "mining",
+    "index": 225,
+    "batch": 5,
+    "url": "/mining-sprites/225.png"
+  },
+  {
+    "kind": "mining",
+    "index": 226,
+    "batch": 5,
+    "url": "/mining-sprites/226.png"
+  },
+  {
+    "kind": "mining",
+    "index": 227,
+    "batch": 5,
+    "url": "/mining-sprites/227.png"
+  },
+  {
+    "kind": "mining",
+    "index": 228,
+    "batch": 5,
+    "url": "/mining-sprites/228.png"
+  },
+  {
+    "kind": "mining",
+    "index": 229,
+    "batch": 5,
+    "url": "/mining-sprites/229.png"
+  },
+  {
+    "kind": "mining",
+    "index": 230,
+    "batch": 5,
+    "url": "/mining-sprites/230.png"
+  },
+  {
+    "kind": "mining",
+    "index": 231,
+    "batch": 5,
+    "url": "/mining-sprites/231.png"
+  },
+  {
+    "kind": "mining",
+    "index": 232,
+    "batch": 5,
+    "url": "/mining-sprites/232.png"
+  },
+  {
+    "kind": "mining",
+    "index": 233,
+    "batch": 5,
+    "url": "/mining-sprites/233.png"
+  },
+  {
+    "kind": "mining",
+    "index": 234,
+    "batch": 5,
+    "url": "/mining-sprites/234.png"
+  },
+  {
+    "kind": "mining",
+    "index": 235,
+    "batch": 5,
+    "url": "/mining-sprites/235.png"
+  },
+  {
+    "kind": "mining",
+    "index": 236,
+    "batch": 5,
+    "url": "/mining-sprites/236.png"
+  },
+  {
+    "kind": "mining",
+    "index": 237,
+    "batch": 5,
+    "url": "/mining-sprites/237.png"
+  },
+  {
+    "kind": "mining",
+    "index": 238,
+    "batch": 5,
+    "url": "/mining-sprites/238.png"
+  },
+  {
+    "kind": "mining",
+    "index": 239,
+    "batch": 5,
+    "url": "/mining-sprites/239.png"
+  },
+  {
+    "kind": "mining",
+    "index": 240,
+    "batch": 5,
+    "url": "/mining-sprites/240.png"
+  },
+  {
+    "kind": "mining",
+    "index": 241,
+    "batch": 5,
+    "url": "/mining-sprites/241.png"
+  },
+  {
+    "kind": "mining",
+    "index": 242,
+    "batch": 5,
+    "url": "/mining-sprites/242.png"
+  },
+  {
+    "kind": "mining",
+    "index": 243,
+    "batch": 5,
+    "url": "/mining-sprites/243.png"
+  },
+  {
+    "kind": "mining",
+    "index": 244,
+    "batch": 5,
+    "url": "/mining-sprites/244.png"
+  },
+  {
+    "kind": "mining",
+    "index": 245,
+    "batch": 5,
+    "url": "/mining-sprites/245.png"
+  },
+  {
+    "kind": "mining",
+    "index": 246,
+    "batch": 5,
+    "url": "/mining-sprites/246.png"
+  },
+  {
+    "kind": "mining",
+    "index": 247,
+    "batch": 5,
+    "url": "/mining-sprites/247.png"
+  },
+  {
+    "kind": "mining",
+    "index": 248,
+    "batch": 5,
+    "url": "/mining-sprites/248.png"
+  },
+  {
+    "kind": "mining",
+    "index": 249,
+    "batch": 5,
+    "url": "/mining-sprites/249.png"
+  },
+  {
+    "kind": "mining",
+    "index": 250,
+    "batch": 5,
+    "url": "/mining-sprites/250.png"
+  },
+  {
+    "kind": "mining",
+    "index": 251,
+    "batch": 6,
+    "url": "/mining-sprites/251.png"
+  },
+  {
+    "kind": "mining",
+    "index": 252,
+    "batch": 6,
+    "url": "/mining-sprites/252.png"
+  },
+  {
+    "kind": "mining",
+    "index": 253,
+    "batch": 6,
+    "url": "/mining-sprites/253.png"
+  },
+  {
+    "kind": "mining",
+    "index": 254,
+    "batch": 6,
+    "url": "/mining-sprites/254.png"
+  },
+  {
+    "kind": "mining",
+    "index": 255,
+    "batch": 6,
+    "url": "/mining-sprites/255.png"
+  },
+  {
+    "kind": "mining",
+    "index": 256,
+    "batch": 6,
+    "url": "/mining-sprites/256.png"
+  },
+  {
+    "kind": "mining",
+    "index": 257,
+    "batch": 6,
+    "url": "/mining-sprites/257.png"
+  },
+  {
+    "kind": "mining",
+    "index": 258,
+    "batch": 6,
+    "url": "/mining-sprites/258.png"
+  },
+  {
+    "kind": "mining",
+    "index": 259,
+    "batch": 6,
+    "url": "/mining-sprites/259.png"
+  },
+  {
+    "kind": "mining",
+    "index": 260,
+    "batch": 6,
+    "url": "/mining-sprites/260.png"
+  },
+  {
+    "kind": "mining",
+    "index": 261,
+    "batch": 6,
+    "url": "/mining-sprites/261.png"
+  },
+  {
+    "kind": "mining",
+    "index": 262,
+    "batch": 6,
+    "url": "/mining-sprites/262.png"
+  },
+  {
+    "kind": "mining",
+    "index": 263,
+    "batch": 6,
+    "url": "/mining-sprites/263.png"
+  },
+  {
+    "kind": "mining",
+    "index": 264,
+    "batch": 6,
+    "url": "/mining-sprites/264.png"
+  },
+  {
+    "kind": "mining",
+    "index": 265,
+    "batch": 6,
+    "url": "/mining-sprites/265.png"
+  },
+  {
+    "kind": "mining",
+    "index": 266,
+    "batch": 6,
+    "url": "/mining-sprites/266.png"
+  },
+  {
+    "kind": "mining",
+    "index": 267,
+    "batch": 6,
+    "url": "/mining-sprites/267.png"
+  },
+  {
+    "kind": "mining",
+    "index": 268,
+    "batch": 6,
+    "url": "/mining-sprites/268.png"
+  },
+  {
+    "kind": "mining",
+    "index": 269,
+    "batch": 6,
+    "url": "/mining-sprites/269.png"
+  },
+  {
+    "kind": "mining",
+    "index": 270,
+    "batch": 6,
+    "url": "/mining-sprites/270.png"
+  },
+  {
+    "kind": "mining",
+    "index": 271,
+    "batch": 6,
+    "url": "/mining-sprites/271.png"
+  },
+  {
+    "kind": "mining",
+    "index": 272,
+    "batch": 6,
+    "url": "/mining-sprites/272.png"
+  },
+  {
+    "kind": "mining",
+    "index": 273,
+    "batch": 6,
+    "url": "/mining-sprites/273.png"
+  },
+  {
+    "kind": "mining",
+    "index": 274,
+    "batch": 6,
+    "url": "/mining-sprites/274.png"
+  },
+  {
+    "kind": "mining",
+    "index": 275,
+    "batch": 6,
+    "url": "/mining-sprites/275.png"
+  },
+  {
+    "kind": "mining",
+    "index": 276,
+    "batch": 6,
+    "url": "/mining-sprites/276.png"
+  },
+  {
+    "kind": "mining",
+    "index": 277,
+    "batch": 6,
+    "url": "/mining-sprites/277.png"
+  },
+  {
+    "kind": "mining",
+    "index": 278,
+    "batch": 6,
+    "url": "/mining-sprites/278.png"
+  },
+  {
+    "kind": "mining",
+    "index": 279,
+    "batch": 6,
+    "url": "/mining-sprites/279.png"
+  },
+  {
+    "kind": "mining",
+    "index": 280,
+    "batch": 6,
+    "url": "/mining-sprites/280.png"
+  },
+  {
+    "kind": "mining",
+    "index": 281,
+    "batch": 6,
+    "url": "/mining-sprites/281.png"
+  },
+  {
+    "kind": "mining",
+    "index": 282,
+    "batch": 6,
+    "url": "/mining-sprites/282.png"
+  },
+  {
+    "kind": "mining",
+    "index": 283,
+    "batch": 6,
+    "url": "/mining-sprites/283.png"
+  },
+  {
+    "kind": "mining",
+    "index": 284,
+    "batch": 6,
+    "url": "/mining-sprites/284.png"
+  },
+  {
+    "kind": "mining",
+    "index": 285,
+    "batch": 6,
+    "url": "/mining-sprites/285.png"
+  },
+  {
+    "kind": "mining",
+    "index": 286,
+    "batch": 6,
+    "url": "/mining-sprites/286.png"
+  },
+  {
+    "kind": "mining",
+    "index": 287,
+    "batch": 6,
+    "url": "/mining-sprites/287.png"
+  },
+  {
+    "kind": "mining",
+    "index": 288,
+    "batch": 6,
+    "url": "/mining-sprites/288.png"
+  },
+  {
+    "kind": "mining",
+    "index": 289,
+    "batch": 6,
+    "url": "/mining-sprites/289.png"
+  },
+  {
+    "kind": "mining",
+    "index": 290,
+    "batch": 6,
+    "url": "/mining-sprites/290.png"
+  },
+  {
+    "kind": "mining",
+    "index": 291,
+    "batch": 6,
+    "url": "/mining-sprites/291.png"
+  },
+  {
+    "kind": "mining",
+    "index": 292,
+    "batch": 6,
+    "url": "/mining-sprites/292.png"
+  },
+  {
+    "kind": "mining",
+    "index": 293,
+    "batch": 6,
+    "url": "/mining-sprites/293.png"
+  },
+  {
+    "kind": "mining",
+    "index": 294,
+    "batch": 6,
+    "url": "/mining-sprites/294.png"
+  },
+  {
+    "kind": "mining",
+    "index": 295,
+    "batch": 6,
+    "url": "/mining-sprites/295.png"
+  },
+  {
+    "kind": "mining",
+    "index": 296,
+    "batch": 6,
+    "url": "/mining-sprites/296.png"
+  },
+  {
+    "kind": "mining",
+    "index": 297,
+    "batch": 6,
+    "url": "/mining-sprites/297.png"
+  },
+  {
+    "kind": "mining",
+    "index": 298,
+    "batch": 6,
+    "url": "/mining-sprites/298.png"
+  },
+  {
+    "kind": "mining",
+    "index": 299,
+    "batch": 6,
+    "url": "/mining-sprites/299.png"
+  },
+  {
+    "kind": "mining",
+    "index": 300,
+    "batch": 6,
+    "url": "/mining-sprites/300.png"
+  },
+  {
+    "kind": "city",
+    "index": 1,
+    "batch": 1,
+    "url": "/city-sprites/001.png"
+  },
+  {
+    "kind": "city",
+    "index": 2,
+    "batch": 1,
+    "url": "/city-sprites/002.png"
+  },
+  {
+    "kind": "city",
+    "index": 3,
+    "batch": 1,
+    "url": "/city-sprites/003.png"
+  },
+  {
+    "kind": "city",
+    "index": 4,
+    "batch": 1,
+    "url": "/city-sprites/004.png"
+  },
+  {
+    "kind": "city",
+    "index": 5,
+    "batch": 1,
+    "url": "/city-sprites/005.png"
+  },
+  {
+    "kind": "city",
+    "index": 6,
+    "batch": 1,
+    "url": "/city-sprites/006.png"
+  },
+  {
+    "kind": "city",
+    "index": 7,
+    "batch": 1,
+    "url": "/city-sprites/007.png"
+  },
+  {
+    "kind": "city",
+    "index": 8,
+    "batch": 1,
+    "url": "/city-sprites/008.png"
+  },
+  {
+    "kind": "city",
+    "index": 9,
+    "batch": 1,
+    "url": "/city-sprites/009.png"
+  },
+  {
+    "kind": "city",
+    "index": 10,
+    "batch": 1,
+    "url": "/city-sprites/010.png"
+  },
+  {
+    "kind": "city",
+    "index": 11,
+    "batch": 1,
+    "url": "/city-sprites/011.png"
+  },
+  {
+    "kind": "city",
+    "index": 12,
+    "batch": 1,
+    "url": "/city-sprites/012.png"
+  },
+  {
+    "kind": "city",
+    "index": 13,
+    "batch": 1,
+    "url": "/city-sprites/013.png"
+  },
+  {
+    "kind": "city",
+    "index": 14,
+    "batch": 1,
+    "url": "/city-sprites/014.png"
+  },
+  {
+    "kind": "city",
+    "index": 15,
+    "batch": 1,
+    "url": "/city-sprites/015.png"
+  },
+  {
+    "kind": "city",
+    "index": 16,
+    "batch": 1,
+    "url": "/city-sprites/016.png"
+  },
+  {
+    "kind": "city",
+    "index": 17,
+    "batch": 1,
+    "url": "/city-sprites/017.png"
+  },
+  {
+    "kind": "city",
+    "index": 18,
+    "batch": 1,
+    "url": "/city-sprites/018.png"
+  },
+  {
+    "kind": "city",
+    "index": 19,
+    "batch": 1,
+    "url": "/city-sprites/019.png"
+  },
+  {
+    "kind": "city",
+    "index": 20,
+    "batch": 1,
+    "url": "/city-sprites/020.png"
+  },
+  {
+    "kind": "city",
+    "index": 21,
+    "batch": 1,
+    "url": "/city-sprites/021.png"
+  },
+  {
+    "kind": "city",
+    "index": 22,
+    "batch": 1,
+    "url": "/city-sprites/022.png"
+  },
+  {
+    "kind": "city",
+    "index": 23,
+    "batch": 1,
+    "url": "/city-sprites/023.png"
+  },
+  {
+    "kind": "city",
+    "index": 24,
+    "batch": 1,
+    "url": "/city-sprites/024.png"
+  },
+  {
+    "kind": "city",
+    "index": 25,
+    "batch": 1,
+    "url": "/city-sprites/025.png"
+  },
+  {
+    "kind": "city",
+    "index": 26,
+    "batch": 1,
+    "url": "/city-sprites/026.png"
+  },
+  {
+    "kind": "city",
+    "index": 27,
+    "batch": 1,
+    "url": "/city-sprites/027.png"
+  },
+  {
+    "kind": "city",
+    "index": 28,
+    "batch": 1,
+    "url": "/city-sprites/028.png"
+  },
+  {
+    "kind": "city",
+    "index": 29,
+    "batch": 1,
+    "url": "/city-sprites/029.png"
+  },
+  {
+    "kind": "city",
+    "index": 30,
+    "batch": 1,
+    "url": "/city-sprites/030.png"
+  },
+  {
+    "kind": "city",
+    "index": 31,
+    "batch": 1,
+    "url": "/city-sprites/031.png"
+  },
+  {
+    "kind": "city",
+    "index": 32,
+    "batch": 1,
+    "url": "/city-sprites/032.png"
+  },
+  {
+    "kind": "city",
+    "index": 33,
+    "batch": 1,
+    "url": "/city-sprites/033.png"
+  },
+  {
+    "kind": "city",
+    "index": 34,
+    "batch": 1,
+    "url": "/city-sprites/034.png"
+  },
+  {
+    "kind": "city",
+    "index": 35,
+    "batch": 1,
+    "url": "/city-sprites/035.png"
+  },
+  {
+    "kind": "city",
+    "index": 36,
+    "batch": 1,
+    "url": "/city-sprites/036.png"
+  },
+  {
+    "kind": "city",
+    "index": 37,
+    "batch": 1,
+    "url": "/city-sprites/037.png"
+  },
+  {
+    "kind": "city",
+    "index": 38,
+    "batch": 1,
+    "url": "/city-sprites/038.png"
+  },
+  {
+    "kind": "city",
+    "index": 39,
+    "batch": 1,
+    "url": "/city-sprites/039.png"
+  },
+  {
+    "kind": "city",
+    "index": 40,
+    "batch": 1,
+    "url": "/city-sprites/040.png"
+  },
+  {
+    "kind": "city",
+    "index": 41,
+    "batch": 1,
+    "url": "/city-sprites/041.png"
+  },
+  {
+    "kind": "city",
+    "index": 42,
+    "batch": 1,
+    "url": "/city-sprites/042.png"
+  },
+  {
+    "kind": "city",
+    "index": 43,
+    "batch": 1,
+    "url": "/city-sprites/043.png"
+  },
+  {
+    "kind": "city",
+    "index": 44,
+    "batch": 1,
+    "url": "/city-sprites/044.png"
+  },
+  {
+    "kind": "city",
+    "index": 45,
+    "batch": 1,
+    "url": "/city-sprites/045.png"
+  },
+  {
+    "kind": "city",
+    "index": 46,
+    "batch": 1,
+    "url": "/city-sprites/046.png"
+  },
+  {
+    "kind": "city",
+    "index": 47,
+    "batch": 1,
+    "url": "/city-sprites/047.png"
+  },
+  {
+    "kind": "city",
+    "index": 48,
+    "batch": 1,
+    "url": "/city-sprites/048.png"
+  },
+  {
+    "kind": "city",
+    "index": 49,
+    "batch": 1,
+    "url": "/city-sprites/049.png"
+  },
+  {
+    "kind": "city",
+    "index": 50,
+    "batch": 1,
+    "url": "/city-sprites/050.png"
+  },
+  {
+    "kind": "city",
+    "index": 51,
+    "batch": 2,
+    "url": "/city-sprites/051.png"
+  },
+  {
+    "kind": "city",
+    "index": 52,
+    "batch": 2,
+    "url": "/city-sprites/052.png"
+  },
+  {
+    "kind": "city",
+    "index": 53,
+    "batch": 2,
+    "url": "/city-sprites/053.png"
+  },
+  {
+    "kind": "city",
+    "index": 54,
+    "batch": 2,
+    "url": "/city-sprites/054.png"
+  },
+  {
+    "kind": "city",
+    "index": 55,
+    "batch": 2,
+    "url": "/city-sprites/055.png"
+  },
+  {
+    "kind": "city",
+    "index": 56,
+    "batch": 2,
+    "url": "/city-sprites/056.png"
+  },
+  {
+    "kind": "city",
+    "index": 57,
+    "batch": 2,
+    "url": "/city-sprites/057.png"
+  },
+  {
+    "kind": "city",
+    "index": 58,
+    "batch": 2,
+    "url": "/city-sprites/058.png"
+  },
+  {
+    "kind": "city",
+    "index": 59,
+    "batch": 2,
+    "url": "/city-sprites/059.png"
+  },
+  {
+    "kind": "city",
+    "index": 60,
+    "batch": 2,
+    "url": "/city-sprites/060.png"
+  },
+  {
+    "kind": "city",
+    "index": 61,
+    "batch": 2,
+    "url": "/city-sprites/061.png"
+  },
+  {
+    "kind": "city",
+    "index": 62,
+    "batch": 2,
+    "url": "/city-sprites/062.png"
+  },
+  {
+    "kind": "city",
+    "index": 63,
+    "batch": 2,
+    "url": "/city-sprites/063.png"
+  },
+  {
+    "kind": "city",
+    "index": 64,
+    "batch": 2,
+    "url": "/city-sprites/064.png"
+  },
+  {
+    "kind": "city",
+    "index": 65,
+    "batch": 2,
+    "url": "/city-sprites/065.png"
+  },
+  {
+    "kind": "city",
+    "index": 66,
+    "batch": 2,
+    "url": "/city-sprites/066.png"
+  },
+  {
+    "kind": "city",
+    "index": 67,
+    "batch": 2,
+    "url": "/city-sprites/067.png"
+  },
+  {
+    "kind": "city",
+    "index": 68,
+    "batch": 2,
+    "url": "/city-sprites/068.png"
+  },
+  {
+    "kind": "city",
+    "index": 69,
+    "batch": 2,
+    "url": "/city-sprites/069.png"
+  },
+  {
+    "kind": "city",
+    "index": 70,
+    "batch": 2,
+    "url": "/city-sprites/070.png"
+  },
+  {
+    "kind": "city",
+    "index": 71,
+    "batch": 2,
+    "url": "/city-sprites/071.png"
+  },
+  {
+    "kind": "city",
+    "index": 72,
+    "batch": 2,
+    "url": "/city-sprites/072.png"
+  },
+  {
+    "kind": "city",
+    "index": 73,
+    "batch": 2,
+    "url": "/city-sprites/073.png"
+  },
+  {
+    "kind": "city",
+    "index": 74,
+    "batch": 2,
+    "url": "/city-sprites/074.png"
+  },
+  {
+    "kind": "city",
+    "index": 75,
+    "batch": 2,
+    "url": "/city-sprites/075.png"
+  },
+  {
+    "kind": "city",
+    "index": 76,
+    "batch": 2,
+    "url": "/city-sprites/076.png"
+  },
+  {
+    "kind": "city",
+    "index": 77,
+    "batch": 2,
+    "url": "/city-sprites/077.png"
+  },
+  {
+    "kind": "city",
+    "index": 78,
+    "batch": 2,
+    "url": "/city-sprites/078.png"
+  },
+  {
+    "kind": "city",
+    "index": 79,
+    "batch": 2,
+    "url": "/city-sprites/079.png"
+  },
+  {
+    "kind": "city",
+    "index": 80,
+    "batch": 2,
+    "url": "/city-sprites/080.png"
+  },
+  {
+    "kind": "city",
+    "index": 81,
+    "batch": 2,
+    "url": "/city-sprites/081.png"
+  },
+  {
+    "kind": "city",
+    "index": 82,
+    "batch": 2,
+    "url": "/city-sprites/082.png"
+  },
+  {
+    "kind": "city",
+    "index": 83,
+    "batch": 2,
+    "url": "/city-sprites/083.png"
+  },
+  {
+    "kind": "city",
+    "index": 84,
+    "batch": 2,
+    "url": "/city-sprites/084.png"
+  },
+  {
+    "kind": "city",
+    "index": 85,
+    "batch": 2,
+    "url": "/city-sprites/085.png"
+  },
+  {
+    "kind": "city",
+    "index": 86,
+    "batch": 2,
+    "url": "/city-sprites/086.png"
+  },
+  {
+    "kind": "city",
+    "index": 87,
+    "batch": 2,
+    "url": "/city-sprites/087.png"
+  },
+  {
+    "kind": "city",
+    "index": 88,
+    "batch": 2,
+    "url": "/city-sprites/088.png"
+  },
+  {
+    "kind": "city",
+    "index": 89,
+    "batch": 2,
+    "url": "/city-sprites/089.png"
+  },
+  {
+    "kind": "city",
+    "index": 90,
+    "batch": 2,
+    "url": "/city-sprites/090.png"
+  },
+  {
+    "kind": "city",
+    "index": 91,
+    "batch": 2,
+    "url": "/city-sprites/091.png"
+  },
+  {
+    "kind": "city",
+    "index": 92,
+    "batch": 2,
+    "url": "/city-sprites/092.png"
+  },
+  {
+    "kind": "city",
+    "index": 93,
+    "batch": 2,
+    "url": "/city-sprites/093.png"
+  },
+  {
+    "kind": "city",
+    "index": 94,
+    "batch": 2,
+    "url": "/city-sprites/094.png"
+  },
+  {
+    "kind": "city",
+    "index": 95,
+    "batch": 2,
+    "url": "/city-sprites/095.png"
+  },
+  {
+    "kind": "city",
+    "index": 96,
+    "batch": 2,
+    "url": "/city-sprites/096.png"
+  },
+  {
+    "kind": "city",
+    "index": 97,
+    "batch": 2,
+    "url": "/city-sprites/097.png"
+  },
+  {
+    "kind": "city",
+    "index": 98,
+    "batch": 2,
+    "url": "/city-sprites/098.png"
+  },
+  {
+    "kind": "city",
+    "index": 99,
+    "batch": 2,
+    "url": "/city-sprites/099.png"
+  },
+  {
+    "kind": "city",
+    "index": 100,
+    "batch": 2,
+    "url": "/city-sprites/100.png"
+  },
+  {
+    "kind": "city",
+    "index": 101,
+    "batch": 3,
+    "url": "/city-sprites/101.png"
+  },
+  {
+    "kind": "city",
+    "index": 102,
+    "batch": 3,
+    "url": "/city-sprites/102.png"
+  },
+  {
+    "kind": "city",
+    "index": 103,
+    "batch": 3,
+    "url": "/city-sprites/103.png"
+  },
+  {
+    "kind": "city",
+    "index": 104,
+    "batch": 3,
+    "url": "/city-sprites/104.png"
+  },
+  {
+    "kind": "city",
+    "index": 105,
+    "batch": 3,
+    "url": "/city-sprites/105.png"
+  },
+  {
+    "kind": "city",
+    "index": 106,
+    "batch": 3,
+    "url": "/city-sprites/106.png"
+  },
+  {
+    "kind": "city",
+    "index": 107,
+    "batch": 3,
+    "url": "/city-sprites/107.png"
+  },
+  {
+    "kind": "city",
+    "index": 108,
+    "batch": 3,
+    "url": "/city-sprites/108.png"
+  },
+  {
+    "kind": "city",
+    "index": 109,
+    "batch": 3,
+    "url": "/city-sprites/109.png"
+  },
+  {
+    "kind": "city",
+    "index": 110,
+    "batch": 3,
+    "url": "/city-sprites/110.png"
+  },
+  {
+    "kind": "city",
+    "index": 111,
+    "batch": 3,
+    "url": "/city-sprites/111.png"
+  },
+  {
+    "kind": "city",
+    "index": 112,
+    "batch": 3,
+    "url": "/city-sprites/112.png"
+  },
+  {
+    "kind": "city",
+    "index": 113,
+    "batch": 3,
+    "url": "/city-sprites/113.png"
+  },
+  {
+    "kind": "city",
+    "index": 114,
+    "batch": 3,
+    "url": "/city-sprites/114.png"
+  },
+  {
+    "kind": "city",
+    "index": 115,
+    "batch": 3,
+    "url": "/city-sprites/115.png"
+  },
+  {
+    "kind": "city",
+    "index": 116,
+    "batch": 3,
+    "url": "/city-sprites/116.png"
+  },
+  {
+    "kind": "city",
+    "index": 117,
+    "batch": 3,
+    "url": "/city-sprites/117.png"
+  },
+  {
+    "kind": "city",
+    "index": 118,
+    "batch": 3,
+    "url": "/city-sprites/118.png"
+  },
+  {
+    "kind": "city",
+    "index": 119,
+    "batch": 3,
+    "url": "/city-sprites/119.png"
+  },
+  {
+    "kind": "city",
+    "index": 120,
+    "batch": 3,
+    "url": "/city-sprites/120.png"
+  },
+  {
+    "kind": "city",
+    "index": 121,
+    "batch": 3,
+    "url": "/city-sprites/121.png"
+  },
+  {
+    "kind": "city",
+    "index": 122,
+    "batch": 3,
+    "url": "/city-sprites/122.png"
+  },
+  {
+    "kind": "city",
+    "index": 123,
+    "batch": 3,
+    "url": "/city-sprites/123.png"
+  },
+  {
+    "kind": "city",
+    "index": 124,
+    "batch": 3,
+    "url": "/city-sprites/124.png"
+  },
+  {
+    "kind": "city",
+    "index": 125,
+    "batch": 3,
+    "url": "/city-sprites/125.png"
+  },
+  {
+    "kind": "city",
+    "index": 126,
+    "batch": 3,
+    "url": "/city-sprites/126.png"
+  },
+  {
+    "kind": "city",
+    "index": 127,
+    "batch": 3,
+    "url": "/city-sprites/127.png"
+  },
+  {
+    "kind": "city",
+    "index": 128,
+    "batch": 3,
+    "url": "/city-sprites/128.png"
+  },
+  {
+    "kind": "city",
+    "index": 129,
+    "batch": 3,
+    "url": "/city-sprites/129.png"
+  },
+  {
+    "kind": "city",
+    "index": 130,
+    "batch": 3,
+    "url": "/city-sprites/130.png"
+  },
+  {
+    "kind": "city",
+    "index": 131,
+    "batch": 3,
+    "url": "/city-sprites/131.png"
+  },
+  {
+    "kind": "city",
+    "index": 132,
+    "batch": 3,
+    "url": "/city-sprites/132.png"
+  },
+  {
+    "kind": "city",
+    "index": 133,
+    "batch": 3,
+    "url": "/city-sprites/133.png"
+  },
+  {
+    "kind": "city",
+    "index": 134,
+    "batch": 3,
+    "url": "/city-sprites/134.png"
+  },
+  {
+    "kind": "city",
+    "index": 135,
+    "batch": 3,
+    "url": "/city-sprites/135.png"
+  },
+  {
+    "kind": "city",
+    "index": 136,
+    "batch": 3,
+    "url": "/city-sprites/136.png"
+  },
+  {
+    "kind": "city",
+    "index": 137,
+    "batch": 3,
+    "url": "/city-sprites/137.png"
+  },
+  {
+    "kind": "city",
+    "index": 138,
+    "batch": 3,
+    "url": "/city-sprites/138.png"
+  },
+  {
+    "kind": "city",
+    "index": 139,
+    "batch": 3,
+    "url": "/city-sprites/139.png"
+  },
+  {
+    "kind": "city",
+    "index": 140,
+    "batch": 3,
+    "url": "/city-sprites/140.png"
+  },
+  {
+    "kind": "city",
+    "index": 141,
+    "batch": 3,
+    "url": "/city-sprites/141.png"
+  },
+  {
+    "kind": "city",
+    "index": 142,
+    "batch": 3,
+    "url": "/city-sprites/142.png"
+  },
+  {
+    "kind": "city",
+    "index": 143,
+    "batch": 3,
+    "url": "/city-sprites/143.png"
+  },
+  {
+    "kind": "city",
+    "index": 144,
+    "batch": 3,
+    "url": "/city-sprites/144.png"
+  },
+  {
+    "kind": "city",
+    "index": 145,
+    "batch": 3,
+    "url": "/city-sprites/145.png"
+  },
+  {
+    "kind": "city",
+    "index": 146,
+    "batch": 3,
+    "url": "/city-sprites/146.png"
+  },
+  {
+    "kind": "city",
+    "index": 147,
+    "batch": 3,
+    "url": "/city-sprites/147.png"
+  },
+  {
+    "kind": "city",
+    "index": 148,
+    "batch": 3,
+    "url": "/city-sprites/148.png"
+  },
+  {
+    "kind": "city",
+    "index": 149,
+    "batch": 3,
+    "url": "/city-sprites/149.png"
+  },
+  {
+    "kind": "city",
+    "index": 150,
+    "batch": 3,
+    "url": "/city-sprites/150.png"
+  },
+  {
+    "kind": "city",
+    "index": 151,
+    "batch": 4,
+    "url": "/city-sprites/151.png"
+  },
+  {
+    "kind": "city",
+    "index": 152,
+    "batch": 4,
+    "url": "/city-sprites/152.png"
+  },
+  {
+    "kind": "city",
+    "index": 153,
+    "batch": 4,
+    "url": "/city-sprites/153.png"
+  },
+  {
+    "kind": "city",
+    "index": 154,
+    "batch": 4,
+    "url": "/city-sprites/154.png"
+  },
+  {
+    "kind": "city",
+    "index": 155,
+    "batch": 4,
+    "url": "/city-sprites/155.png"
+  },
+  {
+    "kind": "city",
+    "index": 156,
+    "batch": 4,
+    "url": "/city-sprites/156.png"
+  },
+  {
+    "kind": "city",
+    "index": 157,
+    "batch": 4,
+    "url": "/city-sprites/157.png"
+  },
+  {
+    "kind": "city",
+    "index": 158,
+    "batch": 4,
+    "url": "/city-sprites/158.png"
+  },
+  {
+    "kind": "city",
+    "index": 159,
+    "batch": 4,
+    "url": "/city-sprites/159.png"
+  },
+  {
+    "kind": "city",
+    "index": 160,
+    "batch": 4,
+    "url": "/city-sprites/160.png"
+  },
+  {
+    "kind": "city",
+    "index": 161,
+    "batch": 4,
+    "url": "/city-sprites/161.png"
+  },
+  {
+    "kind": "city",
+    "index": 162,
+    "batch": 4,
+    "url": "/city-sprites/162.png"
+  },
+  {
+    "kind": "city",
+    "index": 163,
+    "batch": 4,
+    "url": "/city-sprites/163.png"
+  },
+  {
+    "kind": "city",
+    "index": 164,
+    "batch": 4,
+    "url": "/city-sprites/164.png"
+  },
+  {
+    "kind": "city",
+    "index": 165,
+    "batch": 4,
+    "url": "/city-sprites/165.png"
+  },
+  {
+    "kind": "city",
+    "index": 166,
+    "batch": 4,
+    "url": "/city-sprites/166.png"
+  },
+  {
+    "kind": "city",
+    "index": 167,
+    "batch": 4,
+    "url": "/city-sprites/167.png"
+  },
+  {
+    "kind": "city",
+    "index": 168,
+    "batch": 4,
+    "url": "/city-sprites/168.png"
+  },
+  {
+    "kind": "city",
+    "index": 169,
+    "batch": 4,
+    "url": "/city-sprites/169.png"
+  },
+  {
+    "kind": "city",
+    "index": 170,
+    "batch": 4,
+    "url": "/city-sprites/170.png"
+  },
+  {
+    "kind": "city",
+    "index": 171,
+    "batch": 4,
+    "url": "/city-sprites/171.png"
+  },
+  {
+    "kind": "city",
+    "index": 172,
+    "batch": 4,
+    "url": "/city-sprites/172.png"
+  },
+  {
+    "kind": "city",
+    "index": 173,
+    "batch": 4,
+    "url": "/city-sprites/173.png"
+  },
+  {
+    "kind": "city",
+    "index": 174,
+    "batch": 4,
+    "url": "/city-sprites/174.png"
+  },
+  {
+    "kind": "city",
+    "index": 175,
+    "batch": 4,
+    "url": "/city-sprites/175.png"
+  },
+  {
+    "kind": "city",
+    "index": 176,
+    "batch": 4,
+    "url": "/city-sprites/176.png"
+  },
+  {
+    "kind": "city",
+    "index": 177,
+    "batch": 4,
+    "url": "/city-sprites/177.png"
+  },
+  {
+    "kind": "city",
+    "index": 178,
+    "batch": 4,
+    "url": "/city-sprites/178.png"
+  },
+  {
+    "kind": "city",
+    "index": 179,
+    "batch": 4,
+    "url": "/city-sprites/179.png"
+  },
+  {
+    "kind": "city",
+    "index": 180,
+    "batch": 4,
+    "url": "/city-sprites/180.png"
+  },
+  {
+    "kind": "city",
+    "index": 181,
+    "batch": 4,
+    "url": "/city-sprites/181.png"
+  },
+  {
+    "kind": "city",
+    "index": 182,
+    "batch": 4,
+    "url": "/city-sprites/182.png"
+  },
+  {
+    "kind": "city",
+    "index": 183,
+    "batch": 4,
+    "url": "/city-sprites/183.png"
+  },
+  {
+    "kind": "city",
+    "index": 184,
+    "batch": 4,
+    "url": "/city-sprites/184.png"
+  },
+  {
+    "kind": "city",
+    "index": 185,
+    "batch": 4,
+    "url": "/city-sprites/185.png"
+  },
+  {
+    "kind": "city",
+    "index": 186,
+    "batch": 4,
+    "url": "/city-sprites/186.png"
+  },
+  {
+    "kind": "city",
+    "index": 187,
+    "batch": 4,
+    "url": "/city-sprites/187.png"
+  },
+  {
+    "kind": "city",
+    "index": 188,
+    "batch": 4,
+    "url": "/city-sprites/188.png"
+  },
+  {
+    "kind": "city",
+    "index": 189,
+    "batch": 4,
+    "url": "/city-sprites/189.png"
+  },
+  {
+    "kind": "city",
+    "index": 190,
+    "batch": 4,
+    "url": "/city-sprites/190.png"
+  },
+  {
+    "kind": "city",
+    "index": 191,
+    "batch": 4,
+    "url": "/city-sprites/191.png"
+  },
+  {
+    "kind": "city",
+    "index": 192,
+    "batch": 4,
+    "url": "/city-sprites/192.png"
+  },
+  {
+    "kind": "city",
+    "index": 193,
+    "batch": 4,
+    "url": "/city-sprites/193.png"
+  },
+  {
+    "kind": "city",
+    "index": 194,
+    "batch": 4,
+    "url": "/city-sprites/194.png"
+  },
+  {
+    "kind": "city",
+    "index": 195,
+    "batch": 4,
+    "url": "/city-sprites/195.png"
+  },
+  {
+    "kind": "city",
+    "index": 196,
+    "batch": 4,
+    "url": "/city-sprites/196.png"
+  },
+  {
+    "kind": "city",
+    "index": 197,
+    "batch": 4,
+    "url": "/city-sprites/197.png"
+  },
+  {
+    "kind": "city",
+    "index": 198,
+    "batch": 4,
+    "url": "/city-sprites/198.png"
+  },
+  {
+    "kind": "city",
+    "index": 199,
+    "batch": 4,
+    "url": "/city-sprites/199.png"
+  },
+  {
+    "kind": "city",
+    "index": 200,
+    "batch": 4,
+    "url": "/city-sprites/200.png"
+  },
+  {
+    "kind": "city",
+    "index": 201,
+    "batch": 5,
+    "url": "/city-sprites/201.png"
+  },
+  {
+    "kind": "city",
+    "index": 202,
+    "batch": 5,
+    "url": "/city-sprites/202.png"
+  },
+  {
+    "kind": "city",
+    "index": 203,
+    "batch": 5,
+    "url": "/city-sprites/203.png"
+  },
+  {
+    "kind": "city",
+    "index": 204,
+    "batch": 5,
+    "url": "/city-sprites/204.png"
+  },
+  {
+    "kind": "city",
+    "index": 205,
+    "batch": 5,
+    "url": "/city-sprites/205.png"
+  },
+  {
+    "kind": "city",
+    "index": 206,
+    "batch": 5,
+    "url": "/city-sprites/206.png"
+  },
+  {
+    "kind": "city",
+    "index": 207,
+    "batch": 5,
+    "url": "/city-sprites/207.png"
+  },
+  {
+    "kind": "city",
+    "index": 208,
+    "batch": 5,
+    "url": "/city-sprites/208.png"
+  },
+  {
+    "kind": "city",
+    "index": 209,
+    "batch": 5,
+    "url": "/city-sprites/209.png"
+  },
+  {
+    "kind": "city",
+    "index": 210,
+    "batch": 5,
+    "url": "/city-sprites/210.png"
+  },
+  {
+    "kind": "city",
+    "index": 211,
+    "batch": 5,
+    "url": "/city-sprites/211.png"
+  },
+  {
+    "kind": "city",
+    "index": 212,
+    "batch": 5,
+    "url": "/city-sprites/212.png"
+  },
+  {
+    "kind": "city",
+    "index": 213,
+    "batch": 5,
+    "url": "/city-sprites/213.png"
+  },
+  {
+    "kind": "city",
+    "index": 214,
+    "batch": 5,
+    "url": "/city-sprites/214.png"
+  },
+  {
+    "kind": "city",
+    "index": 215,
+    "batch": 5,
+    "url": "/city-sprites/215.png"
+  },
+  {
+    "kind": "city",
+    "index": 216,
+    "batch": 5,
+    "url": "/city-sprites/216.png"
+  },
+  {
+    "kind": "city",
+    "index": 217,
+    "batch": 5,
+    "url": "/city-sprites/217.png"
+  },
+  {
+    "kind": "city",
+    "index": 218,
+    "batch": 5,
+    "url": "/city-sprites/218.png"
+  },
+  {
+    "kind": "city",
+    "index": 219,
+    "batch": 5,
+    "url": "/city-sprites/219.png"
+  },
+  {
+    "kind": "city",
+    "index": 220,
+    "batch": 5,
+    "url": "/city-sprites/220.png"
+  },
+  {
+    "kind": "city",
+    "index": 221,
+    "batch": 5,
+    "url": "/city-sprites/221.png"
+  },
+  {
+    "kind": "city",
+    "index": 222,
+    "batch": 5,
+    "url": "/city-sprites/222.png"
+  },
+  {
+    "kind": "city",
+    "index": 223,
+    "batch": 5,
+    "url": "/city-sprites/223.png"
+  },
+  {
+    "kind": "city",
+    "index": 224,
+    "batch": 5,
+    "url": "/city-sprites/224.png"
+  },
+  {
+    "kind": "city",
+    "index": 225,
+    "batch": 5,
+    "url": "/city-sprites/225.png"
+  },
+  {
+    "kind": "city",
+    "index": 226,
+    "batch": 5,
+    "url": "/city-sprites/226.png"
+  },
+  {
+    "kind": "city",
+    "index": 227,
+    "batch": 5,
+    "url": "/city-sprites/227.png"
+  },
+  {
+    "kind": "city",
+    "index": 228,
+    "batch": 5,
+    "url": "/city-sprites/228.png"
+  },
+  {
+    "kind": "city",
+    "index": 229,
+    "batch": 5,
+    "url": "/city-sprites/229.png"
+  },
+  {
+    "kind": "city",
+    "index": 230,
+    "batch": 5,
+    "url": "/city-sprites/230.png"
+  },
+  {
+    "kind": "city",
+    "index": 231,
+    "batch": 5,
+    "url": "/city-sprites/231.png"
+  },
+  {
+    "kind": "city",
+    "index": 232,
+    "batch": 5,
+    "url": "/city-sprites/232.png"
+  },
+  {
+    "kind": "city",
+    "index": 233,
+    "batch": 5,
+    "url": "/city-sprites/233.png"
+  },
+  {
+    "kind": "city",
+    "index": 234,
+    "batch": 5,
+    "url": "/city-sprites/234.png"
+  },
+  {
+    "kind": "city",
+    "index": 235,
+    "batch": 5,
+    "url": "/city-sprites/235.png"
+  },
+  {
+    "kind": "city",
+    "index": 236,
+    "batch": 5,
+    "url": "/city-sprites/236.png"
+  },
+  {
+    "kind": "city",
+    "index": 237,
+    "batch": 5,
+    "url": "/city-sprites/237.png"
+  },
+  {
+    "kind": "city",
+    "index": 238,
+    "batch": 5,
+    "url": "/city-sprites/238.png"
+  },
+  {
+    "kind": "city",
+    "index": 239,
+    "batch": 5,
+    "url": "/city-sprites/239.png"
+  },
+  {
+    "kind": "city",
+    "index": 240,
+    "batch": 5,
+    "url": "/city-sprites/240.png"
+  },
+  {
+    "kind": "city",
+    "index": 241,
+    "batch": 5,
+    "url": "/city-sprites/241.png"
+  },
+  {
+    "kind": "city",
+    "index": 242,
+    "batch": 5,
+    "url": "/city-sprites/242.png"
+  },
+  {
+    "kind": "city",
+    "index": 243,
+    "batch": 5,
+    "url": "/city-sprites/243.png"
+  },
+  {
+    "kind": "city",
+    "index": 244,
+    "batch": 5,
+    "url": "/city-sprites/244.png"
+  },
+  {
+    "kind": "city",
+    "index": 245,
+    "batch": 5,
+    "url": "/city-sprites/245.png"
+  },
+  {
+    "kind": "city",
+    "index": 246,
+    "batch": 5,
+    "url": "/city-sprites/246.png"
+  },
+  {
+    "kind": "city",
+    "index": 247,
+    "batch": 5,
+    "url": "/city-sprites/247.png"
+  },
+  {
+    "kind": "city",
+    "index": 248,
+    "batch": 5,
+    "url": "/city-sprites/248.png"
+  },
+  {
+    "kind": "city",
+    "index": 249,
+    "batch": 5,
+    "url": "/city-sprites/249.png"
+  },
+  {
+    "kind": "city",
+    "index": 250,
+    "batch": 5,
+    "url": "/city-sprites/250.png"
+  },
+  {
+    "kind": "city",
+    "index": 251,
+    "batch": 6,
+    "url": "/city-sprites/251.png"
+  },
+  {
+    "kind": "city",
+    "index": 252,
+    "batch": 6,
+    "url": "/city-sprites/252.png"
+  },
+  {
+    "kind": "city",
+    "index": 253,
+    "batch": 6,
+    "url": "/city-sprites/253.png"
+  },
+  {
+    "kind": "city",
+    "index": 254,
+    "batch": 6,
+    "url": "/city-sprites/254.png"
+  },
+  {
+    "kind": "city",
+    "index": 255,
+    "batch": 6,
+    "url": "/city-sprites/255.png"
+  },
+  {
+    "kind": "city",
+    "index": 256,
+    "batch": 6,
+    "url": "/city-sprites/256.png"
+  },
+  {
+    "kind": "city",
+    "index": 257,
+    "batch": 6,
+    "url": "/city-sprites/257.png"
+  },
+  {
+    "kind": "city",
+    "index": 258,
+    "batch": 6,
+    "url": "/city-sprites/258.png"
+  },
+  {
+    "kind": "city",
+    "index": 259,
+    "batch": 6,
+    "url": "/city-sprites/259.png"
+  },
+  {
+    "kind": "city",
+    "index": 260,
+    "batch": 6,
+    "url": "/city-sprites/260.png"
+  },
+  {
+    "kind": "city",
+    "index": 261,
+    "batch": 6,
+    "url": "/city-sprites/261.png"
+  },
+  {
+    "kind": "city",
+    "index": 262,
+    "batch": 6,
+    "url": "/city-sprites/262.png"
+  },
+  {
+    "kind": "city",
+    "index": 263,
+    "batch": 6,
+    "url": "/city-sprites/263.png"
+  },
+  {
+    "kind": "city",
+    "index": 264,
+    "batch": 6,
+    "url": "/city-sprites/264.png"
+  },
+  {
+    "kind": "city",
+    "index": 265,
+    "batch": 6,
+    "url": "/city-sprites/265.png"
+  },
+  {
+    "kind": "city",
+    "index": 266,
+    "batch": 6,
+    "url": "/city-sprites/266.png"
+  },
+  {
+    "kind": "city",
+    "index": 267,
+    "batch": 6,
+    "url": "/city-sprites/267.png"
+  },
+  {
+    "kind": "city",
+    "index": 268,
+    "batch": 6,
+    "url": "/city-sprites/268.png"
+  },
+  {
+    "kind": "city",
+    "index": 269,
+    "batch": 6,
+    "url": "/city-sprites/269.png"
+  },
+  {
+    "kind": "city",
+    "index": 270,
+    "batch": 6,
+    "url": "/city-sprites/270.png"
+  },
+  {
+    "kind": "city",
+    "index": 271,
+    "batch": 6,
+    "url": "/city-sprites/271.png"
+  },
+  {
+    "kind": "city",
+    "index": 272,
+    "batch": 6,
+    "url": "/city-sprites/272.png"
+  },
+  {
+    "kind": "city",
+    "index": 273,
+    "batch": 6,
+    "url": "/city-sprites/273.png"
+  },
+  {
+    "kind": "city",
+    "index": 274,
+    "batch": 6,
+    "url": "/city-sprites/274.png"
+  },
+  {
+    "kind": "city",
+    "index": 275,
+    "batch": 6,
+    "url": "/city-sprites/275.png"
+  },
+  {
+    "kind": "city",
+    "index": 276,
+    "batch": 6,
+    "url": "/city-sprites/276.png"
+  },
+  {
+    "kind": "city",
+    "index": 277,
+    "batch": 6,
+    "url": "/city-sprites/277.png"
+  },
+  {
+    "kind": "city",
+    "index": 278,
+    "batch": 6,
+    "url": "/city-sprites/278.png"
+  },
+  {
+    "kind": "city",
+    "index": 279,
+    "batch": 6,
+    "url": "/city-sprites/279.png"
+  },
+  {
+    "kind": "city",
+    "index": 280,
+    "batch": 6,
+    "url": "/city-sprites/280.png"
+  },
+  {
+    "kind": "city",
+    "index": 281,
+    "batch": 6,
+    "url": "/city-sprites/281.png"
+  },
+  {
+    "kind": "city",
+    "index": 282,
+    "batch": 6,
+    "url": "/city-sprites/282.png"
+  },
+  {
+    "kind": "city",
+    "index": 283,
+    "batch": 6,
+    "url": "/city-sprites/283.png"
+  },
+  {
+    "kind": "city",
+    "index": 284,
+    "batch": 6,
+    "url": "/city-sprites/284.png"
+  },
+  {
+    "kind": "city",
+    "index": 285,
+    "batch": 6,
+    "url": "/city-sprites/285.png"
+  },
+  {
+    "kind": "city",
+    "index": 286,
+    "batch": 6,
+    "url": "/city-sprites/286.png"
+  },
+  {
+    "kind": "city",
+    "index": 287,
+    "batch": 6,
+    "url": "/city-sprites/287.png"
+  },
+  {
+    "kind": "city",
+    "index": 288,
+    "batch": 6,
+    "url": "/city-sprites/288.png"
+  },
+  {
+    "kind": "city",
+    "index": 289,
+    "batch": 6,
+    "url": "/city-sprites/289.png"
+  },
+  {
+    "kind": "city",
+    "index": 290,
+    "batch": 6,
+    "url": "/city-sprites/290.png"
+  },
+  {
+    "kind": "city",
+    "index": 291,
+    "batch": 6,
+    "url": "/city-sprites/291.png"
+  },
+  {
+    "kind": "city",
+    "index": 292,
+    "batch": 6,
+    "url": "/city-sprites/292.png"
+  },
+  {
+    "kind": "city",
+    "index": 293,
+    "batch": 6,
+    "url": "/city-sprites/293.png"
+  },
+  {
+    "kind": "city",
+    "index": 294,
+    "batch": 6,
+    "url": "/city-sprites/294.png"
+  },
+  {
+    "kind": "city",
+    "index": 295,
+    "batch": 6,
+    "url": "/city-sprites/295.png"
+  },
+  {
+    "kind": "city",
+    "index": 296,
+    "batch": 6,
+    "url": "/city-sprites/296.png"
+  },
+  {
+    "kind": "city",
+    "index": 297,
+    "batch": 6,
+    "url": "/city-sprites/297.png"
+  },
+  {
+    "kind": "city",
+    "index": 298,
+    "batch": 6,
+    "url": "/city-sprites/298.png"
+  },
+  {
+    "kind": "city",
+    "index": 299,
+    "batch": 6,
+    "url": "/city-sprites/299.png"
+  },
+  {
+    "kind": "city",
+    "index": 300,
+    "batch": 6,
+    "url": "/city-sprites/300.png"
+  }
+]

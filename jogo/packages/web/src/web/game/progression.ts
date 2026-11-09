@@ -1,4 +1,4 @@
-import type { Screen } from "@/screens/menu";
+import type { Screen } from "./screen-ids";
 
 export interface TutorialProgress {
   started: boolean;
@@ -13,7 +13,7 @@ export const UNLOCK_LEVEL: Record<Screen, number> = {
   mine:5, pets:6, cards:7, power:8, observatory:9, museum:10,
   mastery:10, skins:10, lab:12, portal:15, pantheon:6,
   // PvP é independente do progresso offline (nível 10 fixo no servidor).
-  online:1,
+  online:1, drones:3, story:1,
 };
 export function systemUnlocked(g: {playerLevel:number; tutorial:TutorialProgress}, id:Screen):boolean {
   return g.tutorial.legacyAccess || g.playerLevel >= UNLOCK_LEVEL[id];

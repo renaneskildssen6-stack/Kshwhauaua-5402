@@ -23,6 +23,7 @@ export function purchaseSupplies(itemId:string,quantity=1,rng:()=>number=Math.ra
  const id=robotId;
  const average=g.robots.length?Math.max(1,Math.round(g.robots.reduce((sum,r)=>sum+r.level,0)/g.robots.length)-1):1;
  setState(s=>({...s,gold:s.gold-cost,
+   cityLife:{...s.cityLife,purchases:s.cityLife.purchases+quantity},
    robots:id?[...s.robots,{id,level:average,xp:0,trained:{str:0,def:0,agl:0}}]:s.robots,
    team:id&&!s.team.length?[id]:s.team,
    items:id?s.items:{...s.items,[itemId]:(s.items[itemId]??0)+quantity}}));

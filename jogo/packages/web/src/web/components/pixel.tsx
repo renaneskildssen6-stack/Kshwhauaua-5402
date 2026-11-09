@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { getState } from "@/game/save";
+import { droneLevel } from "@/game/drone-system";
 import { ANIM, FRAME, FRAMES, spriteUrl } from "@/game/robots";
 
 type Clip = keyof typeof ANIM;
@@ -56,6 +58,7 @@ export function RobotSprite({
             : undefined,
       }}
     >
+      {droneLevel(getState(),robotId)>0&&<img className="mc-drone-companion" src={`/drones/${robotId}_drone.png?v=3`} alt="Drone de vínculo" style={{position:"absolute",right:0,top:0,width:size*.3,height:size*.3,zIndex:2}}/>}
       <img
         key={`${clip}-${fps}-${loop ? 1 : 0}`}
         src={spriteUrl(robotId)}

@@ -1,0 +1,169 @@
+/*
+ * Botões IA — molduras geradas por IA (public/ui/btn_*.png, originais em /ui/legacy).
+ * 1) .mk-btn / PixelButton usam o 9-slice novo (fatia 32 → borda 16px).
+ * 2) Todo <button> cru ganha a moldura IA como camada ::before atrás do conteúdo,
+ *    sem mexer em tamanho/layout. Botões de ação ganham a placa inteira (fill).
+ * Saída: .mk-plain, [data-skin="none"], orbes de batalha e superfícies da galeria.
+ */
+
+/* ---------- camada genérica: moldura sem preenchimento ---------- */
+:where(button:not(.mk-btn):not(.mk-plain):not([data-skin="none"]):not(.mc-opt-orb):not(.mc-opt-info):not(.mc-cat):not(.mk-city-text-button)) {
+  position: relative;
+  isolation: isolate;
+}
+:where(button:not(.mk-btn):not(.mk-plain):not([data-skin="none"]):not(.mc-opt-orb):not(.mc-opt-info):not(.mc-cat):not(.mk-city-text-button))::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-style: solid;
+  border-width: var(--ai-edge, 7px);
+  border-image: url("/ui/btn_sq.png") 32 / var(--ai-edge, 7px) / 0 stretch;
+  image-rendering: pixelated;
+  transition: filter 90ms steps(2);
+}
+:where(.gallery-surface, .mc-assets) button::before { content: none !important; }
+
+:where(button:not(:disabled):hover)::before { filter: brightness(1.25) saturate(1.1); }
+:where(button[aria-pressed="true"], button[aria-selected="true"], button[aria-expanded="true"], button.is-selected, button[aria-current="true"])::before {
+  border-image-source: url("/ui/btn_sq_active.png");
+}
+:where(button:active:not(:disabled))::before { border-image-source: url("/ui/btn_sq_pressed.png"); }
+:where(button:disabled, button[aria-disabled="true"])::before { border-image-source: url("/ui/btn_wide_disabled.png"); }
+:where(button:focus-visible) { outline: 2px solid #35e2f0; outline-offset: 2px; }
+
+/* ---------- placas de ação: preenchimento IA completo ---------- */
+.mc-entry button,
+.mc-system-primary button,
+.mc-system-menu section button,
+.mc-system-close,
+.mc-city-home-return,
+.mc-pantheon-trigger,
+.mc-guide-trigger,
+.mc-crash button,
+.mc-connected-use,
+.mc-connected-picker,
+.mc-connected-routes header button,
+.mc-home-picker-trigger,
+.mc-home-exclusive-trigger,
+.mc-home-city-link,
+.mc-home-near,
+.mc-home-controls button,
+.mc-subway-controls button,
+.mc-life-panel header button,
+.mc-load-errors button,
+.mc-close,
+.mo-surrender,
+.mo-confirm button,
+.ai-plate {
+  --ai-edge: 10px;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: 1px 1px 0 #000;
+}
+.mc-entry button::before,
+.mc-system-primary button::before,
+.mc-system-menu section button::before,
+.mc-system-close::before,
+.mc-city-home-return::before,
+.mc-pantheon-trigger::before,
+.mc-guide-trigger::before,
+.mc-crash button::before,
+.mc-connected-use::before,
+.mc-connected-picker::before,
+.mc-connected-routes header button::before,
+.mc-home-picker-trigger::before,
+.mc-home-exclusive-trigger::before,
+.mc-home-city-link::before,
+.mc-home-near::before,
+.mc-home-controls button::before,
+.mc-subway-controls button::before,
+.mc-life-panel header button::before,
+.mc-load-errors button::before,
+.mc-close::before,
+.mo-surrender::before,
+.mo-confirm button::before,
+.ai-plate::before {
+  border-image: url("/ui/btn_wide.png") 32 fill / 10px / 0 stretch;
+}
+:is(.mc-entry button, .mc-system-primary button, .mc-system-menu section button, .mc-city-home-return, .mc-pantheon-trigger, .mc-guide-trigger, .mc-connected-picker, .mc-home-picker-trigger, .mc-home-exclusive-trigger, .mc-home-city-link, .mc-home-controls button, .mc-subway-controls button, .mc-life-panel header button, .mc-close, .ai-plate):active:not(:disabled)::before {
+  border-image-source: url("/ui/btn_wide_pressed.png");
+}
+:is(.mc-entry button, .mc-system-primary button, .mc-system-menu section button, .mc-pantheon-trigger, .mc-connected-use, .mc-home-near, .mc-home-controls button, .ai-plate):disabled::before {
+  border-image-source: url("/ui/btn_wide_disabled.png");
+}
+.mc-system-primary button[aria-expanded="true"]::before { border-image-source: url("/ui/btn_primary_active.png"); }
+
+/* CTA principal: placa âmbar, texto escuro para contraste. */
+.mc-entry button:first-of-type,
+.mc-connected-use,
+.mc-home-near,
+.ai-plate.is-primary {
+  color: #1a0d02 !important;
+  text-shadow: 0 1px 0 #ffd88a;
+}
+.mc-entry button:first-of-type::before,
+.mc-connected-use::before,
+.mc-home-near::before,
+.ai-plate.is-primary::before {
+  border-image: url("/ui/btn_primary.png") 32 fill / 10px / 0 stretch;
+}
+.mc-entry button:first-of-type:active::before,
+.mc-connected-use:active::before,
+.mc-home-near:active::before,
+.ai-plate.is-primary:active:not(:disabled)::before { border-image-source: url("/ui/btn_primary_pressed.png"); }
+.mc-entry button:first-of-type:hover::before,
+.mc-connected-use:hover::before,
+.ai-plate.is-primary:hover:not(:disabled)::before { border-image-source: url("/ui/btn_primary_active.png"); filter: none; }
+
+/* Fechar: emblema IA redondo. */
+.mc-system-close,
+.mc-close { padding-right: 28px !important; }
+.mc-system-close::after,
+.mc-close::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  background: url("/ui/btn_close.png") center / contain no-repeat;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+/* Controles touch de exploração: botões redondos IA. */
+.mc-ai-touch {
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  display: grid;
+  place-items: end center;
+  padding: 0 0 2px !important;
+}
+.mc-ai-touch::before {
+  border: 0 !important;
+  border-image: none !important;
+  inset: 0 !important;
+  background: var(--touch-art) center / contain no-repeat;
+  filter: drop-shadow(0 3px 0 #020813);
+}
+.mc-ai-touch.is-pressed::before { transform: translateY(2px) scale(.94); filter: brightness(1.35) drop-shadow(0 0 8px var(--touch-tone, #35e2f0)); }
+.mc-ai-touch:disabled::before { filter: grayscale(.85) brightness(.6); }
+.mc-ai-touch > span {
+  font: 5px/1 "PressStart", "Press Start 2P", monospace;
+  color: #eaffff;
+  background: #020a14d9;
+  padding: 2px 3px;
+  border: 1px solid var(--touch-tone, #35e2f0);
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(button)::before { transition: none; }
+  .mc-ai-touch.is-pressed::before { transform: none; }
+}

@@ -43,6 +43,8 @@ import {
 import { ITEM_MAP } from "./config";
 import { ROBOT_MAP, type Skill } from "./robots";
 import { defaultLoadout, normalizeLoadout, exclusiveUltimate } from "./skills";
+import { droneLevel } from "./drone-system";
+import { drones } from "../drones-data";
 import { getState, gadgetChipsOf, petBonusTable } from "./save";
 import {
   GADGET_MAP,
@@ -197,6 +199,7 @@ export interface FighterView {
 
 /** Lutador completo do motor — a fonte de verdade de um combatente. */
 export interface Combatant extends FighterView {
+  droneSupport?: {level:number;role:string};
   /** stats de referencia, antes de buffs/status. */
   base: { str: number; def: number; agl: number };
   /** turnos de parry (anula o golpe). */
@@ -824,6 +827,7 @@ export function makeCombatant(args: {
   const resMax = resId ? RESOURCES[resId].max : 0;
 
   return {
+    droneSupport: !ai && !save.borrowed && droneLevel(st8,save.id)>0 ? {level:droneLevel(st8,save.id),role:drones[save.id]?.role??""} : undefined,
     uid: `${side}${slot}`,
     robotId: save.id,
     name: def.name,
@@ -1696,6 +1700,13 @@ function coverGuard(ctx:Ctx,vic:Combatant):Combatant|null {
 function startRoundHooks(ctx: Ctx): void {
   for (const m of [...ctx.c.player.fighters, ...ctx.c.enemy.fighters]) {
     if (!alive(m)) continue;
+    const support=m.droneSupport;
+    if(support?.role==="Resgatista"&&ctx.c.turn===1)addStatus(ctx,m,"shield",Math.max(1,Math.round(m.maxHp*(3+support.level*.3)/100)),2,"drone");
+    if(support && ctx.c.turn>1){
+      if(support.role==="Mecânico"&&ctx.c.turn%3===0)heal(ctx,m,Math.max(1,Math.round(m.maxHp*(1+support.level*.2)/100)),"drone de reparo");
+      if(support.role==="Condutor"&&ctx.c.turn%3===0){clampMp(m,m.mp+Math.max(1,Math.round(m.maxMp*(2+support.level*.2)/100)));logLine(ctx,`${m.name}: drone recupera MP.`);}
+      if(support.role==="Purificador"&&ctx.c.turn%4===0){const i=m.effects.findIndex(e=>["poison","burn"].includes(e.type));if(i>=0){m.effects.splice(i,1);logLine(ctx,`${m.name}: drone purifica status.`);}}
+    }
     m.roundHits = 0;
     m.passiveMult = 1;
     m.passiveGuard = 0;

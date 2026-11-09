@@ -79,7 +79,7 @@ export class ErrorBoundary extends Component<Props, State> {
       const updated = prev.errors.map((e) =>
         e.message === error.message
           ? { ...e, componentStack: errorInfo.componentStack ?? undefined }
-          : e
+          : e,
       );
       return { errors: updated };
     });
@@ -150,9 +150,7 @@ export class ErrorBoundary extends Component<Props, State> {
                     <View key={i} style={s.errorCard}>
                       <TouchableOpacity
                         style={s.errorCardHeader}
-                        onPress={() =>
-                          this.setState({ expandedIndex: isOpen ? null : i })
-                        }
+                        onPress={() => this.setState({ expandedIndex: isOpen ? null : i })}
                         activeOpacity={0.7}
                       >
                         <Text style={s.chevron}>{isOpen ? "▾" : "▸"}</Text>
@@ -162,15 +160,10 @@ export class ErrorBoundary extends Component<Props, State> {
                       </TouchableOpacity>
 
                       {isOpen && (
-                        <ScrollView
-                          style={s.stackScroll}
-                          nestedScrollEnabled
-                          horizontal={false}
-                        >
+                        <ScrollView style={s.stackScroll} nestedScrollEnabled horizontal={false}>
                           <Text style={s.stackText} selectable>
                             {err.stack}
-                            {err.componentStack &&
-                              `\n\n── Component Stack ──${err.componentStack}`}
+                            {err.componentStack && `\n\n── Component Stack ──${err.componentStack}`}
                           </Text>
                         </ScrollView>
                       )}

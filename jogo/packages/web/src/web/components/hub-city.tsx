@@ -1,3 +1,7 @@
+import { droneLevel } from "@/game/drone-system";
+import { CITY_SPOTS } from '@/game/city-life';
+import { recordMetro } from '@/game/city-life-actions';
+import { CityDestination } from './city-destination';
 import { SystemDock } from "./system-dock";
 import { ExplorationControls } from "@/components/exploration-controls";
 import { systemUnlocked } from "@/game/progression";
@@ -188,6 +192,11 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
   heroRef.current = hero;
   const landT = useRef(0);
   const [picker, setPicker] = useState(false);
+  const [destination,setDestination]=useState<string|null>(null);
+  const [depth,setDepth]=useState(0);
+  const z=useRef(0);const depthKeys=useRef({front:false,back:false});
+  const [spot,setSpot]=useState<(typeof CITY_SPOTS)[number]|null>(null);
+  const spotRef=useRef(spot);spotRef.current=spot;
 
   const [near, setNear] = useState<Building | null>(null);
   const [score, setScore] = useState(0);
@@ -205,7 +214,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
   onEnterRef.current = onEnter;
   const nearRef = useRef<Building | null>(null);
   const busyRef = useRef(busy);
-  busyRef.current = busy || !enabled || picker;
+  busyRef.current = busy || !enabled || picker || !!destination;
   const transitionRef = useRef(transition);
   transitionRef.current = transition;
 
@@ -260,6 +269,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
   }, []);
 
   const enter = useCallback(() => {
+    if(spotRef.current&&!busyRef.current){setDestination(spotRef.current.id);return;}
     const b = nearRef.current;
     if (!b || busyRef.current || !systemUnlocked(stateRef.current,b.id)) return;
     actRef.current = { clip: "interact", until: performance.now() + 420 };
@@ -273,6 +283,8 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
       const k = e.key.toLowerCase();
       if (k === "arrowleft" || k === "a") input.current.left = true;
       else if (k === "arrowright" || k === "d") input.current.right = true;
+      else if(k==='s'||k==='arrowdown'){e.preventDefault();depthKeys.current.front=true;}
+      else if(k==='i'){depthKeys.current.back=true;}
       else if (k === "shift") input.current.run = true;
       else if (k === " " || k === "arrowup" || k === "w" || k === "z") {
         e.preventDefault();
@@ -284,6 +296,8 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
       const k = e.key.toLowerCase();
       if (k === "arrowleft" || k === "a") input.current.left = false;
       if (k === "arrowright" || k === "d") input.current.right = false;
+      if(k==='s'||k==='arrowdown')depthKeys.current.front=false;
+      if(k==='i')depthKeys.current.back=false;
       if (k === "shift") input.current.run = false;
       if (k === " " || k === "arrowup" || k === "w" || k === "z") input.current.jumpHeld = false;
     };
@@ -359,9 +373,15 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
     const tick = (now: number) => {
       const dt = Math.min(0.033, (now - last) / 1000);
       last = now;
-      if(busyRef.current){input.current={left:false,right:false,run:false,jumpHeld:false};raf=requestAnimationFrame(tick);return;}
+      if(busyRef.current){input.current={left:false,right:false,run:false,jumpHeld:false};depthKeys.current={front:false,back:false};raf=requestAnimationFrame(tick);return;}
       t += dt;
       const P = player.current;
+      const dz=(Number(depthKeys.current.front)-Number(depthKeys.current.back))||analog.current.y;
+      const oldZ=z.current;
+      if(P.onGround)z.current=Math.max(-120,Math.min(130,z.current+dz*130*dt));
+      if(Math.abs(oldZ-z.current)>.1)setDepth(z.current);
+      const newSpot=CITY_SPOTS.find(s=>Math.abs(s.x-P.x)<120&&Math.abs(s.z-z.current)<45&&P.onGround)||null;
+      if(newSpot!==spotRef.current){spotRef.current=newSpot;setSpot(newSpot)}
       const acting = actRef.current && actRef.current.until > now ? actRef.current.clip : null;
       if (actRef.current && actRef.current.until <= now) actRef.current = null;
 
@@ -405,7 +425,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
       // colisões: plataformas (só de cima) e chão
       let grounded = false;
       if (P.vy >= 0) {
-        for (const p of PLATFORMS) {
+        for (const p of Math.abs(z.current)<45?PLATFORMS:[]) {
           const px = platX(p, t);
           const py = platY(p, t);
           if (P.x > px - 8 && P.x < px + p.w + 8 && prevY <= py + 4 && P.y >= py) {
@@ -438,7 +458,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
           c.taken -= dt;
           continue;
         }
-        if (Math.abs(c.x - P.x) < 30 && Math.abs(c.y - (P.y - 40)) < 44) {
+        if (Math.abs(z.current)<45 && Math.abs(c.x - P.x) < 30 && Math.abs(c.y - (P.y - 40)) < 44) {
           c.taken = 14;
           spawn(c.x, c.y, 14, "#ffe36a", true);
           setScore((s) => s + 10);
@@ -448,7 +468,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
       }
 
       /* ---------------- prédio próximo ---------------- */
-      const b = BUILDINGS.find((bb) => systemUnlocked(stateRef.current,bb.id) && Math.abs(bb.x - P.x) < bb.w * 0.45 && P.y >= GROUND_Y - 4) ?? null;
+      const b = BUILDINGS.find((bb) => Math.abs(z.current)<45 && systemUnlocked(stateRef.current,bb.id) && Math.abs(bb.x - P.x) < bb.w * 0.45 && P.y >= GROUND_Y - 4) ?? null;
       if ((b?.id ?? null) !== lastNearId) {
         lastNearId = b?.id ?? null;
         nearRef.current = b;
@@ -537,6 +557,21 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
       drawTraffic(ctx, atlas, "near", bcam);
       drawLayer(LAYERS[4]);
 
+      // Cidade Viva: 300 objetos novos, culling antes de carregar/renderizar.
+      const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      for(let i=0;i<300;i++){
+        const category=Math.floor(i/50);const building=category===0;
+        const px=90+i*(WORLD_W-180)/300;
+        const speed=building?.65:category===4?.8:1;
+        const dx=px-cx*speed;
+        const sz=building?105:category===5?48:category===2?70:54;
+        if(dx < -sz || dx>w+sz)continue;
+        const image=get(`/city-sprites/${String(i+1).padStart(3,"0")}.png`);
+        if(!image.complete||!image.naturalWidth)continue;
+        const hover=!reduced&&category===2?Math.sin(t*2+i)*5:0;
+        const y=GROUND_Y-cy-sz+(building?-55:category===4?-30:category===2?-155:8)+hover;
+        ctx.save();ctx.globalAlpha=building?.65:.85;ctx.drawImage(image,dx,y,sz,sz);ctx.restore();
+      }
       // decoracoes atras dos predios
       for (const d of DECOR) {
         if (d.speed >= 1) continue;
@@ -599,6 +634,26 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
         if (px < -8 || px > w) continue;
         ctx.fillRect(px, gy + 12, 30, 3);
       }
+      // A second ground axis: rear plaza / avenue / foreground commerce.
+      for(const lane of [-110,120]){
+        ctx.strokeStyle='rgba(71,193,219,.32)';ctx.setLineDash([18,12]);ctx.beginPath();ctx.moveTo(0,gy+lane*.42);ctx.lineTo(w,gy+lane*.42);ctx.stroke();ctx.setLineDash([]);
+      }
+      for(const location of CITY_SPOTS){
+        const dx=location.x-cx, foot=gy+location.z*.42;
+        if(dx<-180||dx>w+180)continue;
+        const image=get(`/city-sprites/${String(location.art).padStart(3,'0')}.png`);
+        const active=spotRef.current===location;
+        if(location.id==='metro'){
+          ctx.fillStyle='#061421';ctx.fillRect(dx-56,foot-84,112,84);
+          ctx.fillStyle='#173a50';ctx.fillRect(dx-48,foot-77,96,70);
+          for(let step=0;step<6;step++){ctx.fillStyle=step%2?'#33586b':'#224457';ctx.fillRect(dx-43,foot-64+step*10,86,8);}
+          ctx.strokeStyle=active?'#ffd077':'#56d8e8';ctx.lineWidth=3;ctx.strokeRect(dx-56,foot-84,112,84);
+          ctx.fillStyle='#12465b';ctx.fillRect(dx-38,foot-121,76,29);
+          ctx.fillStyle='#b2f6ff';ctx.font='bold 14px monospace';ctx.textAlign='center';ctx.fillText('M ↓',dx,foot-102);
+        }else if(image.complete&&image.naturalWidth){ctx.globalAlpha=.85;ctx.drawImage(image,dx-55,foot-125,110,125);ctx.globalAlpha=1;}
+        ctx.fillStyle=active?'#ffd077':'#a4d3e4';ctx.font='9px monospace';ctx.textAlign='center';ctx.fillText(location.name,dx,foot-132);
+        ctx.strokeStyle=active?'#ffd077':'#34869c';ctx.strokeRect(dx-24,foot-25,48,25);
+      }
 
       // plataformas
       for (const p of PLATFORMS) {
@@ -621,6 +676,7 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
         if (dx > w + 80 || dx + d.w < -80) continue;
         if (!im?.complete || !im.naturalWidth) continue;
         ctx.save();
+        if(Math.abs(z.current)>45)ctx.globalAlpha=.3;
         ctx.translate(dx, GROUND_Y - cy + 12 - d.h);
         if (d.flip) {
           ctx.translate(d.w, 0);
@@ -666,11 +722,12 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
         const air = Math.max(0, Math.min(1, (GROUND_Y - P.y) / 220));
         ctx.globalAlpha = 0.35 * (1 - air * 0.6);
         ctx.fillStyle = "#000";
-        ctx.fillRect(P.x - cx - 22 + air * 6, GROUND_Y - cy - 4, 44 - air * 12, 6);
+        ctx.fillRect(P.x - cx - 22 + air * 6, GROUND_Y - cy - 4+z.current*.42, 44 - air * 12, 6);
         ctx.globalAlpha = 1;
         ctx.save();
-        ctx.translate(P.x - cx, P.y - cy + bob);
-        ctx.scale(P.face, 1);
+        ctx.translate(P.x - cx, P.y - cy + bob + z.current*.42);
+        const perspective=1+z.current*.001;
+        ctx.scale(P.face*perspective, perspective);
         if (def.tilt) ctx.rotate(def.tilt);
         ctx.drawImage(sheet, sx, 0, HERO_FRAME, HERO_FRAME, -dw / 2, -dh, dw, dh);
         ctx.restore();
@@ -680,6 +737,10 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
         }
       }
 
+      if(droneLevel(stateRef.current,heroRef.current)>0){
+        const drone=get(`/drones/${heroRef.current}_drone.png?v=3`);
+        if(drone.complete&&drone.naturalWidth)ctx.drawImage(drone,P.x-cx+22,P.y-cy-110+z.current*.42+(reduced?0:Math.sin(t*3)*5),52,52);
+      }
       // camada de sucata em primeiro plano (parallax > 1)
       drawLayer(FG_LAYER);
 
@@ -704,6 +765,9 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
   return (
     <div ref={wrapRef} style={{ position: "absolute", inset: 0, overflow: "hidden", background: "#050a16" }}>
       <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, imageRendering: "pixelated" }} />
+      <div className="mc-city-depth-hint">{depth < -45?'PRAÇA / BAIRRO DE TRÁS':depth>45?'COMÉRCIO / BAIRRO FRONTAL':'AVENIDA CENTRAL'}<br/>S / ↓ · FRENTE &nbsp; I · TRÁS<br/>JOYSTICK: MOVER EM PROFUNDIDADE<div className="mc-city-lane-buttons">{[[-110,'TRÁS'],[0,'AVENIDA'],[120,'FRENTE']].map(([value,label])=><button key={value} onClick={()=>{if(!busyRef.current&&player.current.onGround){z.current=Number(value);setDepth(Number(value));}}}>{label}</button>)}</div></div>
+      {spot&&<button className="mc-city-spot-trigger" onClick={()=>setDestination(spot.id)}>ENTRAR • {spot.name}</button>}
+      {destination&&<CityDestination kind={destination} onClose={()=>setDestination(null)} onTravel={(x,id)=>{recordMetro(id);transition(()=>{player.current.x=x;player.current.y=GROUND_Y;player.current.vx=0;z.current=0;setDepth(0);cam.current.x=Math.max(0,x-240);setDestination(null)})}} onEnter={id=>{if(systemUnlocked(stateRef.current,id)){setDestination(null);transition(()=>onEnter(id))}}}/>}
 
       {/* HUD */}
       <div
@@ -878,8 +942,8 @@ export function HubCity({ onEnter, enabled=true }: { onEnter: (s: Exclude<Screen
         onSpecial={doSpecial}
         cooldown={cooldown}
         onInteract={enter}
-        interactReady={!!near}
-        disabled={picker || busy || !enabled}
+        interactReady={!!near||!!spot}
+        disabled={picker || busy || !enabled || !!destination}
       />
     </div>
   );

@@ -7,6 +7,7 @@ import { combatView, type CombatAction } from "@/game/combat";
 import type { RobotSave } from "@/game/engine";
 import { BattleScreen, type RemoteBattle } from "@/screens/battle";
 import { useCancelQueue, useJoinRoom, useOnlineAction, useOnlineLobby, useOnlineMatch, useQueueOnline, useSurrender } from "@/queries/online";
+import { DirectConnect } from "./direct-connect";
 import "./online.css";
 
 const errText = (e: unknown) => (e as { message?: string } | null)?.message ?? "Falha de conexão com o servidor.";
@@ -17,8 +18,10 @@ export function OnlineScreen({ onBack, backLabel = "CIDADE" }: { onBack: () => v
   useEffect(() => { void completeManagedRedirect().finally(() => setRedirected(true)); }, []);
   const { data: session, isPending } = authClient.useSession();
   if (!redirected || isPending) return <div className="mo-screen mo-center"><p className="mo-kicker">CONECTANDO AO SERVIDOR…</p></div>;
-  if (!session) return <AuthPanel onBack={onBack} />;
-  return <Lobby onBack={onBack} backLabel={backLabel} name={session.user.name} />;
+  const user = session?.user;
+  if (!user) return <AuthPanel onBack={onBack} />;
+  const pilotName = user.name?.trim() || user.email?.split("@")[0] || "PILOTO";
+  return <Lobby onBack={onBack} backLabel={backLabel} name={pilotName} />;
 }
 
 function AuthPanel({ onBack }: { onBack: () => void }) {
@@ -28,6 +31,7 @@ function AuthPanel({ onBack }: { onBack: () => void }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [guest, setGuest] = useState(false);
   const google = async () => {
     setError(null); setBusy(true);
     try {
@@ -49,12 +53,14 @@ function AuthPanel({ onBack }: { onBack: () => void }) {
     } catch (err) { setError(errText(err)); }
     finally { setBusy(false); }
   };
+  if (guest) return <GuestLobby onBack={() => setGuest(false)} />;
   return <div className="mo-screen mo-auth">
     <header className="mo-top"><button className="mo-ghost" onClick={onBack}>‹ VOLTAR</button><span>ARENA ONLINE</span></header>
     <div className="mo-auth-card">
       <p className="mo-kicker">PvP EM TEMPO REAL · SERVIDOR AUTORITATIVO</p>
       <h1>CONECTE SEU PILOTO</h1>
       <p className="mo-lead">Uma conta guarda vitórias, derrotas e a partida em andamento. O progresso offline continua no seu aparelho.</p>
+      <button className="mo-secondary" onClick={() => setGuest(true)}>CONTINUAR SEM CONTA · SALA LOCAL</button>
       <button className="mo-google" onClick={google} disabled={busy}><span>G</span>CONTINUAR COM GOOGLE</button>
       <div className="mo-split"><span>OU E-MAIL</span></div>
       <div className="mo-tabs" role="tablist">
@@ -62,15 +68,36 @@ function AuthPanel({ onBack }: { onBack: () => void }) {
         <button role="tab" aria-selected={mode === "up"} onClick={() => setMode("up")}>CRIAR CONTA</button>
       </div>
       <form onSubmit={submit} className="mo-form">
-        {mode === "up" && <label>NOME DE PILOTO<input value={name} onChange={e => setName(e.target.value)} required minLength={2} maxLength={24} autoComplete="nickname" /></label>}
-        <label>E-MAIL<input type="email" value={email} onChange={e => setEmail(e.target.value)} required autoComplete="email" /></label>
-        <label>SENHA<input type="password" value={password} onChange={e => setPassword(e.target.value)} required minLength={10} autoComplete={mode === "up" ? "new-password" : "current-password"} /></label>
+        {mode === "up" && <label>NOME DE PILOTO<input aria-label="Nome de piloto" value={name} onChange={e => setName(e.target.value)} required minLength={2} maxLength={24} autoComplete="name" /></label>}
+        <label>E-MAIL<input aria-label="E-mail" type="email" value={email} onChange={e => setEmail(e.target.value)} required autoComplete="email" /></label>
+        <label>SENHA<input aria-label="Senha" type="password" value={password} onChange={e => setPassword(e.target.value)} required minLength={10} autoComplete={mode === "up" ? "new-password" : "current-password"} /></label>
         {mode === "up" && <small>Mínimo de 10 caracteres.</small>}
         {error && <p className="mo-error" role="alert">{error}</p>}
         <button className="mo-primary" disabled={busy}>{busy ? "AGUARDE…" : mode === "up" ? "CRIAR E ENTRAR" : "ENTRAR"}</button>
       </form>
     </div>
   </div>;
+}
+
+function GuestLobby({ onBack }: { onBack: () => void }) {
+  const [code, setCode] = useState("");
+  const [room, setRoom] = useState<string | null>(() => localStorage.getItem("mecha-local-room"));
+  const [status, setStatus] = useState("Crie uma sala ou entre com um código.");
+  const [direct, setDirect] = useState(false);
+  const channel = useRef<BroadcastChannel | null>(null);
+  useEffect(() => {
+    if (typeof BroadcastChannel === "undefined") return;
+    const c = new BroadcastChannel("mecha-local-arena"); channel.current = c;
+    c.onmessage = (event) => {
+      if (event.data?.type === "join" && event.data.code === room) { setStatus("RIVAL ENCONTRADO · SALA PAREADA"); c.postMessage({ type: "paired", code: room }); }
+      if (event.data?.type === "paired" && event.data.code === room) setStatus("RIVAL ENCONTRADO · SALA PAREADA");
+    };
+    return () => c.close();
+  }, [room]);
+  const create = () => { const next = Math.random().toString(16).slice(2, 12).toUpperCase(); localStorage.setItem("mecha-local-room", next); setRoom(next); setCode(next); setStatus("AGUARDANDO OUTRO PILOTO NESTE DISPOSITIVO"); };
+  const join = () => { const next = code.trim().toUpperCase(); if (next.length !== 10) { setStatus("O código precisa ter 10 caracteres."); return; } setRoom(next); channel.current?.postMessage({ type: "join", code: next }); setStatus("SOLICITANDO PAREAMENTO…"); };
+  if (direct) return <DirectConnect onBack={() => setDirect(false)} />;
+  return <div className="mo-screen mo-auth"><header className="mo-top"><button className="mo-ghost" onClick={onBack}>‹ VOLTAR</button><span>ARENA LOCAL</span></header><div className="mo-auth-card"><p className="mo-kicker">SEM API KEY · ESCOLHA O TRANSPORTE</p><h1>SALA DE CONEXÃO</h1><p className="mo-lead">Na mesma máquina, use o lobby local. Em aparelhos diferentes, use WebRTC direto e troque a oferta e a resposta por copiar/colar.</p><button className="mo-primary" onClick={() => setDirect(true)}>CONECTAR DOIS APARELHOS</button><div className="mo-split"><span>MESMO DISPOSITIVO</span></div>{room ? <><button className="mo-code" onClick={() => void navigator.clipboard?.writeText(room)}>{room}</button><p className="mo-note">{status}</p><button className="mo-secondary" onClick={() => { localStorage.removeItem("mecha-local-room"); setRoom(null); setCode(""); setStatus("Crie uma sala ou entre com um código."); }}>ENCERRAR SALA</button></> : <><button className="mo-secondary" onClick={create}>CRIAR SALA LOCAL</button><form className="mo-join" onSubmit={(e) => { e.preventDefault(); join(); }}><input value={code} onChange={(e) => setCode(e.target.value.replace(/[^0-9a-f]/gi, "").slice(0, 10).toUpperCase())} placeholder="CÓDIGO DA SALA" aria-label="Código da sala local" /><button className="mo-secondary" disabled={code.length !== 10}>ENTRAR</button></form><p className="mo-note">{status}</p></>}</div></div>;
 }
 
 function Lobby({ onBack, backLabel, name }: { onBack: () => void; backLabel: string; name: string }) {

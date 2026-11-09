@@ -1,0 +1,2926 @@
+{
+  "collection": "Bustos anime em pixel art",
+  "count": 291,
+  "size": [
+    200,
+    250
+  ],
+  "columns": 5,
+  "rows": 4,
+  "sheets": 15,
+  "note": "Da barriga para cima. Artes novas por IA inspiradas em seleção de heróis MOBA; fidelidade e enquadramento podem variar. Última folha: 11 personagens. Rostos anteriores preservados.",
+  "characters": [
+    {
+      "id": "aurorion",
+      "name": "AURORION",
+      "element": "LUZ",
+      "rarity": "gold",
+      "bio": "Cavaleiro de plasma solar. Lâmina de luz que corta blindagem.",
+      "index": 1,
+      "batch": 1,
+      "position": 0
+    },
+    {
+      "id": "ferrovax",
+      "name": "FERROVAX",
+      "element": "FERRO",
+      "rarity": "bronze",
+      "bio": "Brigão industrial. Punhos de ferro fundido e chassi reforçado.",
+      "index": 2,
+      "batch": 1,
+      "position": 1
+    },
+    {
+      "id": "cryolance",
+      "name": "CRYOLANCE",
+      "element": "GELO",
+      "rarity": "silver",
+      "bio": "Lanceiro criogênico. Congela sistemas inimigos em pleno combate.",
+      "index": 3,
+      "batch": 1,
+      "position": 2
+    },
+    {
+      "id": "voltronin",
+      "name": "VOLT RONIN",
+      "element": "TROVAO",
+      "rarity": "silver",
+      "bio": "Samurai eletrificado. Katana de arco voltaico e velocidade brutal.",
+      "index": 4,
+      "batch": 1,
+      "position": 3
+    },
+    {
+      "id": "pyrokaiser",
+      "name": "PYROKAISER",
+      "element": "FOGO",
+      "rarity": "gold",
+      "bio": "Imperador incandescente. Núcleo de magma sob armadura de obsidiana.",
+      "index": 5,
+      "batch": 1,
+      "position": 4
+    },
+    {
+      "id": "terrabyte",
+      "name": "TERRABYTE",
+      "element": "TERRA",
+      "rarity": "bronze",
+      "bio": "Golem de rocha e musgo. Praticamente indestrutível.",
+      "index": 6,
+      "batch": 1,
+      "position": 5
+    },
+    {
+      "id": "zephyrblade",
+      "name": "ZEPHYRBLADE",
+      "element": "VENTO",
+      "rarity": "silver",
+      "bio": "Turbinas gêmeas nas costas. Dita o ritmo de qualquer luta.",
+      "index": 7,
+      "batch": 1,
+      "position": 6
+    },
+    {
+      "id": "nullshade",
+      "name": "NULLSHADE",
+      "element": "VAZIO",
+      "rarity": "gold",
+      "bio": "Assassino do vazio. Dilacera código e blindagem por igual.",
+      "index": 8,
+      "batch": 1,
+      "position": 7
+    },
+    {
+      "id": "acidra",
+      "name": "ACIDRA",
+      "element": "ACIDO",
+      "rarity": "bronze",
+      "bio": "Tanque químico ambulante. Dissolve armaduras lentamente.",
+      "index": 9,
+      "batch": 1,
+      "position": 8
+    },
+    {
+      "id": "gravitus",
+      "name": "GRAVITUS",
+      "element": "GRAVIDADE",
+      "rarity": "silver",
+      "bio": "Flutua acima do solo manipulando o próprio peso do inimigo.",
+      "index": 10,
+      "batch": 1,
+      "position": 9
+    },
+    {
+      "id": "chronowake",
+      "name": "CHRONOWAKE",
+      "element": "TEMPO",
+      "rarity": "gold",
+      "bio": "Engrenagens temporais. Rouba turnos e desacelera adversários.",
+      "index": 11,
+      "batch": 1,
+      "position": 10
+    },
+    {
+      "id": "bioreaper",
+      "name": "BIOREAPER",
+      "element": "BIO",
+      "rarity": "silver",
+      "bio": "Bio-máquina com foice de esporos. Se regenera enquanto ataca.",
+      "index": 12,
+      "batch": 1,
+      "position": 11
+    },
+    {
+      "id": "stormfang",
+      "name": "STORMFANG",
+      "element": "TEMPESTADE",
+      "rarity": "silver",
+      "bio": "Besta-lobo de trovão. Caça em rajadas curtas e violentas.",
+      "index": 13,
+      "batch": 1,
+      "position": 12
+    },
+    {
+      "id": "quartzine",
+      "name": "QUARTZINE",
+      "element": "CRISTAL",
+      "rarity": "bronze",
+      "bio": "Corpo de quartzo prismático. Reflete parte do impacto recebido.",
+      "index": 14,
+      "batch": 1,
+      "position": 13
+    },
+    {
+      "id": "hydroknight",
+      "name": "HYDROKNIGHT",
+      "element": "AGUA",
+      "rarity": "silver",
+      "bio": "Paladino aquático de tridente. Sustenta a linha de frente.",
+      "index": 15,
+      "batch": 1,
+      "position": 14
+    },
+    {
+      "id": "emberfox",
+      "name": "EMBERFOX",
+      "element": "BRASA",
+      "rarity": "gold",
+      "bio": "Ninja-raposa de nove caudas em brasa. Golpes rápidos e ardentes.",
+      "index": 16,
+      "batch": 1,
+      "position": 15
+    },
+    {
+      "id": "ironmonk",
+      "name": "IRONMONK",
+      "element": "JADE",
+      "rarity": "bronze",
+      "bio": "Monge marcial de bronze e jade. Disciplina acima da força bruta.",
+      "index": 17,
+      "batch": 1,
+      "position": 16
+    },
+    {
+      "id": "nebulon",
+      "name": "NEBULON",
+      "element": "COSMICO",
+      "rarity": "gold",
+      "bio": "Mago cósmico com cajado estelar. Converte poeira estelar em dano.",
+      "index": 18,
+      "batch": 1,
+      "position": 17
+    },
+    {
+      "id": "titanox",
+      "name": "TITANOX",
+      "element": "TITA",
+      "rarity": "silver",
+      "bio": "Colosso de assalto com canhões de ombro. Anda por cima de tudo.",
+      "index": 19,
+      "batch": 1,
+      "position": 18
+    },
+    {
+      "id": "magnavore",
+      "name": "MAGNAVORE",
+      "element": "MAGNETISMO",
+      "rarity": "gold",
+      "bio": "Devora metal com campos magnéticos. Detritos orbitam seu chassi.",
+      "index": 20,
+      "batch": 1,
+      "position": 19
+    },
+    {
+      "id": "solarixprime",
+      "name": "SOLARIX PRIME",
+      "element": "SOL",
+      "rarity": "gold",
+      "bio": "Chassi forjado para SOL. Abre a guarda inimiga com SUPERNOVA PRIME.",
+      "index": 21,
+      "batch": 2,
+      "position": 0
+    },
+    {
+      "id": "lunargeist",
+      "name": "LUNAR GEIST",
+      "element": "LUA",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de LUA. Guarda MALDICAO LUNAR para o momento decisivo.",
+      "index": 22,
+      "batch": 2,
+      "position": 1
+    },
+    {
+      "id": "dunecrawler",
+      "name": "DUNE CRAWLER",
+      "element": "AREIA",
+      "rarity": "bronze",
+      "bio": "Campeão de AREIA. Sua técnica AREIA MOVEDICA encerra duelos em um golpe.",
+      "index": 23,
+      "batch": 2,
+      "position": 2
+    },
+    {
+      "id": "junglemaw",
+      "name": "JUNGLE MAW",
+      "element": "SELVA",
+      "rarity": "silver",
+      "bio": "Predador de SELVA. Caça sistemas rivais e finaliza com ESPOROS TOXICOS.",
+      "index": 24,
+      "batch": 2,
+      "position": 3
+    },
+    {
+      "id": "abyssalord",
+      "name": "ABYSSA LORD",
+      "element": "ABISSO",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de ABISSO. Guarda ISCA HIPNOTICA para o momento decisivo.",
+      "index": 25,
+      "batch": 2,
+      "position": 4
+    },
+    {
+      "id": "toxinvore",
+      "name": "TOXINVORE",
+      "element": "TOXINA",
+      "rarity": "bronze",
+      "bio": "Predador de TOXINA. Caça sistemas rivais e finaliza com PRAGA CORROSIVA.",
+      "index": 26,
+      "batch": 2,
+      "position": 5
+    },
+    {
+      "id": "ruinwarden",
+      "name": "RUIN WARDEN",
+      "element": "RUINA",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de RUINA. Guarda SELO ESQUECIDO para o momento decisivo.",
+      "index": 27,
+      "batch": 2,
+      "position": 6
+    },
+    {
+      "id": "forgeheart",
+      "name": "FORGE HEART",
+      "element": "FORJA",
+      "rarity": "silver",
+      "bio": "Predador de FORJA. Caça sistemas rivais e finaliza com METAL DERRETIDO.",
+      "index": 28,
+      "batch": 2,
+      "position": 7
+    },
+    {
+      "id": "snowreaver",
+      "name": "SNOW REAVER",
+      "element": "NEVE",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de NEVE. Ninguém sobrevive a CONGELAMENTO duas vezes.",
+      "index": 29,
+      "batch": 2,
+      "position": 8
+    },
+    {
+      "id": "ashenrevenant",
+      "name": "ASHEN REVENANT",
+      "element": "CINZAS",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de CINZAS. Assina cada vitória com CREMACAO.",
+      "index": 30,
+      "batch": 2,
+      "position": 9
+    },
+    {
+      "id": "plasmawraith",
+      "name": "PLASMA WRAITH",
+      "element": "PLASMA",
+      "rarity": "gold",
+      "bio": "Predador de PLASMA. Caça sistemas rivais e finaliza com FUSAO INSTAVEL.",
+      "index": 31,
+      "batch": 2,
+      "position": 10
+    },
+    {
+      "id": "shadowfang",
+      "name": "SHADOWFANG",
+      "element": "SOMBRA",
+      "rarity": "silver",
+      "bio": "Campeão de SOMBRA. Sua técnica BREU ABSOLUTO encerra duelos em um golpe.",
+      "index": 32,
+      "batch": 2,
+      "position": 11
+    },
+    {
+      "id": "mirrorclad",
+      "name": "MIRRORCLAD",
+      "element": "ESPELHO",
+      "rarity": "gold",
+      "bio": "Predador de ESPELHO. Caça sistemas rivais e finaliza com IMAGEM INVERTIDA.",
+      "index": 33,
+      "batch": 2,
+      "position": 12
+    },
+    {
+      "id": "bonemarshal",
+      "name": "BONE MARSHAL",
+      "element": "OSSO",
+      "rarity": "silver",
+      "bio": "Predador de OSSO. Caça sistemas rivais e finaliza com MEDULA DRENADA.",
+      "index": 34,
+      "batch": 2,
+      "position": 13
+    },
+    {
+      "id": "cloudpiercer",
+      "name": "CLOUD PIERCER",
+      "element": "NUVEM",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de NUVEM. Ninguém sobrevive a VACUO DE ALTITUDE duas vezes.",
+      "index": 35,
+      "batch": 2,
+      "position": 14
+    },
+    {
+      "id": "vulcanargo",
+      "name": "VULCAN ARGO",
+      "element": "VULCAO",
+      "rarity": "silver",
+      "bio": "Predador de VULCAO. Caça sistemas rivais e finaliza com CHUVA DE LAPILLI.",
+      "index": 36,
+      "batch": 2,
+      "position": 15
+    },
+    {
+      "id": "mireclad",
+      "name": "MIRECLAD",
+      "element": "PANTANO",
+      "rarity": "bronze",
+      "bio": "Campeão de PANTANO. Sua técnica MIASMA encerra duelos em um golpe.",
+      "index": 37,
+      "batch": 2,
+      "position": 16
+    },
+    {
+      "id": "aridfang",
+      "name": "ARID FANG",
+      "element": "DESERTO",
+      "rarity": "bronze",
+      "bio": "Piloto autônomo de DESERTO. Guarda VENENO SECO para o momento decisivo.",
+      "index": 38,
+      "batch": 2,
+      "position": 17
+    },
+    {
+      "id": "tundrakeeper",
+      "name": "TUNDRA KEEPER",
+      "element": "TUNDRA",
+      "rarity": "silver",
+      "bio": "Predador de TUNDRA. Caça sistemas rivais e finaliza com GEADA PROFUNDA.",
+      "index": 39,
+      "batch": 2,
+      "position": 18
+    },
+    {
+      "id": "reefsovereign",
+      "name": "REEF SOVEREIGN",
+      "element": "RECIFE",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de RECIFE. Assina cada vitória com POLIPO PARASITA.",
+      "index": 40,
+      "batch": 2,
+      "position": 19
+    },
+    {
+      "id": "obsidianfist",
+      "name": "OBSIDIAN FIST",
+      "element": "OBSIDIANA",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de OBSIDIANA. Ninguém sobrevive a CORTE VITREO duas vezes.",
+      "index": 41,
+      "batch": 3,
+      "position": 0
+    },
+    {
+      "id": "amberlock",
+      "name": "AMBERLOCK",
+      "element": "AMBAR",
+      "rarity": "bronze",
+      "bio": "Predador de AMBAR. Caça sistemas rivais e finaliza com FOSSILIZAR.",
+      "index": 42,
+      "batch": 3,
+      "position": 1
+    },
+    {
+      "id": "neondrifter",
+      "name": "NEON DRIFTER",
+      "element": "NEON",
+      "rarity": "silver",
+      "bio": "Predador de NEON. Caça sistemas rivais e finaliza com SOBRECARGA LUMINOSA.",
+      "index": 43,
+      "batch": 3,
+      "position": 2
+    },
+    {
+      "id": "rustpriest",
+      "name": "RUST PRIEST",
+      "element": "FERRUGEM",
+      "rarity": "bronze",
+      "bio": "Campeão de FERRUGEM. Sua técnica OXIDACAO encerra duelos em um golpe.",
+      "index": 44,
+      "batch": 3,
+      "position": 3
+    },
+    {
+      "id": "graphenex",
+      "name": "GRAPHENEX",
+      "element": "GRAFENO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para GRAFENO. Abre a guarda inimiga com COLAPSO ATOMICO.",
+      "index": 45,
+      "batch": 3,
+      "position": 4
+    },
+    {
+      "id": "quantumecho",
+      "name": "QUANTUM ECHO",
+      "element": "QUANTUM",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de QUANTUM. Ninguém sobrevive a COLAPSO DE ONDA duas vezes.",
+      "index": 46,
+      "batch": 3,
+      "position": 5
+    },
+    {
+      "id": "nebulaseer",
+      "name": "NEBULA SEER",
+      "element": "NEBULOSA",
+      "rarity": "silver",
+      "bio": "Chassi forjado para NEBULOSA. Abre a guarda inimiga com VISAO DO VAZIO.",
+      "index": 47,
+      "batch": 3,
+      "position": 6
+    },
+    {
+      "id": "eclipsar",
+      "name": "ECLIPSAR",
+      "element": "ECLIPSE",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de ECLIPSE. Guarda SOMBRA SOLAR para o momento decisivo.",
+      "index": 48,
+      "batch": 3,
+      "position": 7
+    },
+    {
+      "id": "meteorpunch",
+      "name": "METEOR PUNCH",
+      "element": "METEORO",
+      "rarity": "silver",
+      "bio": "Campeão de METEORO. Sua técnica CHUVA DE ROCHAS encerra duelos em um golpe.",
+      "index": 49,
+      "batch": 3,
+      "position": 8
+    },
+    {
+      "id": "ringwarden",
+      "name": "RING WARDEN",
+      "element": "ANEL",
+      "rarity": "silver",
+      "bio": "Predador de ANEL. Caça sistemas rivais e finaliza com GRAVIDADE DE ANEL.",
+      "index": 50,
+      "batch": 3,
+      "position": 9
+    },
+    {
+      "id": "pulsarcore",
+      "name": "PULSAR CORE",
+      "element": "PULSAR",
+      "rarity": "gold",
+      "bio": "Campeão de PULSAR. Sua técnica RADIOPULSO encerra duelos em um golpe.",
+      "index": 51,
+      "batch": 3,
+      "position": 10
+    },
+    {
+      "id": "voidsingularity",
+      "name": "VOID SINGULARITY",
+      "element": "BURACO NEGRO",
+      "rarity": "gold",
+      "bio": "Predador de BURACO NEGRO. Caça sistemas rivais e finaliza com ESPAGUETIFICACAO.",
+      "index": 52,
+      "batch": 3,
+      "position": 11
+    },
+    {
+      "id": "seraphcircuit",
+      "name": "SERAPH CIRCUIT",
+      "element": "LUZ",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de LUZ. Assina cada vitória com JULGAMENTO DIGITAL.",
+      "index": 53,
+      "batch": 3,
+      "position": 12
+    },
+    {
+      "id": "cinderhound",
+      "name": "CINDERHOUND",
+      "element": "BRASA",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de BRASA. Assina cada vitória com RASTRO DE FAGULHAS.",
+      "index": 54,
+      "batch": 3,
+      "position": 13
+    },
+    {
+      "id": "glacierjaw",
+      "name": "GLACIER JAW",
+      "element": "GELO",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de GELO. Ninguém sobrevive a PRISAO DE GELO duas vezes.",
+      "index": 55,
+      "batch": 3,
+      "position": 14
+    },
+    {
+      "id": "stormlance",
+      "name": "STORMLANCE",
+      "element": "TEMPESTADE",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de TEMPESTADE. Ninguém sobrevive a DESCARGA EM CADEIA duas vezes.",
+      "index": 56,
+      "batch": 3,
+      "position": 15
+    },
+    {
+      "id": "terraforge",
+      "name": "TERRAFORGE",
+      "element": "TERRA",
+      "rarity": "bronze",
+      "bio": "Predador de TERRA. Caça sistemas rivais e finaliza com TREMOR.",
+      "index": 57,
+      "batch": 3,
+      "position": 16
+    },
+    {
+      "id": "windshear",
+      "name": "WINDSHEAR",
+      "element": "VENTO",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de VENTO. Ninguém sobrevive a VACUO duas vezes.",
+      "index": 58,
+      "batch": 3,
+      "position": 17
+    },
+    {
+      "id": "voidcaller",
+      "name": "VOIDCALLER",
+      "element": "VAZIO",
+      "rarity": "silver",
+      "bio": "Predador de VAZIO. Caça sistemas rivais e finaliza com SUGAR ESSENCIA.",
+      "index": 59,
+      "batch": 3,
+      "position": 18
+    },
+    {
+      "id": "acidbloom",
+      "name": "ACIDBLOOM",
+      "element": "ACIDO",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de ACIDO. Assina cada vitória com FLORACAO TOXICA.",
+      "index": 60,
+      "batch": 3,
+      "position": 19
+    },
+    {
+      "id": "gravitide",
+      "name": "GRAVITIDE",
+      "element": "GRAVIDADE",
+      "rarity": "silver",
+      "bio": "Chassi forjado para GRAVIDADE. Abre a guarda inimiga com COMPRESSAO.",
+      "index": 61,
+      "batch": 4,
+      "position": 0
+    },
+    {
+      "id": "chronofracture",
+      "name": "CHRONOFRACTURE",
+      "element": "TEMPO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de TEMPO. Assina cada vitória com PARADOXO.",
+      "index": 62,
+      "batch": 4,
+      "position": 1
+    },
+    {
+      "id": "biolattice",
+      "name": "BIOLATTICE",
+      "element": "BIO",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de BIO. Assina cada vitória com INFECCAO.",
+      "index": 63,
+      "batch": 4,
+      "position": 2
+    },
+    {
+      "id": "crystallux",
+      "name": "CRYSTALLUX",
+      "element": "CRISTAL",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de CRISTAL. Guarda REFRACAO CEGANTE para o momento decisivo.",
+      "index": 64,
+      "batch": 4,
+      "position": 3
+    },
+    {
+      "id": "aquabastion",
+      "name": "AQUA BASTION",
+      "element": "AGUA",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de AGUA. Ninguém sobrevive a CORRENTEZA duas vezes.",
+      "index": 65,
+      "batch": 4,
+      "position": 4
+    },
+    {
+      "id": "emberwing",
+      "name": "EMBERWING",
+      "element": "FOGO",
+      "rarity": "bronze",
+      "bio": "Chassi forjado para FOGO. Abre a guarda inimiga com RENASCER EM FOGO.",
+      "index": 66,
+      "batch": 4,
+      "position": 5
+    },
+    {
+      "id": "ironsentinel",
+      "name": "IRON SENTINEL",
+      "element": "FERRO",
+      "rarity": "bronze",
+      "bio": "Predador de FERRO. Caça sistemas rivais e finaliza com TRAVA DE ACO.",
+      "index": 67,
+      "batch": 4,
+      "position": 6
+    },
+    {
+      "id": "thunderoni",
+      "name": "THUNDER ONI",
+      "element": "TROVAO",
+      "rarity": "silver",
+      "bio": "Predador de TROVAO. Caça sistemas rivais e finaliza com MARCA DO ONI.",
+      "index": 68,
+      "batch": 4,
+      "position": 7
+    },
+    {
+      "id": "titanbulwark",
+      "name": "TITAN BULWARK",
+      "element": "TITA",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de TITA. Assina cada vitória com CERCO TOTAL.",
+      "index": 69,
+      "batch": 4,
+      "position": 8
+    },
+    {
+      "id": "magnashrike",
+      "name": "MAGNASHRIKE",
+      "element": "MAGNETISMO",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de MAGNETISMO. Ninguém sobrevive a POLARIDADE INVERSA duas vezes.",
+      "index": 70,
+      "batch": 4,
+      "position": 9
+    },
+    {
+      "id": "jadearbiter",
+      "name": "JADE ARBITER",
+      "element": "JADE",
+      "rarity": "gold",
+      "bio": "Chassi forjado para JADE. Abre a guarda inimiga com VEREDITO ANCESTRAL.",
+      "index": 71,
+      "batch": 4,
+      "position": 10
+    },
+    {
+      "id": "cosmoveil",
+      "name": "COSMOVEIL",
+      "element": "COSMICO",
+      "rarity": "silver",
+      "bio": "Predador de COSMICO. Caça sistemas rivais e finaliza com CONSTELACAO.",
+      "index": 72,
+      "batch": 4,
+      "position": 11
+    },
+    {
+      "id": "sandwyrm",
+      "name": "SANDWYRM",
+      "element": "AREIA",
+      "rarity": "silver",
+      "bio": "Campeão de AREIA. Sua técnica VORTICE DE AREIA encerra duelos em um golpe.",
+      "index": 73,
+      "batch": 4,
+      "position": 12
+    },
+    {
+      "id": "pyreconclave",
+      "name": "PYRE CONCLAVE",
+      "element": "FOGO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de FOGO. Assina cada vitória com PIRA FUNERARIA.",
+      "index": 74,
+      "batch": 4,
+      "position": 13
+    },
+    {
+      "id": "frostmonarch",
+      "name": "FROST MONARCH",
+      "element": "GELO",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de GELO. Guarda INVERNO ETERNO para o momento decisivo.",
+      "index": 75,
+      "batch": 4,
+      "position": 14
+    },
+    {
+      "id": "voltcarnyx",
+      "name": "VOLTCARNYX",
+      "element": "TROVAO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para TROVAO. Abre a guarda inimiga com TROVAO PRIMORDIAL.",
+      "index": 76,
+      "batch": 4,
+      "position": 15
+    },
+    {
+      "id": "quarrybreaker",
+      "name": "QUARRY BREAKER",
+      "element": "TERRA",
+      "rarity": "bronze",
+      "bio": "Predador de TERRA. Caça sistemas rivais e finaliza com DESLIZAMENTO.",
+      "index": 77,
+      "batch": 4,
+      "position": 16
+    },
+    {
+      "id": "zephyrhalo",
+      "name": "ZEPHYR HALO",
+      "element": "VENTO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de VENTO. Ninguém sobrevive a OLHO DA TORMENTA duas vezes.",
+      "index": 78,
+      "batch": 4,
+      "position": 17
+    },
+    {
+      "id": "nullpriest",
+      "name": "NULL PRIEST",
+      "element": "VAZIO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de VAZIO. Assina cada vitória com APAGAR EXISTENCIA.",
+      "index": 79,
+      "batch": 4,
+      "position": 18
+    },
+    {
+      "id": "venomcarapace",
+      "name": "VENOM CARAPACE",
+      "element": "TOXINA",
+      "rarity": "silver",
+      "bio": "Chassi forjado para TOXINA. Abre a guarda inimiga com GAS NEUROTOXICO.",
+      "index": 80,
+      "batch": 4,
+      "position": 19
+    },
+    {
+      "id": "grimsprocket",
+      "name": "GRIM SPROCKET",
+      "element": "RUINA",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de RUINA. Ninguém sobrevive a COLAPSO MECANICO duas vezes.",
+      "index": 81,
+      "batch": 5,
+      "position": 0
+    },
+    {
+      "id": "blastfurnace",
+      "name": "BLAST FURNACE",
+      "element": "FORJA",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de FORJA. Guarda FUSAO TOTAL para o momento decisivo.",
+      "index": 82,
+      "batch": 5,
+      "position": 1
+    },
+    {
+      "id": "hailstriker",
+      "name": "HAILSTRIKER",
+      "element": "NEVE",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de NEVE. Guarda TORMENTA BRANCA para o momento decisivo.",
+      "index": 83,
+      "batch": 5,
+      "position": 2
+    },
+    {
+      "id": "emberlash",
+      "name": "EMBERLASH",
+      "element": "BRASA",
+      "rarity": "bronze",
+      "bio": "Campeão de BRASA. Sua técnica MARCA A FOGO encerra duelos em um golpe.",
+      "index": 84,
+      "batch": 5,
+      "position": 3
+    },
+    {
+      "id": "lumenblade",
+      "name": "LUMEN BLADE",
+      "element": "LUZ",
+      "rarity": "silver",
+      "bio": "Predador de LUZ. Caça sistemas rivais e finaliza com BRILHO OFUSCANTE.",
+      "index": 85,
+      "batch": 5,
+      "position": 4
+    },
+    {
+      "id": "gloomtide",
+      "name": "GLOOMTIDE",
+      "element": "ABISSO",
+      "rarity": "silver",
+      "bio": "Campeão de ABISSO. Sua técnica PULMAO INUNDADO encerra duelos em um golpe.",
+      "index": 86,
+      "batch": 5,
+      "position": 5
+    },
+    {
+      "id": "sporeherald",
+      "name": "SPORE HERALD",
+      "element": "BIO",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de BIO. Assina cada vitória com NUVEM FUNGICA.",
+      "index": 87,
+      "batch": 5,
+      "position": 6
+    },
+    {
+      "id": "prismvector",
+      "name": "PRISM VECTOR",
+      "element": "CRISTAL",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de CRISTAL. Assina cada vitória com DISPERSAO.",
+      "index": 88,
+      "batch": 5,
+      "position": 7
+    },
+    {
+      "id": "maelstromfist",
+      "name": "MAELSTROM FIST",
+      "element": "AGUA",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de AGUA. Ninguém sobrevive a AFOGAMENTO duas vezes.",
+      "index": 89,
+      "batch": 5,
+      "position": 8
+    },
+    {
+      "id": "scrapbaron",
+      "name": "SCRAP BARON",
+      "element": "FERRUGEM",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de FERRUGEM. Ninguém sobrevive a PRENSA HIDRAULICA duas vezes.",
+      "index": 90,
+      "batch": 5,
+      "position": 9
+    },
+    {
+      "id": "stelladrake",
+      "name": "STELLADRAKE",
+      "element": "COSMICO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de COSMICO. Assina cada vitória com NOVA DRACONICA.",
+      "index": 91,
+      "batch": 5,
+      "position": 10
+    },
+    {
+      "id": "terminuscore",
+      "name": "TERMINUS CORE",
+      "element": "QUANTUM",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de QUANTUM. Assina cada vitória com REINICIAR REALIDADE.",
+      "index": 92,
+      "batch": 5,
+      "position": 11
+    },
+    {
+      "id": "heliondriver",
+      "name": "HELION DRIVER",
+      "element": "SOL",
+      "rarity": "silver",
+      "bio": "Predador de SOL. Caça sistemas rivais e finaliza com EXPLOSAO DE CROMOSFERA.",
+      "index": 93,
+      "batch": 5,
+      "position": 12
+    },
+    {
+      "id": "noxfeather",
+      "name": "NOXFEATHER",
+      "element": "SOMBRA",
+      "rarity": "silver",
+      "bio": "Campeão de SOMBRA. Sua técnica GRASNADO MALDITO encerra duelos em um golpe.",
+      "index": 94,
+      "batch": 5,
+      "position": 13
+    },
+    {
+      "id": "basaltguard",
+      "name": "BASALT GUARD",
+      "element": "OBSIDIANA",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de OBSIDIANA. Ninguém sobrevive a LASCAS VULCANICAS duas vezes.",
+      "index": 95,
+      "batch": 5,
+      "position": 14
+    },
+    {
+      "id": "hexweaver",
+      "name": "HEXWEAVER",
+      "element": "GRAFENO",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de GRAFENO. Guarda REDE PARALISANTE para o momento decisivo.",
+      "index": 96,
+      "batch": 5,
+      "position": 15
+    },
+    {
+      "id": "solstitia",
+      "name": "SOLSTITIA",
+      "element": "ECLIPSE",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de ECLIPSE. Guarda EQUINOCIO para o momento decisivo.",
+      "index": 97,
+      "batch": 5,
+      "position": 16
+    },
+    {
+      "id": "cometfang",
+      "name": "COMETFANG",
+      "element": "METEORO",
+      "rarity": "bronze",
+      "bio": "Piloto autônomo de METEORO. Guarda QUEDA DE COMETA para o momento decisivo.",
+      "index": 98,
+      "batch": 5,
+      "position": 17
+    },
+    {
+      "id": "orbitalmarshal",
+      "name": "ORBITAL MARSHAL",
+      "element": "ANEL",
+      "rarity": "gold",
+      "bio": "Chassi forjado para ANEL. Abre a guarda inimiga com BOMBARDEIO SATELITE.",
+      "index": 99,
+      "batch": 5,
+      "position": 18
+    },
+    {
+      "id": "neutronmaul",
+      "name": "NEUTRON MAUL",
+      "element": "PULSAR",
+      "rarity": "silver",
+      "bio": "Piloto autônomo de PULSAR. Guarda COMPRESSAO BRUTAL para o momento decisivo.",
+      "index": 100,
+      "batch": 5,
+      "position": 19
+    },
+    {
+      "id": "eventhorizon",
+      "name": "EVENT HORIZON",
+      "element": "BURACO NEGRO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para BURACO NEGRO. Abre a guarda inimiga com DILATACAO.",
+      "index": 101,
+      "batch": 6,
+      "position": 0
+    },
+    {
+      "id": "mossknight",
+      "name": "MOSS KNIGHT",
+      "element": "SELVA",
+      "rarity": "bronze",
+      "bio": "Piloto autônomo de SELVA. Guarda RAIZES PRENSANTES para o momento decisivo.",
+      "index": 102,
+      "batch": 6,
+      "position": 1
+    },
+    {
+      "id": "quicksilverr",
+      "name": "QUICKSILVER",
+      "element": "ESPELHO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de ESPELHO. Ninguém sobrevive a GOTA LETAL duas vezes.",
+      "index": 103,
+      "batch": 6,
+      "position": 2
+    },
+    {
+      "id": "boneorchestra",
+      "name": "BONE ORCHESTRA",
+      "element": "OSSO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de OSSO. Ninguém sobrevive a REQUIEM duas vezes.",
+      "index": 104,
+      "batch": 6,
+      "position": 3
+    },
+    {
+      "id": "stratoveil",
+      "name": "STRATOVEIL",
+      "element": "NUVEM",
+      "rarity": "silver",
+      "bio": "Chassi forjado para NUVEM. Abre a guarda inimiga com NEVOEIRO DENSO.",
+      "index": 105,
+      "batch": 6,
+      "position": 4
+    },
+    {
+      "id": "lavabastion",
+      "name": "LAVA BASTION",
+      "element": "VULCAO",
+      "rarity": "gold",
+      "bio": "Predador de VULCAO. Caça sistemas rivais e finaliza com CALDEIRA.",
+      "index": 106,
+      "batch": 6,
+      "position": 5
+    },
+    {
+      "id": "bogtyrant",
+      "name": "BOG TYRANT",
+      "element": "PANTANO",
+      "rarity": "silver",
+      "bio": "Predador de PANTANO. Caça sistemas rivais e finaliza com LAMA FERVENTE.",
+      "index": 107,
+      "batch": 6,
+      "position": 6
+    },
+    {
+      "id": "mirageblade",
+      "name": "MIRAGE BLADE",
+      "element": "DESERTO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de DESERTO. Ninguém sobrevive a CALOR ILUSORIO duas vezes.",
+      "index": 108,
+      "batch": 6,
+      "position": 7
+    },
+    {
+      "id": "permafrostmk",
+      "name": "PERMAFROST MK",
+      "element": "TUNDRA",
+      "rarity": "gold",
+      "bio": "Predador de TUNDRA. Caça sistemas rivais e finaliza com PERMAFROST.",
+      "index": 109,
+      "batch": 6,
+      "position": 8
+    },
+    {
+      "id": "coralshiv",
+      "name": "CORAL SHIV",
+      "element": "RECIFE",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de RECIFE. Ninguém sobrevive a ESPINHO VENENOSO duas vezes.",
+      "index": 110,
+      "batch": 6,
+      "position": 9
+    },
+    {
+      "id": "resinjudge",
+      "name": "RESIN JUDGE",
+      "element": "AMBAR",
+      "rarity": "silver",
+      "bio": "Campeão de AMBAR. Sua técnica PRISAO FOSSIL encerra duelos em um golpe.",
+      "index": 111,
+      "batch": 6,
+      "position": 10
+    },
+    {
+      "id": "gridrunner",
+      "name": "GRIDRUNNER",
+      "element": "NEON",
+      "rarity": "bronze",
+      "bio": "Piloto autônomo de NEON. Guarda SOBRECARGA para o momento decisivo.",
+      "index": 112,
+      "batch": 6,
+      "position": 11
+    },
+    {
+      "id": "seraphimvoid",
+      "name": "SERAPHIM VOID",
+      "element": "VAZIO",
+      "rarity": "gold",
+      "bio": "Piloto autônomo de VAZIO. Guarda ABISMO SAGRADO para o momento decisivo.",
+      "index": 113,
+      "batch": 6,
+      "position": 12
+    },
+    {
+      "id": "tempestcrown",
+      "name": "TEMPEST CROWN",
+      "element": "TEMPESTADE",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de TEMPESTADE. Assina cada vitória com TEMPESTADE REAL.",
+      "index": 114,
+      "batch": 6,
+      "position": 13
+    },
+    {
+      "id": "ironmonarch",
+      "name": "IRON MONARCH",
+      "element": "FERRO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de FERRO. Assina cada vitória com EXECUCAO REAL.",
+      "index": 115,
+      "batch": 6,
+      "position": 14
+    },
+    {
+      "id": "vireoblade",
+      "name": "VIREO BLADE",
+      "element": "JADE",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de JADE. Ninguém sobrevive a VENTO VERDE duas vezes.",
+      "index": 116,
+      "batch": 6,
+      "position": 15
+    },
+    {
+      "id": "aetherloom",
+      "name": "AETHER LOOM",
+      "element": "NEBULOSA",
+      "rarity": "gold",
+      "bio": "Chassi forjado para NEBULOSA. Abre a guarda inimiga com TECER DESTINO.",
+      "index": 117,
+      "batch": 6,
+      "position": 16
+    },
+    {
+      "id": "cindercrown",
+      "name": "CINDER CROWN",
+      "element": "CINZAS",
+      "rarity": "silver",
+      "bio": "Chassi forjado para CINZAS. Abre a guarda inimiga com TEMPESTADE DE CINZAS.",
+      "index": 118,
+      "batch": 6,
+      "position": 17
+    },
+    {
+      "id": "magnetarfist",
+      "name": "MAGNETAR FIST",
+      "element": "MAGNETISMO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de MAGNETISMO. Ninguém sobrevive a PULSO MAGNETICO duas vezes.",
+      "index": 119,
+      "batch": 6,
+      "position": 18
+    },
+    {
+      "id": "ravenousbloom",
+      "name": "RAVENOUS BLOOM",
+      "element": "BIO",
+      "rarity": "gold",
+      "bio": "Campeão de BIO. Sua técnica SEIVA CORROSIVA encerra duelos em um golpe.",
+      "index": 120,
+      "batch": 6,
+      "position": 19
+    },
+    {
+      "id": "obsidianfang",
+      "name": "OBSIDIAN FANG",
+      "element": "OBSIDIANA",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de OBSIDIANA. Assina cada vitoria com ZENITE ZERO.",
+      "index": 121,
+      "batch": 7,
+      "position": 0
+    },
+    {
+      "id": "aurumtitan",
+      "name": "AURUM TITAN",
+      "element": "OURO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de OURO. Assina cada vitoria com ABISSO OMEGA.",
+      "index": 122,
+      "batch": 7,
+      "position": 1
+    },
+    {
+      "id": "mycelor",
+      "name": "MYCELOR",
+      "element": "FUNGO",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de FUNGO. Assina cada vitoria com SENTENCA INFINITO.",
+      "index": 123,
+      "batch": 7,
+      "position": 2
+    },
+    {
+      "id": "tidebreaker",
+      "name": "TIDEBREAKER",
+      "element": "MARE",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de MARE. Guarda OBLIVIO PROIBIDO para o momento decisivo.",
+      "index": 124,
+      "batch": 7,
+      "position": 3
+    },
+    {
+      "id": "nimbusaint",
+      "name": "NIMBUS SAINT",
+      "element": "NUVEM",
+      "rarity": "gold",
+      "bio": "Predador de NUVEM. Caca sistemas rivais e finaliza com SUPERNOVA SIDERAL.",
+      "index": 125,
+      "batch": 7,
+      "position": 4
+    },
+    {
+      "id": "scrapjaw",
+      "name": "SCRAPJAW",
+      "element": "SUCATA",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de SUCATA. Guarda SUPERNOVA ETERNO para o momento decisivo.",
+      "index": 126,
+      "batch": 7,
+      "position": 5
+    },
+    {
+      "id": "chronowraith",
+      "name": "CHRONO WRAITH",
+      "element": "TEMPO",
+      "rarity": "gold",
+      "bio": "Campeao de TEMPO. Sua tecnica SENTENCA COLOSSAL encerra duelos em um golpe.",
+      "index": 127,
+      "batch": 7,
+      "position": 6
+    },
+    {
+      "id": "basaltgore",
+      "name": "BASALT GORE",
+      "element": "BASALTO",
+      "rarity": "bronze",
+      "bio": "Gladiador de BASALTO. Cada round termina em RAGNAROK TITANICO.",
+      "index": 128,
+      "batch": 7,
+      "position": 7
+    },
+    {
+      "id": "seraphlux",
+      "name": "SERAPH LUX",
+      "element": "SANTO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de SANTO. Assina cada vitoria com RAGNAROK SIDERAL.",
+      "index": 129,
+      "batch": 7,
+      "position": 8
+    },
+    {
+      "id": "venomcoil",
+      "name": "VENOM COIL",
+      "element": "VENENO",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de VENENO. Guarda ABISSO SIDERAL para o momento decisivo.",
+      "index": 130,
+      "batch": 7,
+      "position": 9
+    },
+    {
+      "id": "magnetarch",
+      "name": "MAGNETARCH",
+      "element": "MAGNETISMO",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de MAGNETISMO. Guarda SUPERNOVA PROIBIDO para o momento decisivo.",
+      "index": 131,
+      "batch": 7,
+      "position": 10
+    },
+    {
+      "id": "emberkite",
+      "name": "EMBER KITE",
+      "element": "BRASA",
+      "rarity": "bronze",
+      "bio": "Predador de BRASA. Caca sistemas rivais e finaliza com OBLIVIO CARMESIM.",
+      "index": 132,
+      "batch": 7,
+      "position": 11
+    },
+    {
+      "id": "gravelord",
+      "name": "GRAVELORD",
+      "element": "GRAVIDADE",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de GRAVIDADE. Assina cada vitoria com SUPERNOVA VORAZ.",
+      "index": 133,
+      "batch": 7,
+      "position": 12
+    },
+    {
+      "id": "silkarachne",
+      "name": "SILK ARACHNE",
+      "element": "SEDA",
+      "rarity": "silver",
+      "bio": "Gladiador de SEDA. Cada round termina em ECLIPSE PROIBIDO.",
+      "index": 134,
+      "batch": 7,
+      "position": 13
+    },
+    {
+      "id": "boreaxe",
+      "name": "BOREAXE",
+      "element": "VENTANIA",
+      "rarity": "bronze",
+      "bio": "Campeao de VENTANIA. Sua tecnica RAGNAROK VORAZ encerra duelos em um golpe.",
+      "index": 135,
+      "batch": 7,
+      "position": 14
+    },
+    {
+      "id": "plasmoth",
+      "name": "PLASMOTH",
+      "element": "PLASMA",
+      "rarity": "silver",
+      "bio": "Predador de PLASMA. Caca sistemas rivais e finaliza com ECLIPSE VORAZ.",
+      "index": 136,
+      "batch": 7,
+      "position": 15
+    },
+    {
+      "id": "steelmonk",
+      "name": "IRON MONK",
+      "element": "DISCIPLINA",
+      "rarity": "bronze",
+      "bio": "Campeao de DISCIPLINA. Sua tecnica APOCALIPSE TITANICO encerra duelos em um golpe.",
+      "index": 137,
+      "batch": 7,
+      "position": 16
+    },
+    {
+      "id": "nebulynx",
+      "name": "NEBULYNX",
+      "element": "NEBULOSA",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de NEBULOSA. Ninguem sobrevive a ECLIPSE VORAZ duas vezes.",
+      "index": 138,
+      "batch": 7,
+      "position": 17
+    },
+    {
+      "id": "rustsaurus",
+      "name": "RUSTSAURUS",
+      "element": "FERRUGEM",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de FERRUGEM. Ninguem sobrevive a RAGNAROK CARMESIM duas vezes.",
+      "index": 139,
+      "batch": 7,
+      "position": 18
+    },
+    {
+      "id": "crystalquartz",
+      "name": "CRYSTAL QUARTZ",
+      "element": "CRISTAL",
+      "rarity": "silver",
+      "bio": "Gladiador de CRISTAL. Cada round termina em APOCALIPSE ETERNO.",
+      "index": 140,
+      "batch": 7,
+      "position": 19
+    },
+    {
+      "id": "bogmire",
+      "name": "BOGMIRE",
+      "element": "PANTANO",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de PANTANO. Assina cada vitoria com SENTENCA VORAZ.",
+      "index": 141,
+      "batch": 8,
+      "position": 0
+    },
+    {
+      "id": "solstice",
+      "name": "SOLSTICE",
+      "element": "ESTACAO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para ESTACAO. Abre a guarda inimiga com SENTENCA OMEGA.",
+      "index": 142,
+      "batch": 8,
+      "position": 1
+    },
+    {
+      "id": "neonrunner",
+      "name": "NEON RUNNER",
+      "element": "NEON",
+      "rarity": "silver",
+      "bio": "Predador de NEON. Caca sistemas rivais e finaliza com APOCALIPSE ZERO.",
+      "index": 143,
+      "batch": 8,
+      "position": 2
+    },
+    {
+      "id": "cathedron",
+      "name": "CATHEDRON",
+      "element": "CATEDRAL",
+      "rarity": "gold",
+      "bio": "Chassi forjado para CATEDRAL. Abre a guarda inimiga com SENTENCA ETERNO.",
+      "index": 144,
+      "batch": 8,
+      "position": 3
+    },
+    {
+      "id": "kelpwarden",
+      "name": "KELP WARDEN",
+      "element": "ALGA",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de ALGA. Guarda ZENITE PROIBIDO para o momento decisivo.",
+      "index": 145,
+      "batch": 8,
+      "position": 4
+    },
+    {
+      "id": "thunderbison",
+      "name": "THUNDER BISON",
+      "element": "TROVAO",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de TROVAO. Assina cada vitoria com ABISSO CARMESIM.",
+      "index": 146,
+      "batch": 8,
+      "position": 5
+    },
+    {
+      "id": "prismblade",
+      "name": "PRISM BLADE",
+      "element": "ARCO-IRIS",
+      "rarity": "gold",
+      "bio": "Piloto autonomo de ARCO-IRIS. Guarda SUPERNOVA OMEGA para o momento decisivo.",
+      "index": 147,
+      "batch": 8,
+      "position": 6
+    },
+    {
+      "id": "ashenhound",
+      "name": "CINDER HOUND",
+      "element": "CINZAS",
+      "rarity": "bronze",
+      "bio": "Chassi forjado para CINZAS. Abre a guarda inimiga com SUPERNOVA CARMESIM.",
+      "index": 148,
+      "batch": 8,
+      "position": 7
+    },
+    {
+      "id": "aetherbell",
+      "name": "AETHER BELL",
+      "element": "ETER",
+      "rarity": "silver",
+      "bio": "Predador de ETER. Caca sistemas rivais e finaliza com CATACLISMA ZERO.",
+      "index": 149,
+      "batch": 8,
+      "position": 8
+    },
+    {
+      "id": "dreadnought",
+      "name": "DREADNOUGHT X",
+      "element": "GUERRA",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de GUERRA. Ninguem sobrevive a ASCENSAO ZERO duas vezes.",
+      "index": 150,
+      "batch": 8,
+      "position": 9
+    },
+    {
+      "id": "wispkin",
+      "name": "WISPKIN",
+      "element": "ESPIRITO",
+      "rarity": "bronze",
+      "bio": "Nucleo instavel de ESPIRITO. Libera SUPERNOVA ETERNO quando encurralado.",
+      "index": 151,
+      "batch": 8,
+      "position": 10
+    },
+    {
+      "id": "obeliskar",
+      "name": "OBELISKAR",
+      "element": "RUNA",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de RUNA. Assina cada vitoria com RAGNAROK TITANICO.",
+      "index": 152,
+      "batch": 8,
+      "position": 11
+    },
+    {
+      "id": "sirenfall",
+      "name": "SIRENFALL",
+      "element": "CANTO",
+      "rarity": "gold",
+      "bio": "Gladiador de CANTO. Cada round termina em ABISSO OMEGA.",
+      "index": 153,
+      "batch": 8,
+      "position": 12
+    },
+    {
+      "id": "boilerbrute",
+      "name": "BOILER BRUTE",
+      "element": "VAPOR",
+      "rarity": "bronze",
+      "bio": "Predador de VAPOR. Caca sistemas rivais e finaliza com OBLIVIO PRIMORDIAL.",
+      "index": 154,
+      "batch": 8,
+      "position": 13
+    },
+    {
+      "id": "voidmantis",
+      "name": "VOID MANTIS",
+      "element": "VAZIO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de VAZIO. Ninguem sobrevive a ABISSO VORAZ duas vezes.",
+      "index": 155,
+      "batch": 8,
+      "position": 14
+    },
+    {
+      "id": "harvestking",
+      "name": "HARVEST KING",
+      "element": "COLHEITA",
+      "rarity": "silver",
+      "bio": "Predador de COLHEITA. Caca sistemas rivais e finaliza com REQUIEM ZERO.",
+      "index": 156,
+      "batch": 8,
+      "position": 15
+    },
+    {
+      "id": "polarisguard",
+      "name": "POLARIS GUARD",
+      "element": "POLAR",
+      "rarity": "silver",
+      "bio": "Gladiador de POLAR. Cada round termina em SENTENCA FINAL.",
+      "index": 157,
+      "batch": 8,
+      "position": 16
+    },
+    {
+      "id": "sandvizier",
+      "name": "SAND VIZIER",
+      "element": "DESERTO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para DESERTO. Abre a guarda inimiga com JULGAMENTO OMEGA.",
+      "index": 158,
+      "batch": 8,
+      "position": 17
+    },
+    {
+      "id": "clockthrone",
+      "name": "CLOCK THRONE",
+      "element": "ENGRENAGEM",
+      "rarity": "gold",
+      "bio": "Predador de ENGRENAGEM. Caca sistemas rivais e finaliza com ECLIPSE FINAL.",
+      "index": 159,
+      "batch": 8,
+      "position": 18
+    },
+    {
+      "id": "fenrisbyte",
+      "name": "FENRISBYTE",
+      "element": "LOBO",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de LOBO. Libera REQUIEM INFINITO quando encurralado.",
+      "index": 160,
+      "batch": 8,
+      "position": 19
+    },
+    {
+      "id": "emberlotus",
+      "name": "EMBER LOTUS",
+      "element": "FLOR",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de FLOR. Assina cada vitoria com CATACLISMA ZERO.",
+      "index": 161,
+      "batch": 9,
+      "position": 0
+    },
+    {
+      "id": "stygianox",
+      "name": "STYGIAN OX",
+      "element": "ABISMO",
+      "rarity": "bronze",
+      "bio": "Campeao de ABISMO. Sua tecnica SUPERNOVA CARMESIM encerra duelos em um golpe.",
+      "index": 162,
+      "batch": 9,
+      "position": 1
+    },
+    {
+      "id": "photonveil",
+      "name": "PHOTON VEIL",
+      "element": "FOTON",
+      "rarity": "gold",
+      "bio": "Campeao de FOTON. Sua tecnica SUPERNOVA TITANICO encerra duelos em um golpe.",
+      "index": 163,
+      "batch": 9,
+      "position": 2
+    },
+    {
+      "id": "grimquill",
+      "name": "GRIM QUILL",
+      "element": "PENA",
+      "rarity": "silver",
+      "bio": "Chassi forjado para PENA. Abre a guarda inimiga com ECLIPSE ETERNO.",
+      "index": 164,
+      "batch": 9,
+      "position": 3
+    },
+    {
+      "id": "magmaticus",
+      "name": "MAGMATICUS",
+      "element": "MAGMA",
+      "rarity": "gold",
+      "bio": "Campeao de MAGMA. Sua tecnica OBLIVIO ZERO encerra duelos em um golpe.",
+      "index": 165,
+      "batch": 9,
+      "position": 4
+    },
+    {
+      "id": "frostpike",
+      "name": "FROST PIKE",
+      "element": "GEADA",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de GEADA. Ninguem sobrevive a ABISSO CARMESIM duas vezes.",
+      "index": 166,
+      "batch": 9,
+      "position": 5
+    },
+    {
+      "id": "orbitalance",
+      "name": "ORBITALANCE",
+      "element": "ORBITA",
+      "rarity": "silver",
+      "bio": "Predador de ORBITA. Caca sistemas rivais e finaliza com REQUIEM CARMESIM.",
+      "index": 167,
+      "batch": 9,
+      "position": 6
+    },
+    {
+      "id": "bramblewrath",
+      "name": "BRAMBLE WRATH",
+      "element": "ESPINHO",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de ESPINHO. Guarda CATACLISMA FINAL para o momento decisivo.",
+      "index": 168,
+      "batch": 9,
+      "position": 7
+    },
+    {
+      "id": "cobaltronin",
+      "name": "COBALT RONIN",
+      "element": "AÇO AZUL",
+      "rarity": "gold",
+      "bio": "Gladiador de AÇO AZUL. Cada round termina em SENTENCA PROIBIDO.",
+      "index": 169,
+      "batch": 9,
+      "position": 8
+    },
+    {
+      "id": "sporequeen",
+      "name": "SPORE QUEEN",
+      "element": "ESPORO",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de ESPORO. Assina cada vitoria com APOCALIPSE ZERO.",
+      "index": 170,
+      "batch": 9,
+      "position": 9
+    },
+    {
+      "id": "quakejaw",
+      "name": "QUAKE JAW",
+      "element": "TERREMOTO",
+      "rarity": "silver",
+      "bio": "Predador de TERREMOTO. Caca sistemas rivais e finaliza com APOCALIPSE TITANICO.",
+      "index": 171,
+      "batch": 9,
+      "position": 10
+    },
+    {
+      "id": "astrafox",
+      "name": "ASTRA FOX",
+      "element": "ESTRELA",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de ESTRELA. Libera JULGAMENTO INFINITO quando encurralado.",
+      "index": 172,
+      "batch": 9,
+      "position": 11
+    },
+    {
+      "id": "hullbreaker",
+      "name": "HULL BREAKER",
+      "element": "TITANIO",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de TITANIO. Ninguem sobrevive a REQUIEM PROIBIDO duas vezes.",
+      "index": 173,
+      "batch": 9,
+      "position": 12
+    },
+    {
+      "id": "aurorafin",
+      "name": "AURORA FIN",
+      "element": "AURORA",
+      "rarity": "gold",
+      "bio": "Chassi forjado para AURORA. Abre a guarda inimiga com OBLIVIO PRIMORDIAL.",
+      "index": 174,
+      "batch": 9,
+      "position": 13
+    },
+    {
+      "id": "mirrorage",
+      "name": "MIRRORAGE",
+      "element": "ESPELHO",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de ESPELHO. Libera SUPERNOVA CARMESIM quando encurralado.",
+      "index": 175,
+      "batch": 9,
+      "position": 14
+    },
+    {
+      "id": "carrionvex",
+      "name": "CARRION VEX",
+      "element": "PRAGA",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de PRAGA. Libera REQUIEM TITANICO quando encurralado.",
+      "index": 176,
+      "batch": 9,
+      "position": 15
+    },
+    {
+      "id": "titanforge",
+      "name": "TITAN FORGE",
+      "element": "FORJA",
+      "rarity": "gold",
+      "bio": "Predador de FORJA. Caca sistemas rivais e finaliza com SENTENCA FINAL.",
+      "index": 177,
+      "batch": 9,
+      "position": 16
+    },
+    {
+      "id": "glasscicada",
+      "name": "GLASS CICADA",
+      "element": "VIDRO",
+      "rarity": "bronze",
+      "bio": "Gladiador de VIDRO. Cada round termina em ZENITE COLOSSAL.",
+      "index": 178,
+      "batch": 9,
+      "position": 17
+    },
+    {
+      "id": "shogunplate",
+      "name": "SHOGUN PLATE",
+      "element": "SAMURAI",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de SAMURAI. Ninguem sobrevive a ECLIPSE ETERNO duas vezes.",
+      "index": 179,
+      "batch": 9,
+      "position": 18
+    },
+    {
+      "id": "dustmoth",
+      "name": "DUST MOTH",
+      "element": "POEIRA",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de POEIRA. Ninguem sobrevive a ZENITE PRIMORDIAL duas vezes.",
+      "index": 180,
+      "batch": 9,
+      "position": 19
+    },
+    {
+      "id": "hydroquake",
+      "name": "HYDROQUAKE",
+      "element": "TSUNAMI",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de TSUNAMI. Guarda REQUIEM INFINITO para o momento decisivo.",
+      "index": 181,
+      "batch": 10,
+      "position": 0
+    },
+    {
+      "id": "emberfang",
+      "name": "EMBER FANG",
+      "element": "CHAMA",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de CHAMA. Ninguem sobrevive a REQUIEM PRIMORDIAL duas vezes.",
+      "index": 182,
+      "batch": 10,
+      "position": 1
+    },
+    {
+      "id": "lanternghast",
+      "name": "LANTERN GHAST",
+      "element": "ALMA",
+      "rarity": "silver",
+      "bio": "Gladiador de ALMA. Cada round termina em ASCENSAO INFINITO.",
+      "index": 183,
+      "batch": 10,
+      "position": 2
+    },
+    {
+      "id": "cobblegolem",
+      "name": "COBBLE GOLEM",
+      "element": "PEDRA",
+      "rarity": "bronze",
+      "bio": "Gladiador de PEDRA. Cada round termina em SENTENCA ETERNO.",
+      "index": 184,
+      "batch": 10,
+      "position": 3
+    },
+    {
+      "id": "skyforgewing",
+      "name": "SKYFORGE WING",
+      "element": "CEU",
+      "rarity": "gold",
+      "bio": "Gladiador de CEU. Cada round termina em OBLIVIO INFINITO.",
+      "index": 185,
+      "batch": 10,
+      "position": 4
+    },
+    {
+      "id": "scarabking",
+      "name": "SCARAB KING",
+      "element": "BESOURO",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de BESOURO. Libera ASCENSAO CARMESIM quando encurralado.",
+      "index": 186,
+      "batch": 10,
+      "position": 5
+    },
+    {
+      "id": "tempestcoil",
+      "name": "TEMPEST COIL",
+      "element": "TEMPESTADE",
+      "rarity": "silver",
+      "bio": "Chassi forjado para TEMPESTADE. Abre a guarda inimiga com ABISSO PROIBIDO.",
+      "index": 187,
+      "batch": 10,
+      "position": 6
+    },
+    {
+      "id": "marblesaint",
+      "name": "MARBLE SAINT",
+      "element": "MARMORE",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de MARMORE. Assina cada vitoria com JULGAMENTO PROIBIDO.",
+      "index": 188,
+      "batch": 10,
+      "position": 7
+    },
+    {
+      "id": "gearwidow",
+      "name": "GEAR WIDOW",
+      "element": "RELOJOARIA",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de RELOJOARIA. Assina cada vitoria com REQUIEM VORAZ.",
+      "index": 189,
+      "batch": 10,
+      "position": 8
+    },
+    {
+      "id": "radiantcalf",
+      "name": "RADIANT CALF",
+      "element": "SOL",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de SOL. Ninguem sobrevive a OBLIVIO INFINITO duas vezes.",
+      "index": 190,
+      "batch": 10,
+      "position": 9
+    },
+    {
+      "id": "acidgrin",
+      "name": "ACID GRIN",
+      "element": "ACIDO",
+      "rarity": "silver",
+      "bio": "Chassi forjado para ACIDO. Abre a guarda inimiga com ECLIPSE ZERO.",
+      "index": 191,
+      "batch": 10,
+      "position": 10
+    },
+    {
+      "id": "bastionhold",
+      "name": "BASTION HOLD",
+      "element": "FORTALEZA",
+      "rarity": "gold",
+      "bio": "Chassi forjado para FORTALEZA. Abre a guarda inimiga com JULGAMENTO TITANICO.",
+      "index": 192,
+      "batch": 10,
+      "position": 11
+    },
+    {
+      "id": "meteorachi",
+      "name": "METEORACHI",
+      "element": "METEORO",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de METEORO. Libera ECLIPSE INFINITO quando encurralado.",
+      "index": 193,
+      "batch": 10,
+      "position": 12
+    },
+    {
+      "id": "silentquill",
+      "name": "SILENT QUILL",
+      "element": "SILENCIO",
+      "rarity": "silver",
+      "bio": "Gladiador de SILENCIO. Cada round termina em CATACLISMA PROIBIDO.",
+      "index": 194,
+      "batch": 10,
+      "position": 13
+    },
+    {
+      "id": "boltbunny",
+      "name": "BOLT BUNNY",
+      "element": "FAISCA",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de FAISCA. Assina cada vitoria com CATACLISMA INFINITO.",
+      "index": 195,
+      "batch": 10,
+      "position": 14
+    },
+    {
+      "id": "furnaceoni",
+      "name": "FURNACE ONI",
+      "element": "INFERNO",
+      "rarity": "gold",
+      "bio": "Gladiador de INFERNO. Cada round termina em ASCENSAO COLOSSAL.",
+      "index": 196,
+      "batch": 10,
+      "position": 15
+    },
+    {
+      "id": "glacierarch",
+      "name": "GLACIER ARCH",
+      "element": "GLACIAL",
+      "rarity": "gold",
+      "bio": "Piloto autonomo de GLACIAL. Guarda ABISSO COLOSSAL para o momento decisivo.",
+      "index": 197,
+      "batch": 10,
+      "position": 16
+    },
+    {
+      "id": "swiftgale",
+      "name": "SWIFT GALE",
+      "element": "BRISA",
+      "rarity": "bronze",
+      "bio": "Predador de BRISA. Caca sistemas rivais e finaliza com OBLIVIO COLOSSAL.",
+      "index": 198,
+      "batch": 10,
+      "position": 17
+    },
+    {
+      "id": "darkharbor",
+      "name": "DARK HARBOR",
+      "element": "BREU",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de BREU. Libera ECLIPSE TITANICO quando encurralado.",
+      "index": 199,
+      "batch": 10,
+      "position": 18
+    },
+    {
+      "id": "solderjack",
+      "name": "SOLDER JACK",
+      "element": "SOLDA",
+      "rarity": "bronze",
+      "bio": "Nucleo instavel de SOLDA. Libera SENTENCA PRIMORDIAL quando encurralado.",
+      "index": 200,
+      "batch": 10,
+      "position": 19
+    },
+    {
+      "id": "valkyrune",
+      "name": "VALKYRUNE",
+      "element": "VALQUIRIA",
+      "rarity": "gold",
+      "bio": "Gladiador de VALQUIRIA. Cada round termina em OBLIVIO INFINITO.",
+      "index": 201,
+      "batch": 11,
+      "position": 0
+    },
+    {
+      "id": "mudlarker",
+      "name": "MUDLARKER",
+      "element": "LODO",
+      "rarity": "bronze",
+      "bio": "Veterano das arenas de LODO. Assina cada vitoria com CATACLISMA COLOSSAL.",
+      "index": 202,
+      "batch": 11,
+      "position": 1
+    },
+    {
+      "id": "crimsonaria",
+      "name": "CRIMSON ARIA",
+      "element": "SANGUE",
+      "rarity": "gold",
+      "bio": "Campeao de SANGUE. Sua tecnica ZENITE PROIBIDO encerra duelos em um golpe.",
+      "index": 203,
+      "batch": 11,
+      "position": 2
+    },
+    {
+      "id": "stonewhisker",
+      "name": "STONE WHISKER",
+      "element": "GRANITO",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de GRANITO. Ninguem sobrevive a CATACLISMA INFINITO duas vezes.",
+      "index": 204,
+      "batch": 11,
+      "position": 3
+    },
+    {
+      "id": "skyreef",
+      "name": "SKY REEF",
+      "element": "CORAL",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de CORAL. Ninguem sobrevive a ECLIPSE PRIMORDIAL duas vezes.",
+      "index": 205,
+      "batch": 11,
+      "position": 4
+    },
+    {
+      "id": "ironpilgrim",
+      "name": "IRON PILGRIM",
+      "element": "PEREGRINO",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de PEREGRINO. Guarda SUPERNOVA PRIMORDIAL para o momento decisivo.",
+      "index": 206,
+      "batch": 11,
+      "position": 5
+    },
+    {
+      "id": "nightjarx",
+      "name": "NIGHTJAR X",
+      "element": "NOITE",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de NOITE. Ninguem sobrevive a OBLIVIO INFINITO duas vezes.",
+      "index": 207,
+      "batch": 11,
+      "position": 6
+    },
+    {
+      "id": "pyreherald",
+      "name": "PYRE HERALD",
+      "element": "PIRA",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de PIRA. Libera JULGAMENTO INFINITO quando encurralado.",
+      "index": 208,
+      "batch": 11,
+      "position": 7
+    },
+    {
+      "id": "dunemaw",
+      "name": "DUNE MAW",
+      "element": "AREIA MOVEDIÇA",
+      "rarity": "silver",
+      "bio": "Gladiador de AREIA MOVEDIÇA. Cada round termina em ASCENSAO TITANICO.",
+      "index": 209,
+      "batch": 11,
+      "position": 8
+    },
+    {
+      "id": "circuitmonk",
+      "name": "CIRCUIT MONK",
+      "element": "CIRCUITO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de CIRCUITO. Ninguem sobrevive a ZENITE PROIBIDO duas vezes.",
+      "index": 210,
+      "batch": 11,
+      "position": 9
+    },
+    {
+      "id": "frostmourn",
+      "name": "FROST MOURN",
+      "element": "LAMENTO",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de LAMENTO. Ninguem sobrevive a REQUIEM SIDERAL duas vezes.",
+      "index": 211,
+      "batch": 11,
+      "position": 10
+    },
+    {
+      "id": "brasslion",
+      "name": "BRASS LION",
+      "element": "LATAO",
+      "rarity": "silver",
+      "bio": "Veterano das arenas de LATAO. Assina cada vitoria com SENTENCA PROIBIDO.",
+      "index": 212,
+      "batch": 11,
+      "position": 11
+    },
+    {
+      "id": "tarpitfiend",
+      "name": "TARPIT FIEND",
+      "element": "PICHE",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de PICHE. Guarda ABISSO INFINITO para o momento decisivo.",
+      "index": 213,
+      "batch": 11,
+      "position": 12
+    },
+    {
+      "id": "skyloomweaver",
+      "name": "SKYLOOM WEAVER",
+      "element": "TECELA",
+      "rarity": "silver",
+      "bio": "Piloto autonomo de TECELA. Guarda SUPERNOVA TITANICO para o momento decisivo.",
+      "index": 214,
+      "batch": 11,
+      "position": 13
+    },
+    {
+      "id": "boulderox",
+      "name": "BOULDER OX",
+      "element": "ROCHA",
+      "rarity": "bronze",
+      "bio": "Campeao de ROCHA. Sua tecnica ECLIPSE TITANICO encerra duelos em um golpe.",
+      "index": 215,
+      "batch": 11,
+      "position": 14
+    },
+    {
+      "id": "halcyonix",
+      "name": "HALCYONIX",
+      "element": "CALMARIA",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de CALMARIA. Libera CATACLISMA CARMESIM quando encurralado.",
+      "index": 216,
+      "batch": 11,
+      "position": 15
+    },
+    {
+      "id": "gravebyte",
+      "name": "GRAVEBYTE",
+      "element": "TUMULO",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de TUMULO. Ninguem sobrevive a ECLIPSE ZERO duas vezes.",
+      "index": 217,
+      "batch": 11,
+      "position": 16
+    },
+    {
+      "id": "emberveilla",
+      "name": "EMBER VEILLA",
+      "element": "FOGO FATUO",
+      "rarity": "silver",
+      "bio": "Chassi forjado para FOGO FATUO. Abre a guarda inimiga com JULGAMENTO PRIMORDIAL.",
+      "index": 218,
+      "batch": 11,
+      "position": 17
+    },
+    {
+      "id": "titanomaw",
+      "name": "TITANOMAW",
+      "element": "TITAN",
+      "rarity": "gold",
+      "bio": "Veterano das arenas de TITAN. Assina cada vitoria com REQUIEM VORAZ.",
+      "index": 219,
+      "batch": 11,
+      "position": 18
+    },
+    {
+      "id": "zenithara",
+      "name": "ZENITHARA",
+      "element": "ZENITE",
+      "rarity": "gold",
+      "bio": "Lenda do circuito de ZENITE. Ninguem sobrevive a ABISSO FINAL duas vezes.",
+      "index": 220,
+      "batch": 11,
+      "position": 19
+    },
+    {
+      "id": "vespirion",
+      "name": "VESPIRION",
+      "element": "FERRAO",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de FERRAO. Libera JULGAMENTO INFINITO quando encurralado.",
+      "index": 221,
+      "batch": 12,
+      "position": 0
+    },
+    {
+      "id": "scarabyss",
+      "name": "SCARABYSS",
+      "element": "ESCARAVELHO",
+      "rarity": "bronze",
+      "bio": "Gladiador de ESCARAVELHO. Cada round termina em APOCALIPSE CARMESIM.",
+      "index": 222,
+      "batch": 12,
+      "position": 1
+    },
+    {
+      "id": "aranthrax",
+      "name": "ARANTHRAX",
+      "element": "TEIA",
+      "rarity": "gold",
+      "bio": "Predador de TEIA. Caca sistemas rivais e finaliza com OBLIVIO ETERNO.",
+      "index": 223,
+      "batch": 12,
+      "position": 2
+    },
+    {
+      "id": "mantivore",
+      "name": "MANTIVORE",
+      "element": "LAMINA",
+      "rarity": "silver",
+      "bio": "Campeao de LAMINA. Sua tecnica SENTENCA CARMESIM encerra duelos em um golpe.",
+      "index": 224,
+      "batch": 12,
+      "position": 3
+    },
+    {
+      "id": "formicore",
+      "name": "FORMICORE",
+      "element": "COLONIA",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de COLONIA. Guarda OBLIVIO PRIMORDIAL para o momento decisivo.",
+      "index": 225,
+      "batch": 12,
+      "position": 4
+    },
+    {
+      "id": "cicadron",
+      "name": "CICADRON",
+      "element": "SONORO",
+      "rarity": "silver",
+      "bio": "Chassi forjado para SONORO. Abre a guarda inimiga com JULGAMENTO OMEGA.",
+      "index": 226,
+      "batch": 12,
+      "position": 5
+    },
+    {
+      "id": "kagemaru",
+      "name": "KAGEMARU",
+      "element": "SOMBRA",
+      "rarity": "gold",
+      "bio": "Predador de SOMBRA. Caca sistemas rivais e finaliza com SENTENCA PRIMORDIAL.",
+      "index": 227,
+      "batch": 12,
+      "position": 6
+    },
+    {
+      "id": "shurikage",
+      "name": "SHURIKAGE",
+      "element": "AGIL",
+      "rarity": "silver",
+      "bio": "Predador de AGIL. Caca sistemas rivais e finaliza com SENTENCA PROIBIDO.",
+      "index": 228,
+      "batch": 12,
+      "position": 7
+    },
+    {
+      "id": "fumikaze",
+      "name": "FUMIKAZE",
+      "element": "FUMACA",
+      "rarity": "bronze",
+      "bio": "Chassi forjado para FUMACA. Abre a guarda inimiga com SUPERNOVA SIDERAL.",
+      "index": 229,
+      "batch": 12,
+      "position": 8
+    },
+    {
+      "id": "kunailock",
+      "name": "KUNAI LOCK",
+      "element": "CORRENTE",
+      "rarity": "silver",
+      "bio": "Predador de CORRENTE. Caca sistemas rivais e finaliza com ASCENSAO FINAL.",
+      "index": 230,
+      "batch": 12,
+      "position": 9
+    },
+    {
+      "id": "hayatezero",
+      "name": "HAYATE ZERO",
+      "element": "VENTO",
+      "rarity": "gold",
+      "bio": "Chassi forjado para VENTO. Abre a guarda inimiga com JULGAMENTO VORAZ.",
+      "index": 231,
+      "batch": 12,
+      "position": 10
+    },
+    {
+      "id": "nokusaki",
+      "name": "NOKUSAKI",
+      "element": "VENENO",
+      "rarity": "bronze",
+      "bio": "Lenda do circuito de VENENO. Ninguem sobrevive a APOCALIPSE VORAZ duas vezes.",
+      "index": 232,
+      "batch": 12,
+      "position": 11
+    },
+    {
+      "id": "bastionox",
+      "name": "BASTIONOX",
+      "element": "MURALHA",
+      "rarity": "gold",
+      "bio": "Predador de MURALHA. Caca sistemas rivais e finaliza com JULGAMENTO ETERNO.",
+      "index": 233,
+      "batch": 12,
+      "position": 12
+    },
+    {
+      "id": "mortarhulk",
+      "name": "MORTAR HULK",
+      "element": "ARTILHARIA",
+      "rarity": "silver",
+      "bio": "Predador de ARTILHARIA. Caca sistemas rivais e finaliza com CATACLISMA SIDERAL.",
+      "index": 234,
+      "batch": 12,
+      "position": 13
+    },
+    {
+      "id": "granithor",
+      "name": "GRANITHOR",
+      "element": "GRANITO",
+      "rarity": "bronze",
+      "bio": "Chassi forjado para GRANITO. Abre a guarda inimiga com SENTENCA ZERO.",
+      "index": 235,
+      "batch": 12,
+      "position": 14
+    },
+    {
+      "id": "juggerspine",
+      "name": "JUGGERSPINE",
+      "element": "IMPACTO",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de IMPACTO. Libera REQUIEM ETERNO quando encurralado.",
+      "index": 236,
+      "batch": 12,
+      "position": 15
+    },
+    {
+      "id": "tectomaul",
+      "name": "TECTOMAUL",
+      "element": "TECTONICA",
+      "rarity": "gold",
+      "bio": "Chassi forjado para TECTONICA. Abre a guarda inimiga com OBLIVIO FINAL.",
+      "index": 237,
+      "batch": 12,
+      "position": 16
+    },
+    {
+      "id": "ferroatlas",
+      "name": "FERRO ATLAS",
+      "element": "FERRO",
+      "rarity": "bronze",
+      "bio": "Gladiador de FERRO. Cada round termina em ABISSO INFINITO.",
+      "index": 238,
+      "batch": 12,
+      "position": 17
+    },
+    {
+      "id": "xenovyre",
+      "name": "XENOVYRE",
+      "element": "XENO",
+      "rarity": "gold",
+      "bio": "Campeao de XENO. Sua tecnica ECLIPSE PRIMORDIAL encerra duelos em um golpe.",
+      "index": 239,
+      "batch": 12,
+      "position": 18
+    },
+    {
+      "id": "myconaut",
+      "name": "MYCONAUT",
+      "element": "ESPORO",
+      "rarity": "bronze",
+      "bio": "Nucleo instavel de ESPORO. Libera CATACLISMA TITANICO quando encurralado.",
+      "index": 240,
+      "batch": 12,
+      "position": 19
+    },
+    {
+      "id": "nebulith",
+      "name": "NEBULITH",
+      "element": "NEBULOSA",
+      "rarity": "silver",
+      "bio": "Nucleo instavel de NEBULOSA. Libera JULGAMENTO FINAL quando encurralado.",
+      "index": 241,
+      "batch": 13,
+      "position": 0
+    },
+    {
+      "id": "bioquell",
+      "name": "BIOQUELL",
+      "element": "SIMBIOSE",
+      "rarity": "silver",
+      "bio": "Campeao de SIMBIOSE. Sua tecnica SENTENCA ETERNO encerra duelos em um golpe.",
+      "index": 242,
+      "batch": 13,
+      "position": 1
+    },
+    {
+      "id": "hollowseer",
+      "name": "HOLLOW SEER",
+      "element": "PSIQUICO",
+      "rarity": "gold",
+      "bio": "Gladiador de PSIQUICO. Cada round termina em CATACLISMA INFINITO.",
+      "index": 243,
+      "batch": 13,
+      "position": 2
+    },
+    {
+      "id": "gastropodo",
+      "name": "GASTROPODO",
+      "element": "MUCO",
+      "rarity": "bronze",
+      "bio": "Predador de MUCO. Caca sistemas rivais e finaliza com ZENITE PRIMORDIAL.",
+      "index": 244,
+      "batch": 13,
+      "position": 3
+    },
+    {
+      "id": "ronin_akatsu",
+      "name": "AKATSU RONIN",
+      "element": "AURORA",
+      "rarity": "gold",
+      "bio": "Campeao de AURORA. Sua tecnica APOCALIPSE COLOSSAL encerra duelos em um golpe.",
+      "index": 245,
+      "batch": 13,
+      "position": 4
+    },
+    {
+      "id": "bushidorne",
+      "name": "BUSHIDORNE",
+      "element": "HONRA",
+      "rarity": "silver",
+      "bio": "Campeao de HONRA. Sua tecnica SUPERNOVA FINAL encerra duelos em um golpe.",
+      "index": 246,
+      "batch": 13,
+      "position": 5
+    },
+    {
+      "id": "lanceviel",
+      "name": "LANCEVIEL",
+      "element": "LANCA",
+      "rarity": "silver",
+      "bio": "Campeao de LANCA. Sua tecnica APOCALIPSE VORAZ encerra duelos em um golpe.",
+      "index": 247,
+      "batch": 13,
+      "position": 6
+    },
+    {
+      "id": "templarion",
+      "name": "TEMPLARION",
+      "element": "JURAMENTO",
+      "rarity": "gold",
+      "bio": "Campeao de JURAMENTO. Sua tecnica ABISSO VORAZ encerra duelos em um golpe.",
+      "index": 248,
+      "batch": 13,
+      "position": 7
+    },
+    {
+      "id": "kuroyari",
+      "name": "KUROYARI",
+      "element": "OBSIDIANA",
+      "rarity": "bronze",
+      "bio": "Nucleo instavel de OBSIDIANA. Libera APOCALIPSE CARMESIM quando encurralado.",
+      "index": 249,
+      "batch": 13,
+      "position": 8
+    },
+    {
+      "id": "gwenshield",
+      "name": "GWEN SHIELD",
+      "element": "GUARDIA",
+      "rarity": "bronze",
+      "bio": "Predador de GUARDIA. Caca sistemas rivais e finaliza com OBLIVIO VORAZ.",
+      "index": 250,
+      "batch": 13,
+      "position": 9
+    },
+    {
+      "id": "lupvexor",
+      "name": "LUPVEXOR",
+      "element": "MATILHA",
+      "rarity": "silver",
+      "bio": "Lenda do circuito de MATILHA. Ninguem sobrevive a SENTENCA ZERO duas vezes.",
+      "index": 251,
+      "batch": 13,
+      "position": 10
+    },
+    {
+      "id": "tigravox",
+      "name": "TIGRAVOX",
+      "element": "PRESA",
+      "rarity": "gold",
+      "bio": "Nucleo instavel de PRESA. Libera REQUIEM PRIMORDIAL quando encurralado.",
+      "index": 252,
+      "batch": 13,
+      "position": 11
+    },
+    {
+      "id": "ursagrind",
+      "name": "URSA GRIND",
+      "element": "URSO",
+      "rarity": "bronze",
+      "bio": "Piloto autonomo de URSO. Guarda APOCALIPSE FINAL para o momento decisivo.",
+      "index": 253,
+      "batch": 13,
+      "position": 12
+    },
+    {
+      "id": "cornubrute",
+      "name": "CORNU BRUTE",
+      "element": "CHIFRE",
+      "rarity": "silver",
+      "bio": "Chassi forjado para CHIFRE. Abre a guarda inimiga com JULGAMENTO ETERNO.",
+      "index": 254,
+      "batch": 13,
+      "position": 13
+    },
+    {
+      "id": "simiaslam",
+      "name": "SIMIA SLAM",
+      "element": "PRIMATA",
+      "rarity": "bronze",
+      "bio": "Gladiador de PRIMATA. Cada round termina em SENTENCA INFINITO.",
+      "index": 255,
+      "batch": 13,
+      "position": 14
+    },
+    {
+      "id": "draknoir",
+      "name": "DRAKNOIR",
+      "element": "DRAGAO",
+      "rarity": "gold",
+      "bio": "Predador de DRAGAO. Caca sistemas rivais e finaliza com ZENITE INFINITO.",
+      "index": 256,
+      "batch": 13,
+      "position": 15
+    },
+    {
+      "id": "odinax",
+      "name": "ODINAX",
+      "element": "RUNA",
+      "rarity": "mythic",
+      "bio": "Pai de todos os chassis. Um olho vê a arena, o outro vê o fim dela.",
+      "index": 257,
+      "batch": 13,
+      "position": 16
+    },
+    {
+      "id": "thorvald",
+      "name": "THORVALD",
+      "element": "TROVAO",
+      "rarity": "mythic",
+      "bio": "O martelo cai uma vez. O trovão chega depois, para avisar.",
+      "index": 258,
+      "batch": 13,
+      "position": 17
+    },
+    {
+      "id": "lokirax",
+      "name": "LOKIRAX",
+      "element": "ILUSAO",
+      "rarity": "mythic",
+      "bio": "Nunca está onde o radar aponta. Às vezes está do seu lado do campo.",
+      "index": 259,
+      "batch": 13,
+      "position": 18
+    },
+    {
+      "id": "freyjax",
+      "name": "FREYJAX",
+      "element": "VALQUIRIA",
+      "rarity": "mythic",
+      "bio": "Escolhe quem cai e quem volta. Suas asas de aço reerguem o esquadrão.",
+      "index": 260,
+      "batch": 13,
+      "position": 19
+    },
+    {
+      "id": "fenrigar",
+      "name": "FENRIGAR",
+      "element": "LOBO",
+      "rarity": "mythic",
+      "bio": "As correntes Gleipnir ainda pendem dos pulsos. Ninguém conseguiu prendê-lo de novo.",
+      "index": 261,
+      "batch": 14,
+      "position": 0
+    },
+    {
+      "id": "heimdros",
+      "name": "HEIMDROS",
+      "element": "BIFROST",
+      "rarity": "mythic",
+      "bio": "Guarda a ponte de arco-íris. Ouve o reator inimigo antes de ele ligar.",
+      "index": 262,
+      "batch": 14,
+      "position": 1
+    },
+    {
+      "id": "helgrim",
+      "name": "HELGRIM",
+      "element": "NIFLHEL",
+      "rarity": "mythic",
+      "bio": "Metade osso, metade névoa. Governa os chassis que o ferro-velho esqueceu.",
+      "index": 263,
+      "batch": 14,
+      "position": 2
+    },
+    {
+      "id": "tyrbrand",
+      "name": "TYRBRAND",
+      "element": "JUSTICA",
+      "rarity": "mythic",
+      "bio": "Deu o braço como garantia de um juramento. Nunca perdeu um duelo justo.",
+      "index": 264,
+      "batch": 14,
+      "position": 3
+    },
+    {
+      "id": "jormundr",
+      "name": "JORMUNDR",
+      "element": "SERPENTE",
+      "rarity": "mythic",
+      "bio": "Uma volta da cauda envolve a arena inteira. A segunda volta aperta.",
+      "index": 265,
+      "batch": 14,
+      "position": 4
+    },
+    {
+      "id": "zeustron",
+      "name": "ZEUSTRON",
+      "element": "RAIO",
+      "rarity": "mythic",
+      "bio": "Senhor do céu de cobre. Cada raio carrega uma assinatura que nenhum para-raios aceita.",
+      "index": 266,
+      "batch": 14,
+      "position": 5
+    },
+    {
+      "id": "poseidrax",
+      "name": "POSEIDRAX",
+      "element": "MARE",
+      "rarity": "mythic",
+      "bio": "Bate o tridente e o chão da arena vira maré alta.",
+      "index": 267,
+      "batch": 14,
+      "position": 6
+    },
+    {
+      "id": "hadexor",
+      "name": "HADEXOR",
+      "element": "SUBMUNDO",
+      "rarity": "mythic",
+      "bio": "Cérbero-drone a seus pés, chama azul na coroa. Ninguém sai do placar dele.",
+      "index": 268,
+      "batch": 14,
+      "position": 7
+    },
+    {
+      "id": "arestrix",
+      "name": "ARESTRIX",
+      "element": "GUERRA",
+      "rarity": "mythic",
+      "bio": "Espartano de reator vermelho. Quanto mais longa a luta, mais forte ele fica.",
+      "index": 269,
+      "batch": 14,
+      "position": 8
+    },
+    {
+      "id": "athenyx",
+      "name": "ATHENYX",
+      "element": "SABEDORIA",
+      "rarity": "mythic",
+      "bio": "Estrategista de olhos de coruja. Calculou esta batalha antes de você entrar.",
+      "index": 270,
+      "batch": 14,
+      "position": 9
+    },
+    {
+      "id": "apollarc",
+      "name": "APOLLARC",
+      "element": "SOL",
+      "rarity": "mythic",
+      "bio": "Arqueiro do carro solar. Suas flechas chegam antes da luz delas.",
+      "index": 271,
+      "batch": 14,
+      "position": 10
+    },
+    {
+      "id": "artemyst",
+      "name": "ARTEMYST",
+      "element": "LUA",
+      "rarity": "mythic",
+      "bio": "Caçadora da lua crescente. Não erra um alvo que já marcou.",
+      "index": 272,
+      "batch": 14,
+      "position": 11
+    },
+    {
+      "id": "hermexis",
+      "name": "HERMEXIS",
+      "element": "MENSAGEIRO",
+      "rarity": "mythic",
+      "bio": "Botas aladas e caduceu. Já entregou a derrota antes do primeiro turno.",
+      "index": 273,
+      "batch": 14,
+      "position": 12
+    },
+    {
+      "id": "hefestor",
+      "name": "HEFESTOR",
+      "element": "FORJA",
+      "rarity": "mythic",
+      "bio": "O ferreiro dos deuses. Forjou metade das armas desta lista.",
+      "index": 274,
+      "batch": 14,
+      "position": 13
+    },
+    {
+      "id": "rakhet",
+      "name": "RAKHET",
+      "element": "SOL",
+      "rarity": "mythic",
+      "bio": "Rei-falcão do disco solar. Atravessa o céu e o submundo em um só ciclo.",
+      "index": 275,
+      "batch": 14,
+      "position": 14
+    },
+    {
+      "id": "anubrex",
+      "name": "ANUBREX",
+      "element": "JULGAMENTO",
+      "rarity": "mythic",
+      "bio": "Pesa o núcleo do inimigo contra uma pluma. A balança sempre pende.",
+      "index": 276,
+      "batch": 14,
+      "position": 15
+    },
+    {
+      "id": "horaxis",
+      "name": "HORAXIS",
+      "element": "CEU",
+      "rarity": "mythic",
+      "bio": "O olho que tudo vê está no visor. O outro olho está mirando você.",
+      "index": 277,
+      "batch": 14,
+      "position": 16
+    },
+    {
+      "id": "sethrax",
+      "name": "SETHRAX",
+      "element": "TEMPESTADE",
+      "rarity": "mythic",
+      "bio": "Senhor do deserto vermelho. Leva a areia para dentro de cada engrenagem.",
+      "index": 278,
+      "batch": 14,
+      "position": 17
+    },
+    {
+      "id": "isyra",
+      "name": "ISYRA",
+      "element": "VIDA",
+      "rarity": "mythic",
+      "bio": "Asas turquesa e um ankh no peito. Já trouxe de volta um chassi aos pedaços.",
+      "index": 279,
+      "batch": 14,
+      "position": 18
+    },
+    {
+      "id": "thothex",
+      "name": "THOTHEX",
+      "element": "ESCRITA",
+      "rarity": "mythic",
+      "bio": "Escriba íbis. O que ele escreve na tábua acontece no turno seguinte.",
+      "index": 280,
+      "batch": 14,
+      "position": 19
+    },
+    {
+      "id": "sekhmara",
+      "name": "SEKHMARA",
+      "element": "PRAGA",
+      "rarity": "mythic",
+      "bio": "Leoa da guerra com juba de fogo. Só para quando a arena inteira arde.",
+      "index": 281,
+      "batch": 15,
+      "position": 0
+    },
+    {
+      "id": "osirun",
+      "name": "OSIRUN",
+      "element": "RENASCER",
+      "rarity": "mythic",
+      "bio": "Faraó de bronze verde enfaixado em cabos. Morreu uma vez e não gostou.",
+      "index": 282,
+      "batch": 15,
+      "position": 1
+    },
+    {
+      "id": "basteon",
+      "name": "BASTEON",
+      "element": "FELINO",
+      "rarity": "mythic",
+      "bio": "Gata de lápis-lazúli. Cai sempre de pé e sempre atrás de você.",
+      "index": 283,
+      "batch": 15,
+      "position": 2
+    },
+    {
+      "id": "npc_scrapking",
+      "name": "REI DA SUCATA",
+      "element": "METAL",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 284,
+      "batch": 15,
+      "position": 3
+    },
+    {
+      "id": "npc_chronoguard",
+      "name": "GUARDIÃO CRONAL",
+      "element": "QUANTICO",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 285,
+      "batch": 15,
+      "position": 4
+    },
+    {
+      "id": "npc_siegetank",
+      "name": "BASTIÃO DE CERCO",
+      "element": "IMPACTO",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 286,
+      "batch": 15,
+      "position": 5
+    },
+    {
+      "id": "npc_voidarchon",
+      "name": "ARCONTE DO VAZIO",
+      "element": "SOMBRA",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 287,
+      "batch": 15,
+      "position": 6
+    },
+    {
+      "id": "npc_scavenger",
+      "name": "CATADOR ÓPTICO",
+      "element": "TOXICO",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 288,
+      "batch": 15,
+      "position": 7
+    },
+    {
+      "id": "npc_mirrorduelist",
+      "name": "DUELISTA PRISMÁTICO",
+      "element": "CRISTAL",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 289,
+      "batch": 15,
+      "position": 8
+    },
+    {
+      "id": "npc_minotaur",
+      "name": "MINOTAURO MUSGO",
+      "element": "BIO",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 290,
+      "batch": 15,
+      "position": 9
+    },
+    {
+      "id": "npc_dicelord",
+      "name": "LORD DOS DADOS",
+      "element": "ARCANO",
+      "rarity": "npc",
+      "bio": "Personagem não recrutável.",
+      "index": 291,
+      "batch": 15,
+      "position": 10
+    }
+  ],
+  "transparent": true,
+  "version": 3
+}

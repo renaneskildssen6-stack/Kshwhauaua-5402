@@ -1,13 +1,13 @@
 .mc-studio,.mc-loader{position:absolute;inset:0;z-index:80;overflow:hidden;color:#e2f5ff;font-family:'Silkscreen',monospace;background:#000}
 .mc-studio{display:grid;place-items:center}
-.mc-studio-mark{width:88%;max-width:470px;text-align:center;animation:mc-studio-fade 3200ms ease both}
+.mc-studio-mark{width:88%;max-width:470px;text-align:center;animation:mc-studio-fade 760ms ease both}
 .mc-studio-mark img{width:100%;height:auto;display:block;image-rendering:pixelated}
 .mc-studio-mark p{font-size:9px;letter-spacing:2px;margin:0 0 10px;color:#a8ccd8}
 .mc-studio-mark small{font-size:7px;letter-spacing:3px;color:#d9a852}
-.mc-entry-skip{position:absolute;bottom:max(22px,env(safe-area-inset-bottom));right:18px;border:0;border-bottom:1px solid #3b505c;background:none;color:#7593a4;padding:12px 2px;font:7px 'Press Start 2P',monospace;cursor:pointer}
-.mc-loader{background:#030912;transition:opacity 650ms ease}
+.mc-entry-skip{position:absolute;top:max(18px,env(safe-area-inset-top));right:18px;border:0;border-bottom:1px solid #3b505c;background:none;color:#7593a4;padding:12px 2px;font:7px 'Press Start 2P',monospace;cursor:pointer}
+.mc-loader{background:#030912;transition:opacity 240ms ease}
 .mc-loader[data-done=true]{opacity:0;pointer-events:none}
-.mc-loader-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 650ms ease;image-rendering:pixelated}
+.mc-loader-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 240ms ease;image-rendering:pixelated}
 .mc-loader-scene[data-active=true]{opacity:1}
 .mc-loader-shade{position:absolute;inset:0;background:linear-gradient(180deg,#02081099,transparent 32%,#02071020 49%,#020710f5 77%),radial-gradient(ellipse at 50% 43%,transparent 20%,#0007 100%)}
 .mc-loader-heading{position:absolute;top:max(38px,6%);left:24px;right:24px;text-align:center;text-shadow:0 3px #020810}
@@ -22,8 +22,10 @@
 .mc-loader-number>span{font:7px/1.8 'Press Start 2P',monospace;letter-spacing:1px;color:#b9dfe7;max-width:210px}
 .mc-loader-number strong{font:24px 'Press Start 2P',monospace;color:#ffc66a}
 .mc-loader-number strong small{font-size:9px;margin-left:4px;color:#a8c3cb}
-.mc-load-track{height:16px;padding:3px;background:#091725;border-image:url('/ui/panel_strip.png') 12 stretch;border-width:3px;border-style:solid}
-.mc-load-track span{display:block;height:100%;background:repeating-linear-gradient(90deg,#35e2f0 0 7px,#0e879b 7px 10px);transition:width 120ms linear;box-shadow:0 0 9px #35e2f044}
+.mc-load-track{appearance:none;display:block;box-sizing:border-box;width:100%;height:16px;padding:3px;background:#091725;border-image:url('/ui/panel_strip.png') 12 stretch;border-width:3px;border-style:solid;overflow:hidden}
+.mc-load-track::-webkit-progress-bar{background:transparent}
+.mc-load-track::-webkit-progress-value{background:repeating-linear-gradient(90deg,#35e2f0 0 7px,#0e879b 7px 10px);transition:width 120ms linear;box-shadow:0 0 9px #35e2f044}
+.mc-load-track::-moz-progress-bar{background:repeating-linear-gradient(90deg,#35e2f0 0 7px,#0e879b 7px 10px);box-shadow:0 0 9px #35e2f044}
 .mc-load-stats{display:flex;justify-content:space-between;font-size:7px;color:#81afc0;gap:10px}
 .mc-load-tip{font-size:10px;line-height:1.7;color:#b6cad1;min-height:48px;margin:8px 0}
 .mc-scene-choice{display:flex;gap:6px}
@@ -37,4 +39,4 @@
 @keyframes mc-studio-fade{0%{opacity:0;transform:translateY(5px)}20%,74%{opacity:1;transform:translateY(0)}100%{opacity:0}}
 .mc-studio-mark[data-reduced=true]{animation:none}
 @media(max-height:650px){.mc-loader-heading{top:22px}.mc-loader-heading h1{font-size:16px;margin:8px 0}.mc-loader-core{top:26%;width:140px;height:140px}.mc-loader-orbit{display:none}.mc-loader-bottom{bottom:14px;gap:6px}.mc-load-tip{font-size:8px;min-height:24px;margin:4px 0}.mc-loader-heading span{font-size:8px}.mc-loader-footer{margin:0}.mc-studio-mark{width:70%}}
-@media(prefers-reduced-motion:reduce){.mc-studio-mark{animation:none}.mc-loader,.mc-loader-scene,.mc-load-track span{transition:none}}
+@media(prefers-reduced-motion:reduce){.mc-studio-mark{animation:none}.mc-loader,.mc-loader-scene,.mc-load-track::-webkit-progress-value{transition:none}}

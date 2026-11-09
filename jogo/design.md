@@ -1,77 +1,90 @@
-# CAMPEÕES MECHA — Design
+# Arquivo de Robôs — Design
 
-Jogo de batalha por turnos (RPG tático 1v1 com equipe de 4 robôs), web mobile-first, 100% pixel art
-gerada por IA. Mecânicas replicadas de "Ben 10 Campeões Galácticos" (fórmulas de dano, evasão,
-crítico, XP, treino e torneios extraídas do SWF original), com 20 robôs originais estilo anime.
+## Botões IA + Modo História (aprovado: gerar todos de uma vez)
+**Botões:** um atlas gerado por IA (aço navy rebitado, filete cyan, cantos âmbar, pixel art industrial) substitui as molduras de `/ui/btn_*.png` com os mesmos nomes e 9-slice; originais salvos em `/ui/legacy/`. Detalhe concentrado nos cantos para o 9-slice não borrar; centro liso para o texto PressStart continuar legível. Estados: normal, pressionado, desabilitado (cinza), primário âmbar, quadrado, fechar. Uma camada `.mc-ai-btn` aplica a mesma moldura aos botões crus (dock, cidade, controles touch, modais) sem mexer em layout, tamanho mínimo de toque ou foco visível (contorno cyan 2px).
+**Modo História — “Crônicas da Primeira Luz”:** 6 capítulos depois do tutorial. Tela imersiva própria (`screens/story.tsx`), aberta pelo dock (HISTÓRIA) desde o nível 1.
+- Mapa de capítulos: arte-chave IA por capítulo, estado bloqueado/disponível/concluído, nível recomendado, recompensa de primeira vitória.
+- Cena: fundo IA em tela cheia com pan lento (Ken Burns), retratos que entram deslizando (falante aceso, ouvinte escurecido), caixa de diálogo com nome, texto datilografado, ▼ piscando, AUTO, PULAR, histórico (LOG). Efeitos por fala: tremor, flash, glitch, zoom; cartão de título do capítulo. Escolhas que mudam falas posteriores (salvas como flags).
+- Batalhas: `BattleScreen` real com chefes `npc_*` e robôs inimigos; derrota oferece repetir ou voltar ao mapa sem perder o progresso de cena.
+- Recompensa paga uma única vez por capítulo (guardada no save `story.cleared`); replay só paga o prêmio normal da luta. Nada de multiplicar ouro/poder.
+- Teclado: Espaço/Enter avança, A auto, Esc pula; toque na caixa avança. `prefers-reduced-motion` remove pan, tremor e datilografia.
+- Retratos humanos IA (Lyra, Nara) em pixel art; robôs usam os bustos existentes.
 
-## Direção de arte
+## Arte premium — cidade e metrô (aprovado: gerar todos os cenários de uma vez)
+Manter o pixel art industrial original (aço navy, luz cyan, acentos âmbar). As 16 fachadas `/city/b_*.png` continuam intactas; arte nova de IA entra como camadas em volta delas:
+- Fundo: placas `city-premium/skyline-central` e `skyline-industrial` com parallax, espelhadas a cada repetição para esconder a emenda, e mistura entre elas conforme o distrito. Tráfego aéreo antigo (`/city/traffic.png`) passa por cima.
+- Chão: texturas IA (calçada, asfalto, plataforma, lastro) projetadas no mesmo plano oblíquo do mundo via transformação afim do canvas — não são texturas de tela. Padrões em cache, sem criação por quadro.
+- Mobiliário IA (poste, banco, venda, terminal, floreira, caixas, semáforo) + props antigos (lixeira, placa, antena) apenas na faixa do meio-fio, fora de portas, travessias e escadarias; os sólidos têm colisão.
+- Metrô: parede IA repetida em coordenadas de mundo na cota `SUBWAY_LEVEL`, laje em corte entre rua e estação, escadaria aberta que desce da calçada até a plataforma (mesmo trajeto da animação). Trem = trem do atlas antigo. Cobertura IA sobre cada boca de metrô.
+- Luz: poças aditivas sob postes/portas/bocas, halos, garoa e poeira com reduced-motion; carros flutuantes do atlas antigo na avenida, freando diante do robô.
+- Estrutura: manifesto de assets com pré-carga/progresso/fallback, culling, passo físico fixo, pausa quando a aba some, reduced-motion em cache, banner de distrito.
 
-- Revisão anime mecha (pedido mais recente): REMOVER holograma e console orbital. Painéis blindados com molduras pixel existentes, retratos grandes espelhados, HP/MP legíveis, quatro ataques sempre visíveis com nome/custo e duas defesas em faixa distinta. Ultimate recebe painel dourado próprio; utilitários ficam subordinados. Arena e HUD fora da câmera; console inferior com largura responsiva e sem sobrepor o palco. Sem alteração de roster ou exigência de E2E.
-- Revisão de escopo: expansão para 500 robôs cancelada pelo usuário. Manter os 256 recrutáveis e oito NPCs existentes; não produzir ou cadastrar as 244 identidades planejadas. Continuar abertura, arena, tutorial, interface e refinamento de sistemas. O manifesto antigo é somente histórico, não uma fila ativa.
-- Revisão aprovada (2026-10-07): abertura Remulu Games com logo IA em pixel art sobre preto, fade in/hold/fade out e sem locução. Depois, carregamento com 50 desenhos IA em duas folhas 5×5, três fundos selecionáveis (Hangar, Cidade Noturna, Órbita), progresso baseado em requisições concluídas/decodificadas, erros explícitos e repetição dos assets que falharam. Preferência visual separada do save de jogo.
-- O pedido novo substitui a tela preta do ultimate: especial acontece dentro da arena, no ator e no alvo reais, mantendo o palco e HUD visíveis. Carga continua individual e regras/recompensas não dependem da animação. Redução de movimento mantém um frame estático, sem deslocamentos nem flashes.
-- Refinamento de todos os sistemas é incremental: abertura/batalha primeiro; orientação contextual, Hangar/equipe e tutorial em seguida; aprofundamento restante continua pendente até implementação e validação, nunca chamado de completo só por um plano. Não há expansão de robôs em execução.
-- Overhaul aprovado (2026-10-07): entrada MECHA CHAMPIONS com Jogar/Tutorial; console orbital no canto inferior esquerdo, elevado, holograma de 50 frames (duas folhas 5×5), quatro símbolos de ataque em linha com informação independente, duas defesas, itens e ultimate separado. Ultimate individual 0–100%, sem MP: ataque +18%, defesa +14%, dano recebido +4–16% proporcional ao HP perdido; ultimate não recarrega a si mesmo. Tela preta desce para a sequência exclusiva. Combos de batalha removidos; coleta de núcleos na cidade continua independente.
-- Progressão nova: zero ouro/itens/robôs; Aurorion entregue ao começar o tutorial. Cinco batalhas reais com diálogo de missão e checkpoints. Hangar/Arena/Coliseu no nível 1; Loja 2, Oficina/Contratos 3, Ranqueado/Academia 4, Mina 5, Pets 6, Cards 7, Usina 8, Observatório 9, Museu 10, Laboratório 12, Portal 15. Saves anteriores preservam acessos existentes. Piloto no topo direito; atalhos simbólicos agrupados.
-- Arte de especiais para os robôs atuais: distinguir sequências exclusivas prontas dos efeitos existentes usados como fallback; nenhum recorte repetido/recolorido conta como sequência IA exclusiva. Expansão de identidades cancelada.
-- Batalha imersiva (2026-10-07): palco panorâmico com robôs afastados, oito materiais de chão IA mapeados às 41 arenas, plataformas em perspectiva e sombras de contato. Câmera aproxima o autor da ação e acompanha o impacto conforme a fila real de eventos; retorna ao plano aberto entre turnos. HUD/menus ficam fora da câmera, comandos centralizados com largura limitada. Movimento reduzido ou botão CÂMERA FIXA desliga aproximação e tremores, sem alterar regras, ordem ou recursos.
-- Cidade imersiva (2026-10-07): seis telas com composições próprias, não listas de painéis idênticos. Usina = mapa isométrico com fios/fluxos e despacho por prédio; Observatório = carta estelar e percurso ramificado; Academia = bancada de chassi com três árvores visuais; Contratos = mapa de 24 operações e rastreamento de até três missões; Museu = salão/vitrines com peças IA e ressonância de conjuntos; Portal = salão de dez portais, cada qual com 16 frames IA, preparação e mapa de etapas.
-- Novas regras: protocolos de energia e capacitores por batalhas; melhorias de rotas/sondas e escolhas de expedição; simulações da academia com cargas por batalhas; pesquisas de ressonância do museu; marcos e resgate encadeado dos contratos; calibração dimensional, tiers de desafio e bênção inicial. Todas persistentes, sem relógio obrigatório, sem dinheiro real. Regras e custos visíveis, saves antigos migrados sem perder progresso.
-- Cenários IA com 12 frames por folha; fluxos e câmera com movimentos contínuos suaves, portais em folhas 4×4; pausar animação fora da área visível e respeitar movimento reduzido. Textos/hotspots permanecem DOM acessível, imagens não contêm labels necessários ao jogo.
-- Vitória cinematográfica: ignição suave → 50 frames IA em duas folhas 5×5 (25 por imagem) → dissolução de 800 ms para tela dividida. Metade ilustrada com santuário dourado/ciano de nove frames IA, metade com resultado, MVP aliado e estatísticas reais. Em telas estreitas as metades ficam empilhadas. Sem cópia de marcas; referência de composição de RPG mobile. Movimento reduzido pula o espetáculo e mantém resultado estático; botão permite pular animação.
-- Expansão dimensional: cidade estendida com seis prédios físicos IA; telas de sistemas mantêm painéis pixel, arte do prédio no cabeçalho e indicadores ciano/âmbar. Portal usa cards ilustrados por modo, mapa ramificado, escolhas entre lutas e HUD de objetivos.
-- Perfil: 12 novas cenas em folhas 3×3 (9 frames), compráveis com diamantes de jogo. Contratos: 360 missões em 24 cadeias, filtros, dois objetivos combinados por missão e resgate único persistente.
-- NPCs exclusivos usam tiras de 16 frames e nunca entram no catálogo de recrutamento. Movimento reduzido desativa flashes de tela; alertas de objetivo devem ter texto além da cor.
-- **Tudo é pixel art gerada por IA**: robôs (16 frames cada), botões, painéis, ícones, barras,
-  molduras, VFX, logo, fundo do menu, arenas (4 frames a 4fps).
-- Nenhum ícone vetorial/lucide, nenhuma borda CSS "moderna": bordas vêm de `border-image` sobre os
-  PNGs de painel/botão.
-- `image-rendering: pixelated` global; escalas em múltiplos inteiros quando possível.
-- Animação em **4 fps** (arenas e sprites idle), 8 fps em ações rápidas (ataque/dano).
+## Revisão espacial — cidade e metrô contínuos
+Substituir faixas deslocadas artificialmente por um chão oblíquo coerente: avenida, duas calçadas, travessias, quarteirões com footprints sólidos, portas no plano da fachada e objetos ordenados por profundidade. Tamanho do robô constante; câmera acompanha X/Z, sem atalhos que teleportem entre faixas. WASD/setas move no chão; Espaço/Z dá pulo duplo. Preservar arte, sistemas e save.
+Metrô no mesmo canvas e mapa: sete escadarias conectam superfície a um subsolo contínuo; animação de descida e subida com câmera acompanhando o mesmo personagem. Plataforma, trilhos, embarque por proximidade, viagem visual sob a cidade e desembarque subterrâneo antes de subir. Sem modal de metrô nem teleporte direto à superfície. Estilo pixel art cyan/âmbar; cenários desobstruídos, sinalização legível, controles touch existentes.
 
-## Online PvP (aprovado 2026-10-07)
+## Integração aprovada — Cidade Viva
+Reutilizar o app gerenciado: jogo do novo repositório em `/`, galeria preservada em `/galeria`. Manter a cidade pixel art cyan/âmbar, fontes originais, tutorial, economia e chave de save. Acrescentar hangar de drones com vínculo por dono e upgrades limitados; integrar suporte offline, mineração e drone acompanhante. Produzir 300 sprites de mineração e 300 de cidade, folhas de 50, PNG com alpha. Cidade recebe decoração distribuída, movimento com respeito a reduced-motion e navegação rápida. Preservar infraestrutura gerenciada e PvP existente; nenhuma alteração remota no GitHub.
 
-- Servidor próprio no mesmo app (Hono + oRPC + Turso), autoritativo: cliente só envia comandos; motor, sorte (sal secreto), turnos, prazos e resultado ficam no servidor. Contas Better Auth (Google gerenciado + e-mail/senha).
-- Acesso pela tela inicial (ONLINE · PVP) e pelo dock PILOTO na cidade; sem exigência de progresso offline. Fila pública por tamanho de equipe e salas privadas por código de 10 caracteres.
-- Equipe de 1–4 robôs únicos escolhidos entre os 256 recrutáveis (sem NPCs/laboratório); nível 10 fixo, sem treino, equipamento, pets, cards ou itens. Turno de 60 s; tempo esgotado passa a vez; 3 perdas seguidas = derrota por abandono.
-- Tela online mantém o visual de painéis blindados ciano/âmbar: cabeçalho com piloto e V/D, abas FILA / SALA, grade de retratos com busca e filtro por elemento, faixa da equipe com 4 slots, ranking dos 10 primeiros. Espera mostra código grande copiável e cancelamento.
-- Batalha online reutiliza palco, câmera, comandos de anime mecha e ultimate na arena. Sem AUTO e sem SUPRIMENTOS. Barra superior do servidor: relógio do turno (âmbar < 15 s), "SUA VEZ"/"VEZ DO OPONENTE", nome do rival, perdas de turno e botão DESISTIR com confirmação. A reprodução usa eventos compactos do servidor; o estado final sempre vem do servidor.
-- AUTO removido de todas as batalhas (online e offline).
+## Nova entrada — Casa-laboratório do piloto
+Ao tocar JOGAR ou concluir tutorial, entrar sempre numa residência-laboratório 2D lateral ampla antes da cidade. Panorama industrial com quarto acolhedor, reator central, forja e baía de drones; piso contínuo e caminhada real com teclado e botões touch, câmera suave, iluminação pulsante, drones e estações clicáveis. Estações: forja (oficina do jogo, substitui acesso de ficha do personagem na rota principal), hangar, drones, mina, laboratório, arquivo/perfil secundário. Porta leva à cidade; porta própria da cidade retorna à casa. Não criar nova economia: abrir os sistemas reais já existentes. CSS/animações com reduced-motion.
 
-## Paleta (derivada dos assets)
+## Expansão autorizada — casa, bairros e indústria
+Casa usa física equivalente à cidade: aceleração, corrida, gravidade, pulo duplo, plataformas, controles multitoque, animações reais de movimento e ataque. Núcleo privado exclusivo da residência: biometria, amostras, projetos cronometrados e iluminação persistente. Cidade em 2,5D com eixo de profundidade contínuo, bairros frontal/traseiro, novos pontos de entrada, Lyra/Nara, supermercado e museu mineral. Metrô subterrâneo com sete destinos. Loja inspirada em balcão colecionável de arcade, sem copiar arte do Geometry Dash: mercador, catálogo em grade, abas, filtros e confirmação de preço. Mina recebe scanner ligado à casa, contratos únicos, venda seletiva, elevador entre camadas liberadas, fila de refino e produção fracionária persistente. Preservar preços básicos e progressão original; não multiplicar poder/ganhos literalmente por 100 ou 200.
 
-| Token | Hex | Uso |
-|---|---|---|
-| bg | #070b14 | fundo geral |
-| bg-2 | #0e1524 | superfícies |
-| panel | #1b3a5c | interior de painel |
-| accent | #35e2f0 | ciano tech (destaque, MP) |
-| accent-2 | #ffb43a | âmbar (XP, ouro) |
-| hp | #e2453a | vida |
-| ok | #57d76a | confirmar |
-| text | #e8f4ff | texto |
-| muted | #7d94ad | texto secundário |
+Terceira coleção: Drones de Vínculo, 291 UAVs não humanoides, um por robô, 160×160. Hélices, sensores, rotores e fuselagens; herdar apenas paleta e detalhes temáticos do dono. 6 folhas 10×5, última 41. Aba nova por padrão; nomes, dono, papel e habilidade sugerida no modal. No jogo: construção, vínculo, upgrades e efeitos limitados reais; os poderes sugeridos no manifesto não são promessas de mecânicas. Preservar bustos e rostos.
 
-## Tipografia
+Coleção adicional aprovada: 291 bustos anime pixel art, da barriga para cima, 200×250; 15 folhas 5×4, última com 11. Preservar rostos v2, alternar coleções na mesma galeria com downloads e ZIPs separados. Abrir bustos por padrão.
 
-- Títulos/HUD: `Press Start 2P` (`/fonts/press-start-2p.woff2`).
-- Corpo/números: `Silkscreen` (`/fonts/silkscreen.woff2`).
-- Sem antialias suave: `letter-spacing` mínimo 0.02em, tamanhos 8/10/12/16px.
+Galeria web escura aprovada, sem template visual, login ou banco adicional.
+Paleta: fundo #090d10, painéis #11191d, bordas #273237, texto #edf5ef, secundário #94a69d, destaque lima #c2f970.
+Poppins para corpo/títulos, monospace para índices. Cabeçalho editorial amplo, linhas finas, botões retos, grade densa de retratos quadrados.
+Tela única: busca, filtros de raridade, retratos/folhas, modal de prévia e downloads PNG/ZIP.
+Catálogo estático tipado; sem novas APIs ou tabelas. Assets locais em public.
+291 personagens fixos incluindo NPCs. PNGs novos; sprites originais usados apenas como referências privadas de geração.
 
-## Telas
+> Starter design brief. Replace this content with the app you're building before writing any UI.
+> Keep it short and concrete — it's the single source of truth for palette, typography, pages,
+> screens, and flows across web, mobile, and desktop.
 
-1. **Splash/Menu** — logo pixel, fundo `bg_menu`, botões: Jogar, Equipe, Treino, Torneios, Loja.
-2. **Coleção/Equipe** — grid de robôs desbloqueados, moldura bronze/prata/ouro por raridade,
-   escolha de 4 para a equipe.
-3. **Robô (detalhe)** — retrato + strip animado, atributos (HP/MP/STR/DEF/AGL), skills, XP.
-4. **Treino** — gastar ouro para subir STR/DEF/AGL até `maxTrained` do nível.
-5. **Loja** — itens de batalha (reparo, energia, revive, buffs) e cápsulas de robô.
-6. **Torneios** — 5 torneios (dojo, vulcão, orbital, congelada, céu), chave de lutas sequenciais.
-7. **Batalha** — arena animada 4fps, HUD com barras HP/MP, menu Atacar/Defender/Item/Trocar,
-   VFX por skill, entrada/saída de robô, log de turno.
-8. **Resultado** — vitória/derrota, ouro/XP, level up, recompensas (robô/item/medalha).
+One-line description of the app, the platforms it ships on, the visual direction (style, feel), and the core job it does for the user.
 
-## Fluxo
+## Brand & Colors
 
-Menu → Torneio → seleção de equipe (4) → batalha em série (n lutas) → recompensa → volta ao mapa.
-Progresso salvo em `localStorage` (offline total, nenhuma chamada de rede necessária).
+One token set, consumed per platform:
+
+- **Web & desktop**: CSS variables in `packages/web/src/web/styles.css` (desktop loads the web UI).
+- **Mobile**: `Colors.light` / `Colors.dark` in `packages/mobile/constants/theme.ts`, read via `useColors()`; `userInterfaceStyle: "automatic"` follows the system light/dark setting.
+
+| Token | Light | Dark | Use |
+|-------|-------|------|-----|
+| primary | #1F1F1F | #E5E5E5 | Buttons, active tab, accents |
+| background | #FFFFFF | #0A0A0A | Page/screen background |
+| card | #FFFFFF | #1A1A1A | Cards, surfaces |
+| foreground | #171717 | #FAFAFA | Primary text |
+| mutedForeground | #737373 | #A3A3A3 | Secondary text |
+| border | #E5E5E5 | #262626 | Hairlines |
+| destructive | #DC2626 | #EF4444 | Delete / errors |
+
+## Typography
+
+Name the display + body pairing here. Web: set font families in `styles.css` (self-hosted files go in `packages/web/public/fonts/`). Mobile: system font by default; load custom fonts with `useFonts` from `expo-font` and reference them via `Fonts` in `constants/theme.ts`.
+
+## Pages & Screens
+
+List each page/screen, its route file, and what it shows. Example:
+
+- **Web — Home** (`packages/web/src/web/pages/index.tsx`) — what the user sees first.
+- **Mobile — Home** (`packages/mobile/app/(tabs)/index.tsx`) — main tab.
+- Add web pages under `src/web/pages/` (+ route in `app.tsx`); mobile tabs under `app/(tabs)/`, stack/modal screens under `app/`.
+
+## Key User Flows
+
+1. Describe the primary flow end to end (open → action → result).
+2. ...
+
+## Architecture
+
+- **API**: typed oRPC client (`lib/api.ts` in each package) → the backend in `@template/web`. Query/mutation hooks live in `queries/` (one file per feature); pages/screens call them with `@tanstack/react-query`.
+- **State/sync**: TanStack Query with optimistic updates for instant-feel interactions.
+- **Auth / payments / uploads**: see `skills/app/references/` when those features are needed.

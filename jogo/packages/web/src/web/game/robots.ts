@@ -3196,6 +3196,13 @@ export function faceUrl(id: string): string {
   return faceResolver?.(id) ?? `/robots/${id}_face.png`;
 }
 
+/** Retrato estilo "brawler" (160px). Robôs de laboratório caem no rosto do sprite. */
+export function portraitUrl(id: string): string {
+  if (id.startsWith("npc_")) return `/portraits/${id.slice(4)}_face.png`;
+  if (!ROBOT_MAP[id] || id.startsWith("lab_")) return faceUrl(id);
+  return `/portraits/${id}_face.png`;
+}
+
 /** Adiciona (ou substitui) um robo no roster em runtime. */
 export function registerCustom(def: RobotDef): void {
   const i = ROBOTS.findIndex((r) => r.id === def.id);
